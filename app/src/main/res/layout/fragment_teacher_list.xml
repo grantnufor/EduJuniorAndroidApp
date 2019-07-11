@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="TeacherListFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTeacherList"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@color/Red"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/lblSchoolNameTeacherList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="10dp"
+                        android:textSize="13dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/White"
+                        android:layout_alignParentLeft="true" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/lblTeacherInfoLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginStart="10dp"
+                            android:textSize="10dp"
+                            android:textColor="@color/White"
+                            android:layout_alignParentLeft="true" />
+
+
+
+                        <TextView
+                            android:id="@+id/lblTeacherInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginStart="10dp"
+                            android:textSize="10dp"
+                            android:textColor="@color/White"
+                            android:layout_alignParentLeft="true" />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnAddANewTeacher"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/SteelBlue"
+                            android:text="Add a New Teacher"
+                            android:textColor="@color/White"
+                            android:textSize="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="30dp"
+                                app:srcCompat="@drawable/info_red" />
+
+
+                            <TextView
+                                android:id="@+id/lbl556"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_weight="1"
+                                android:width="0dp"
+                                android:text="Select a Teacher from the Existing Teachers List below to Edit a Teacher"
+                                android:textColor="@color/White"
+
+                                android:textSize="10dp" />
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/txtTeacherListSearch"
+                            android:layout_width="250dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/White"
+                            android:cursorVisible="true"
+                            android:ems="10"
+                            android:inputType="textLongMessage"
+                            android:hint="Search Teacher"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="10dp"
+                            android:textColor="@color/Black"
+                            android:textCursorDrawable="@null"
+                            android:layout_below="@+id/textView4" />
+
+
+                        <Button
+                            android:id="@+id/btnTeacherListSearch"
+                            android:layout_width="70dp"
+                            android:layout_height="31dp"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/SteelBlue"
+                            android:text="Search"
+                            android:textColor="@color/White"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <TabHost
+                android:id="@+id/tabHostTeacherList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linearLayout1"
+                android:layout_centerHorizontal="true"
+                android:background="@color/White">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></TabWidget>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:id="@+id/tabTeacherList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/White"
+                            android:orientation="vertical">
+
+
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/textView6"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_marginRight="10dp"-->
+                            <!--android:layout_marginTop="20dp"-->
+                            <!--android:fontFamily="sans-serif"-->
+                            <!--android:text="Existing Classes below"-->
+                            <!--android:textColor="@color/Black"-->
+                            <!--android:textSize="10dp"-->
+                            <!--android:textStyle="bold" />-->
+
+
+                            <!--<ScrollView-->
+                            <!--android:id="@+id/scrollViewClassList"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="700dp">-->
+
+                            <!--<LinearLayout-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="fill_parent"-->
+                            <!--android:orientation="vertical"-->
+                            <!--android:background="@color/Green"-->
+                            <!--android:weightSum="1">-->
+
+
+                            <ListView
+                                android:id="@+id/listViewExistingTeachers"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/tabAddEditTeacher"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/White"
+                            android:orientation="vertical">
+
+                            <ScrollView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginStart="0dp">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+
+
+                                    <TextView
+                                        android:id="@+id/lblTeacherIdEdit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:visibility="invisible"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_marginStart="10dp"
+                                        android:textSize="10dp"
+                                        android:layout_alignParentLeft="true" />
+
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Title"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"/>
+
+
+                                    <Spinner
+                                        android:id="@+id/spinnerAddTeacherTitle"
+                                        android:layout_width="300dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:background="@drawable/spinner_bg"
+                                        android:textColor="@color/Black" />
+
+
+
+                                    <EditText
+                                        android:id="@+id/txtAddTeacherFirstName"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="11dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/text_edit_border_grey"
+                                        android:cursorVisible="true"
+                                        android:ems="10"
+                                        android:inputType="textLongMessage"
+                                        android:hint="First Name"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/Black"
+                                        android:textCursorDrawable="@null"
+                                        android:layout_below="@+id/textView4" />
+
+
+                                    <EditText
+                                        android:id="@+id/txtAddTeacherOtherNames"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="11dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/text_edit_border_grey"
+                                        android:cursorVisible="true"
+                                        android:ems="10"
+                                        android:inputType="textLongMessage"
+                                        android:hint="Other Names"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/Black"
+                                        android:textCursorDrawable="@null"
+                                        android:layout_below="@+id/textView4" />
+
+
+
+                                    <EditText
+                                        android:id="@+id/txtAddTeacherLastName"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="11dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/text_edit_border_grey"
+                                        android:cursorVisible="true"
+                                        android:ems="10"
+                                        android:inputType="textLongMessage"
+                                        android:hint="Last Name"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/Black"
+                                        android:textCursorDrawable="@null"
+                                        android:layout_below="@+id/textView4" />
+
+
+
+                                    <EditText
+                                        android:id="@+id/txtAddTeacherHomeAddress"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="90dp"
+                                        android:layout_marginTop="11dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/text_edit_border_grey"
+                                        android:cursorVisible="true"
+                                        android:ems="10"
+                                        android:inputType="textLongMessage"
+                                        android:hint="Home Address"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/Black"
+                                        android:textCursorDrawable="@null"
+                                        android:layout_below="@+id/textView4" />
+
+
+
+                                    <EditText
+                                        android:id="@+id/txtAddTeacherPhoneNumber"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="11dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/text_edit_border_grey"
+                                        android:cursorVisible="true"
+                                        android:ems="10"
+                                        android:inputType="number"
+                                        android:hint="Phone Number"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/Black"
+                                        android:textCursorDrawable="@null"
+                                        android:layout_below="@+id/textView4" />
+
+
+                                    <EditText
+                                        android:id="@+id/txtAddTeacherEmailAddress"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="11dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/text_edit_border_grey"
+                                        android:cursorVisible="true"
+                                        android:ems="10"
+                                        android:inputType="textEmailAddress"
+                                        android:hint="Email Address"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/Black"
+                                        android:textCursorDrawable="@null"
+                                        android:layout_below="@+id/textView4" />
+
+                                    <EditText
+                                        android:id="@+id/txtAddTeacherPassword"
+                                        android:enabled="false"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="11dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/text_edit_border_grey"
+                                        android:cursorVisible="true"
+                                        android:ems="10"
+                                        android:inputType="textLongMessage"
+                                        android:hint="Password"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/Black"
+                                        android:textCursorDrawable="@null"
+                                        android:layout_below="@+id/textView4" />
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Date of Birth"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"/>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <Spinner
+                                            android:id="@+id/spinnerAddTeacherDOBDay"
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/spinner_bg"
+                                            android:textColor="@color/Black" />
+
+                                        <Spinner
+                                            android:id="@+id/spinnerAddTeacherDOBMonth"
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/spinner_bg"
+                                            android:textColor="@color/Black" />
+
+                                        <Spinner
+                                            android:id="@+id/spinnerAddTeacherDOBYear"
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/spinner_bg"
+                                            android:textColor="@color/Black" />
+
+
+                                    </LinearLayout>
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sex"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"/>
+
+                                    <Spinner
+                                        android:id="@+id/spinnerAddTeacherSex"
+                                        android:layout_width="100dp"
+                                        android:layout_height="30dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/spinner_bg"
+                                        android:textColor="@color/Black" />
+
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Date of Appointment"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"/>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <Spinner
+                                            android:id="@+id/spinnerAddTeacherDOADay"
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/spinner_bg"
+                                            android:textColor="@color/Black" />
+
+                                        <Spinner
+                                            android:id="@+id/spinnerAddTeacherDOAMonth"
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/spinner_bg"
+                                            android:textColor="@color/Black" />
+
+                                        <Spinner
+                                            android:id="@+id/spinnerAddTeacherDOAYear"
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/spinner_bg"
+                                            android:textColor="@color/Black" />
+
+
+                                    </LinearLayout>
+
+
+                                    <EditText
+                                        android:id="@+id/txtAddTeacherCertificate"
+                                        android:enabled="false"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="11dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/text_edit_border_grey"
+                                        android:cursorVisible="true"
+                                        android:ems="10"
+                                        android:inputType="textLongMessage"
+                                        android:hint="Certificate"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/Black"
+                                        android:textCursorDrawable="@null"
+                                        android:layout_below="@+id/textView4" />
+
+
+
+
+
+                                    <EditText
+                                        android:id="@+id/txtAddTeacherDesignation"
+                                        android:enabled="false"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="11dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/text_edit_border_grey"
+                                        android:cursorVisible="true"
+                                        android:ems="10"
+                                        android:inputType="textLongMessage"
+                                        android:hint="Designation"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/Black"
+                                        android:textCursorDrawable="@null"
+                                        android:layout_below="@+id/textView4" />
+
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Class Room Assignment"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"/>
+
+
+                                    <Spinner
+                                        android:id="@+id/spinnerAddTeacherClassRoomAssignment"
+                                        android:layout_width="300dp"
+                                        android:layout_height="30dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/spinner_bg"
+                                        android:textColor="@color/Black" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:orientation="horizontal">
+
+
+                                        <Button
+                                            android:id="@+id/btnRegisterTeacher"
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="30dp"
+                                            android:textSize="10dp"
+                                            android:background="@color/SteelBlue"
+                                            android:text="Register Teacher"
+                                            android:textColor="@color/White" />
+
+                                        <Button
+                                            android:id="@+id/btnUpdateTeacher"
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="30dp"
+                                            android:textSize="10dp"
+                                            android:background="@color/Maroon"
+                                            android:text="Update Teacher"
+                                            android:textColor="@color/White" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+
+
+
+                            </ScrollView>
+
+
+                        </LinearLayout>
+
+
+
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MessengerListFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@color/Red"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lblSchoolNameMessengerList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="10dp"
+                android:textSize="13dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/White"
+                android:layout_alignParentLeft="true" />
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/lblMessagesInfoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/White"
+                    android:layout_alignParentLeft="true" />
+
+
+
+                <TextView
+                    android:id="@+id/lblMessagesInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/White"
+                    android:layout_alignParentLeft="true" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewInfoMessengerList"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="30dp"
+                        app:srcCompat="@drawable/info_red" />
+
+
+                    <TextView
+                        android:id="@+id/lbl556"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:text="Select a Message from the List below to Read and Reply Messages"
+                        android:textColor="@color/White"
+
+                        android:textSize="10dp" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <TabHost
+        android:id="@+id/tabHostMessengerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="@color/White">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--****************-->
+                <!--compose message tab-->
+                <!--****************-->
+
+
+
+                <LinearLayout
+                    android:id="@+id/tabComposeMessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/White"
+                    android:paddingLeft="5dp"
+                    android:orientation="vertical">
+
+
+                    <ScrollView
+                        android:id="@+id/svComposeAMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout77"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/White"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout7"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/White"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Select Recipients:" />
+
+                                <Spinner
+                                    android:id="@+id/spinnerTo"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/spinner_bg"></Spinner>
+
+                                <EditText
+                                    android:id="@+id/editTextTo"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/text_edit_border_grey"
+                                    android:hint="To"
+                                    android:padding="5dp"
+                                    android:textSize="14dp" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout8"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/White"
+                                android:orientation="horizontal">
+
+                                <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="SUBJECT:"/>-->
+
+
+                                <EditText
+                                    android:id="@+id/editTextSubject"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/text_edit_border_grey"
+                                    android:hint="Subject"
+                                    android:padding="10dp"
+                                    android:textSize="14dp" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout9"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/White"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Message:"/>-->
+
+
+                                <EditText
+                                    android:id="@+id/editTextMessage"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/WhiteSmoke"
+                                    android:ems="10"
+                                    android:hint="Your Message Here"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:background="@color/White"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+
+                                <Button
+                                    android:id="@+id/btnSendMessage"
+                                    android:layout_width="200dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/dark_blue_button"
+                                    android:text="Send"
+                                    android:textColor="@color/White" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </ScrollView>
+                </LinearLayout>
+
+
+
+
+                <!--****************-->
+                <!--inbox tab-->
+                <!--****************-->
+                <LinearLayout
+                    android:id="@+id/tabExistingMessages"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/White"
+                    android:orientation="vertical">
+
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/textView6"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:fontFamily="sans-serif"-->
+                    <!--android:text="Existing Classes below"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:textSize="10dp"-->
+                    <!--android:textStyle="bold" />-->
+
+
+                    <!--<ScrollView-->
+                    <!--android:id="@+id/scrollViewClassList"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="700dp">-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:background="@color/Green"-->
+                    <!--android:weightSum="1">-->
+
+
+                    <ListView
+                        android:id="@+id/listViewExistingMessages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/tabSentMessages"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/White"
+                    android:orientation="vertical">
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!--<ListView-->
+
+
+
+
+
+
+
+
+
+                        <!--android:id="@+id/listViewSentMessages"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1" />-->
+
+
+
+
+
+
+                        <ListView
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/listViewMessages"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                        </ListView>
+
+
+                        <ScrollView
+                            android:id="@+id/svChats"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/linearLayoutChats"
+                                    android:orientation="vertical">
+
+
+
+
+                                </LinearLayout>
+
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".80"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/text_edit_border_blue"
+                                        android:hint="Enter Message Here"
+                                        android:paddingLeft="10dp"
+                                        android:textSize="13dp"
+                                        android:layout_alignBottom="@id/listViewMessages"
+                                        android:id="@+id/txtMessageAdmin" />
+
+                                    <Button
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".20"
+                                        android:layout_height="50dp"
+                                        android:background="@color/SteelBlue"
+                                        android:textColor="@color/White"
+                                        android:text="Send"
+                                        android:id="@+id/btnSendMessageAdmin"
+                                        android:layout_alignBottom="@id/listViewMessages"
+                                        android:layout_alignParentRight="true" />
+
+
+                                    <!--</ScrollView>-->
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </ScrollView>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+
+
+
+
+
+
+</RelativeLayout>

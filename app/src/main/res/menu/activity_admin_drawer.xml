@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin_home"
+            android:icon="@drawable/home"
+            android:state_checked="true"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_manage_classes_school"
+            android:icon="@drawable/classroom"
+            android:state_checked="true"
+            android:title="Class Rooms" />
+        <item
+            android:id="@+id/nav_manage_grades_school"
+            android:icon="@drawable/classroom"
+            android:state_checked="true"
+            android:title="Grades" />
+        <item
+            android:id="@+id/nav_manage_subjects_school"
+            android:icon="@drawable/classroom"
+            android:state_checked="true"
+            android:title="Subjects" />
+        <item
+            android:id="@+id/nav_manage_levels_school"
+            android:icon="@drawable/classroom"
+            android:state_checked="true"
+            android:title="Levels" />
+        <item
+            android:id="@+id/nav_manage_teachers_school"
+            android:icon="@drawable/teacher"
+            android:state_checked="false"
+            android:title="Teachers" />
+        <item
+            android:id="@+id/nav_manage_parents_school"
+            android:icon="@drawable/parent"
+            android:state_checked="false"
+            android:title="Parents" />
+        <item
+            android:id="@+id/nav_manage_pupils_school"
+            android:icon="@drawable/pupil"
+            android:title="Pupils" />
+
+        <item
+            android:id="@+id/nav_messenger_school"
+            android:icon="@drawable/chat"
+            android:title="Messenger" />
+
+        <item
+            android:id="@+id/nav_result_manager_school"
+            android:icon="@drawable/result_icon"
+            android:title="Result Manager" />
+
+
+        <item
+            android:id="@+id/nav_logout_school"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

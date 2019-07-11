@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "673811306544",
+    "firebase_url": "https://edujunior-5442e.firebaseio.com",
+    "project_id": "edujunior-5442e",
+    "storage_bucket": "edujunior-5442e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673811306544:android:c16c6983de3236cd",
+        "android_client_info": {
+          "package_name": "org.landoria.mac.edujunior"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673811306544-e48h4o7ov3siua2vtudfcnjjiqs6kju7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBTZiaG_IiGknXDFMM4mpuq1veDRr81LI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673811306544-e48h4o7ov3siua2vtudfcnjjiqs6kju7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
