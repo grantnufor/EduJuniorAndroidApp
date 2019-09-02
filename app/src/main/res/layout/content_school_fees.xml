@@ -5,22 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".EduJuniorStaffHomeActivity"
-    tools:showIn="@layout/app_bar_edu_junior_staff_home">
-
-
-
-    <LinearLayout
-        android:id="@+id/content_frame_staff"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
-
-
-    </LinearLayout>
-
-
+    tools:context=".SchoolFeesActivity"
+    tools:showIn="@layout/app_bar_school_fees">
 
 </android.support.constraint.ConstraintLayout>

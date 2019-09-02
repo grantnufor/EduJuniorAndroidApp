@@ -11,49 +11,29 @@
             android:state_checked="true"
             android:title="Home" />
         <item
-            android:id="@+id/nav_manage_classes_school"
-            android:icon="@drawable/classroom"
+            android:id="@+id/nav_setup_school"
+            android:icon="@drawable/setupicon"
             android:state_checked="true"
-            android:title="Class Rooms" />
-        <item
-            android:id="@+id/nav_manage_grades_school"
-            android:icon="@drawable/classroom"
-            android:state_checked="true"
-            android:title="Grades" />
-        <item
-            android:id="@+id/nav_manage_subjects_school"
-            android:icon="@drawable/classroom"
-            android:state_checked="true"
-            android:title="Subjects" />
-        <item
-            android:id="@+id/nav_manage_levels_school"
-            android:icon="@drawable/classroom"
-            android:state_checked="true"
-            android:title="Levels" />
-        <item
-            android:id="@+id/nav_manage_teachers_school"
-            android:icon="@drawable/teacher"
-            android:state_checked="false"
-            android:title="Teachers" />
-        <item
-            android:id="@+id/nav_manage_parents_school"
-            android:icon="@drawable/parent"
-            android:state_checked="false"
-            android:title="Parents" />
-        <item
-            android:id="@+id/nav_manage_pupils_school"
-            android:icon="@drawable/pupil"
-            android:title="Pupils" />
-
-        <item
-            android:id="@+id/nav_messenger_school"
-            android:icon="@drawable/chat"
-            android:title="Messenger" />
+            android:title="Setup" />
 
         <item
             android:id="@+id/nav_result_manager_school"
             android:icon="@drawable/result_icon"
+            android:state_checked="true"
             android:title="Result Manager" />
+
+        <item
+            android:id="@+id/nav_school_fees_school"
+            android:icon="@drawable/schoolfeesicon"
+            android:state_checked="true"
+            android:title="School Fees" />
+
+        <item
+            android:id="@+id/nav_comm_box_school"
+            android:icon="@drawable/commboxicon"
+            android:state_checked="true"
+            android:title="Comm Box" />
+
 
 
         <item

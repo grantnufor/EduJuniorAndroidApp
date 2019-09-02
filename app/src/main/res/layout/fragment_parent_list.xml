@@ -455,8 +455,8 @@
                                     android:layout_below="@+id/textView4" />
 
                                 <EditText
-                                    android:id="@+id/txtAddPasswordPassword"
-                                    android:enabled="false"
+                                    android:id="@+id/txtAddParentPassword"
+                                    android:enabled="true"
                                     android:layout_width="fill_parent"
                                     android:layout_height="50dp"
                                     android:layout_marginTop="11dp"
@@ -465,7 +465,7 @@
                                     android:background="@drawable/text_edit_border_grey"
                                     android:cursorVisible="true"
                                     android:ems="10"
-                                    android:inputType="textLongMessage"
+                                    android:inputType="textPassword"
                                     android:hint="Password"
                                     android:paddingLeft="10dp"
                                     android:paddingRight="10dp"
@@ -494,17 +494,17 @@
                                         android:text="Register Parent"
                                         android:textColor="@color/White" />
 
-                                    <Button
-                                        android:id="@+id/btnUpdateParent"
-                                        android:layout_width="100dp"
-                                        android:layout_height="30dp"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginTop="30dp"
-                                        android:textSize="10dp"
-                                        android:background="@color/Maroon"
-                                        android:text="Update Parent"
-                                        android:textColor="@color/White" />
+                                    <!--<Button-->
+                                        <!--android:id="@+id/btnUpdateParent"-->
+                                        <!--android:layout_width="100dp"-->
+                                        <!--android:layout_height="30dp"-->
+                                        <!--android:layout_marginLeft="10dp"-->
+                                        <!--android:layout_marginRight="10dp"-->
+                                        <!--android:layout_marginTop="30dp"-->
+                                        <!--android:textSize="10dp"-->
+                                        <!--android:background="@color/Maroon"-->
+                                        <!--android:text="Update Parent"-->
+                                        <!--android:textColor="@color/White" />-->
 
                                 </LinearLayout>
 

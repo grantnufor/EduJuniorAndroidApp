@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+
+    <item
+        android:id="@+id/nav_manage_subjects_school"
+        android:icon="@drawable/subjectsicon"
+        android:state_checked="true"
+        android:title="Subjects" />
+    <item
+        android:id="@+id/nav_manage_levels_school"
+        android:icon="@drawable/levelsicon"
+        android:state_checked="true"
+        android:title="Levels" />
+
+
+    <item
+        android:id="@+id/nav_manage_grades_school"
+        android:icon="@drawable/gradesicon"
+        android:state_checked="true"
+        android:title="Grades" />
+
+    <item
+        android:id="@+id/nav_manage_classes_school"
+        android:icon="@drawable/classroom"
+        android:state_checked="true"
+        android:title="Class Rooms" />
+
+    <item
+        android:id="@+id/nav_manage_exams_school"
+        android:icon="@drawable/classroom"
+        android:state_checked="true"
+        android:title="Exam Types" />
+
+
+    <item
+        android:id="@+id/nav_manage_teachers_school"
+        android:icon="@drawable/teacher"
+        android:state_checked="false"
+        android:title="Teachers" />
+    <item
+        android:id="@+id/nav_manage_parents_school"
+        android:icon="@drawable/parent"
+        android:state_checked="false"
+        android:title="Parents" />
+    <item
+        android:id="@+id/nav_manage_pupils_school"
+        android:icon="@drawable/pupil"
+        android:title="Pupils" />
+
+    <item
+        android:id="@+id/nav_back_to_home_school"
+        android:icon="@drawable/backicon"
+        android:title="Back to Home" />
+
+
+</menu>

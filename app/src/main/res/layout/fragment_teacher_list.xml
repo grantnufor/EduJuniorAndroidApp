@@ -6,23 +6,21 @@
     android:layout_height="fill_parent"
     tools:context="TeacherListFragment">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+
+
             <LinearLayout
                 android:id="@+id/linearLayoutTeacherList"
                 android:layout_width="fill_parent"
                 android:layout_height="150dp"
-                android:background="@color/Red"
+                android:paddingRight="5dp"
+                android:background="@color/Black"
                 android:orientation="vertical">
-
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -136,6 +134,7 @@
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
+                        android:weightSum="100"
                         android:orientation="horizontal">
 
 
@@ -143,6 +142,7 @@
                             android:id="@+id/txtTeacherListSearch"
                             android:layout_width="250dp"
                             android:layout_height="30dp"
+                            android:layout_weight="70"
                             android:layout_marginTop="11dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
@@ -153,7 +153,7 @@
                             android:hint="Search Teacher"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:textSize="10dp"
+                            android:textSize="14dp"
                             android:textColor="@color/Black"
                             android:textCursorDrawable="@null"
                             android:layout_below="@+id/textView4" />
@@ -163,13 +163,14 @@
                             android:id="@+id/btnTeacherListSearch"
                             android:layout_width="70dp"
                             android:layout_height="31dp"
+                            android:layout_weight="30"
                             android:layout_marginLeft="-10dp"
                             android:layout_marginTop="11dp"
                             android:layout_marginBottom="10dp"
                             android:background="@color/SteelBlue"
                             android:text="Search"
                             android:textColor="@color/White"
-                            android:textSize="10dp" />
+                            android:textSize="12dp" />
 
                     </LinearLayout>
 
@@ -252,6 +253,8 @@
 
 
 
+
+
                         </LinearLayout>
 
 
@@ -280,25 +283,17 @@
 
 
 
-                                    <TextView
-                                        android:id="@+id/lblTeacherIdEdit"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text=""
-                                        android:visibility="invisible"
-                                        android:layout_marginLeft="0dp"
-                                        android:layout_marginStart="10dp"
-                                        android:textSize="10dp"
-                                        android:layout_alignParentLeft="true" />
-
-
 
                                     <TextView
+                                        android:id="@+id/textView23"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/Red"
                                         android:text="Title"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginLeft="10dp"/>
+
 
 
                                     <Spinner
@@ -314,153 +309,297 @@
                                         android:textColor="@color/Black" />
 
 
-
-                                    <EditText
-                                        android:id="@+id/txtAddTeacherFirstName"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="50dp"
-                                        android:layout_marginTop="11dp"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/text_edit_border_grey"
-                                        android:cursorVisible="true"
-                                        android:ems="10"
-                                        android:inputType="textLongMessage"
-                                        android:hint="First Name"
-                                        android:paddingLeft="10dp"
-                                        android:paddingRight="10dp"
-                                        android:textSize="10dp"
-                                        android:textColor="@color/Black"
-                                        android:textCursorDrawable="@null"
-                                        android:layout_below="@+id/textView4" />
-
-
-                                    <EditText
-                                        android:id="@+id/txtAddTeacherOtherNames"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="50dp"
-                                        android:layout_marginTop="11dp"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/text_edit_border_grey"
-                                        android:cursorVisible="true"
-                                        android:ems="10"
-                                        android:inputType="textLongMessage"
-                                        android:hint="Other Names"
-                                        android:paddingLeft="10dp"
-                                        android:paddingRight="10dp"
-                                        android:textSize="10dp"
-                                        android:textColor="@color/Black"
-                                        android:textCursorDrawable="@null"
-                                        android:layout_below="@+id/textView4" />
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView22"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textSize="16dp"-->
+                                        <!--android:textColor="@color/Red"-->
+                                        <!--android:text="First Name"-->
+                                        <!--android:layout_marginTop="10dp"-->
+                                        <!--android:layout_marginLeft="10dp"/>-->
 
 
 
-                                    <EditText
-                                        android:id="@+id/txtAddTeacherLastName"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="50dp"
-                                        android:layout_marginTop="11dp"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/text_edit_border_grey"
-                                        android:cursorVisible="true"
-                                        android:ems="10"
-                                        android:inputType="textLongMessage"
-                                        android:hint="Last Name"
-                                        android:paddingLeft="10dp"
-                                        android:paddingRight="10dp"
-                                        android:textSize="10dp"
-                                        android:textColor="@color/Black"
-                                        android:textCursorDrawable="@null"
-                                        android:layout_below="@+id/textView4" />
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_layout1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+
+                                        <EditText
+                                            android:id="@+id/txtAddTeacherFirstName"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginTop="11dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:cursorVisible="true"
+                                            android:ems="10"
+                                            android:inputType="textLongMessage"
+                                            android:hint="First Name"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:textSize="10dp"
+                                            android:textColor="@color/Black"
+                                            android:textCursorDrawable="@null"
+                                            android:layout_below="@+id/textView4" />
+
+
+                                    </android.support.design.widget.TextInputLayout>
 
 
 
-                                    <EditText
-                                        android:id="@+id/txtAddTeacherHomeAddress"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="90dp"
-                                        android:layout_marginTop="11dp"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/text_edit_border_grey"
-                                        android:cursorVisible="true"
-                                        android:ems="10"
-                                        android:inputType="textLongMessage"
-                                        android:hint="Home Address"
-                                        android:paddingLeft="10dp"
-                                        android:paddingRight="10dp"
-                                        android:textSize="10dp"
-                                        android:textColor="@color/Black"
-                                        android:textCursorDrawable="@null"
-                                        android:layout_below="@+id/textView4" />
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView21"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textSize="16dp"-->
+                                        <!--android:textColor="@color/Red"-->
+                                        <!--android:text="Other Names"-->
+                                        <!--android:layout_marginTop="10dp"-->
+                                        <!--android:layout_marginLeft="10dp"/>-->
 
 
 
-                                    <EditText
-                                        android:id="@+id/txtAddTeacherPhoneNumber"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="50dp"
-                                        android:layout_marginTop="11dp"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/text_edit_border_grey"
-                                        android:cursorVisible="true"
-                                        android:ems="10"
-                                        android:inputType="number"
-                                        android:hint="Phone Number"
-                                        android:paddingLeft="10dp"
-                                        android:paddingRight="10dp"
-                                        android:textSize="10dp"
-                                        android:textColor="@color/Black"
-                                        android:textCursorDrawable="@null"
-                                        android:layout_below="@+id/textView4" />
 
 
-                                    <EditText
-                                        android:id="@+id/txtAddTeacherEmailAddress"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="50dp"
-                                        android:layout_marginTop="11dp"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/text_edit_border_grey"
-                                        android:cursorVisible="true"
-                                        android:ems="10"
-                                        android:inputType="textEmailAddress"
-                                        android:hint="Email Address"
-                                        android:paddingLeft="10dp"
-                                        android:paddingRight="10dp"
-                                        android:textSize="10dp"
-                                        android:textColor="@color/Black"
-                                        android:textCursorDrawable="@null"
-                                        android:layout_below="@+id/textView4" />
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_layout2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
 
-                                    <EditText
-                                        android:id="@+id/txtAddTeacherPassword"
-                                        android:enabled="false"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="50dp"
-                                        android:layout_marginTop="11dp"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/text_edit_border_grey"
-                                        android:cursorVisible="true"
-                                        android:ems="10"
-                                        android:inputType="textLongMessage"
-                                        android:hint="Password"
-                                        android:paddingLeft="10dp"
-                                        android:paddingRight="10dp"
-                                        android:textSize="10dp"
-                                        android:textColor="@color/Black"
-                                        android:textCursorDrawable="@null"
-                                        android:layout_below="@+id/textView4" />
+
+                                        <EditText
+                                            android:id="@+id/txtAddTeacherOtherNames"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginTop="11dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:cursorVisible="true"
+                                            android:ems="10"
+                                            android:inputType="textLongMessage"
+                                            android:hint="Other Names"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:textSize="10dp"
+                                            android:textColor="@color/Black"
+                                            android:textCursorDrawable="@null"
+                                            android:layout_below="@+id/textView4" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView20"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textSize="16dp"-->
+                                        <!--android:textColor="@color/Red"-->
+                                        <!--android:text="Last Name"-->
+                                        <!--android:layout_marginTop="10dp"-->
+                                        <!--android:layout_marginLeft="10dp"/>-->
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_layout3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+
+                                        <EditText
+                                            android:id="@+id/txtAddTeacherLastName"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginTop="11dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:cursorVisible="true"
+                                            android:ems="10"
+                                            android:inputType="textLongMessage"
+                                            android:hint="Last Name"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:textSize="10dp"
+                                            android:textColor="@color/Black"
+                                            android:textCursorDrawable="@null"
+                                            android:layout_below="@+id/textView4" />
+
+
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView19"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textSize="16dp"-->
+                                        <!--android:textColor="@color/Red"-->
+                                        <!--android:text="Home Address"-->
+                                        <!--android:layout_marginTop="10dp"-->
+                                        <!--android:layout_marginLeft="10dp"/>-->
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_layout4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+
+                                        <EditText
+                                            android:id="@+id/txtAddTeacherHomeAddress"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="90dp"
+                                            android:layout_marginTop="11dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:cursorVisible="true"
+                                            android:ems="10"
+                                            android:inputType="textLongMessage"
+                                            android:hint="Home Address"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:textSize="10dp"
+                                            android:textColor="@color/Black"
+                                            android:textCursorDrawable="@null"
+                                            android:layout_below="@+id/textView4" />
+
+
+
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView18"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textSize="16dp"-->
+                                        <!--android:textColor="@color/Red"-->
+                                        <!--android:text="Phone Number"-->
+                                        <!--android:layout_marginTop="10dp"-->
+                                        <!--android:layout_marginLeft="10dp"/>-->
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_layout5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/txtAddTeacherPhoneNumber"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginTop="11dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:cursorVisible="true"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:hint="Phone Number"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:textSize="10dp"
+                                            android:textColor="@color/Black"
+                                            android:textCursorDrawable="@null"
+                                            android:layout_below="@+id/textView4" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView17"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textSize="16dp"-->
+                                        <!--android:textColor="@color/Red"-->
+                                        <!--android:text="Email Address"-->
+                                        <!--android:layout_marginTop="10dp"-->
+                                        <!--android:layout_marginLeft="10dp"/>-->
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_layout6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/txtAddTeacherEmailAddress"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginTop="11dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:cursorVisible="true"
+                                            android:ems="10"
+                                            android:inputType="textEmailAddress"
+                                            android:hint="Email Address"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:textSize="10dp"
+                                            android:textColor="@color/Black"
+                                            android:textCursorDrawable="@null"
+                                            android:layout_below="@+id/textView4" />
+
+
+                                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView16"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textSize="16dp"-->
+                                        <!--android:textColor="@color/Red"-->
+                                        <!--android:text="Password"-->
+                                        <!--android:layout_marginTop="10dp"-->
+                                        <!--android:layout_marginLeft="10dp"/>-->
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_layout7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/txtAddTeacherPassword"
+                                            android:enabled="true"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginTop="11dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:cursorVisible="true"
+                                            android:ems="10"
+                                            android:inputType="textPassword"
+                                            android:hint="Password"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:textSize="10dp"
+                                            android:textColor="@color/Black"
+                                            android:textCursorDrawable="@null"
+                                            android:layout_below="@+id/textView4" />
+
+
+                                    </android.support.design.widget.TextInputLayout>
+
+
 
 
                                     <TextView
+                                        android:id="@+id/textView15"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/Red"
                                         android:text="Date of Birth"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginLeft="10dp"/>
@@ -470,56 +609,120 @@
                                         android:layout_height="wrap_content"
                                         android:orientation="horizontal">
 
-                                        <Spinner
-                                            android:id="@+id/spinnerAddTeacherDOBDay"
-                                            android:layout_width="100dp"
-                                            android:layout_height="30dp"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentStart="true"
-                                            android:layout_marginLeft="10dp"
-                                            android:layout_marginRight="10dp"
-                                            android:layout_marginTop="10dp"
-                                            android:background="@drawable/spinner_bg"
-                                            android:textColor="@color/Black" />
 
-                                        <Spinner
-                                            android:id="@+id/spinnerAddTeacherDOBMonth"
-                                            android:layout_width="100dp"
-                                            android:layout_height="30dp"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentStart="true"
-                                            android:layout_marginLeft="10dp"
-                                            android:layout_marginRight="10dp"
-                                            android:layout_marginTop="10dp"
-                                            android:background="@drawable/spinner_bg"
-                                            android:textColor="@color/Black" />
 
-                                        <Spinner
-                                            android:id="@+id/spinnerAddTeacherDOBYear"
-                                            android:layout_width="100dp"
-                                            android:layout_height="30dp"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentStart="true"
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="0dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="14dp"
+                                                android:textColor="@color/Red"
+                                                android:text="Day"/>
+
+                                            <Spinner
+                                                android:id="@+id/spinnerAddTeacherDOBDay"
+                                                android:layout_width="100dp"
+                                                android:layout_height="30dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="10dp"
+                                                android:background="@drawable/spinner_bg"
+                                                android:textColor="@color/Black" />
+
+
+                                        </LinearLayout>
+
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="0dp"
                                             android:layout_marginLeft="10dp"
-                                            android:layout_marginRight="10dp"
-                                            android:layout_marginTop="10dp"
-                                            android:background="@drawable/spinner_bg"
-                                            android:textColor="@color/Black" />
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="14dp"
+                                                android:textColor="@color/Red"
+                                                android:text="Month"/>
+
+                                            <Spinner
+                                                android:id="@+id/spinnerAddTeacherDOBMonth"
+                                                android:layout_width="100dp"
+                                                android:layout_height="30dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="10dp"
+                                                android:background="@drawable/spinner_bg"
+                                                android:textColor="@color/Black" />
+
+
+                                        </LinearLayout>
+
+
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="0dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="14dp"
+                                                android:textColor="@color/Red"
+                                                android:text="Year"/>
+
+                                            <Spinner
+                                                android:id="@+id/spinnerAddTeacherDOBYear"
+                                                android:layout_width="100dp"
+                                                android:layout_height="30dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="10dp"
+                                                android:background="@drawable/spinner_bg"
+                                                android:textColor="@color/Black" />
+
+
+                                        </LinearLayout>
+
 
 
                                     </LinearLayout>
 
 
                                     <TextView
+                                        android:id="@+id/textView14"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/Red"
                                         android:text="Sex"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginLeft="10dp"/>
 
                                     <Spinner
                                         android:id="@+id/spinnerAddTeacherSex"
-                                        android:layout_width="100dp"
+                                        android:layout_width="200dp"
                                         android:layout_height="30dp"
                                         android:layout_alignParentLeft="true"
                                         android:layout_alignParentStart="true"
@@ -532,122 +735,247 @@
 
 
                                     <TextView
+                                        android:id="@+id/textView13"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/Red"
                                         android:text="Date of Appointment"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginLeft="10dp"/>
+
+
+
+                                    <!--<DatePicker-->
+                                        <!--android:id="@+id/datePickerTeacherDateOfAppointment"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:datePickerMode="spinner"-->
+                                        <!--android:calendarViewShown="false"/>-->
+
+                                    <!--<EditText-->
+                                        <!--android:id="@+id/Birthday"-->
+                                        <!--android:layout_height="100"-->
+                                        <!--android:clickable="true"-->
+                                        <!--android:editable="false"-->
+                                        <!--android:hint="@string/Date of Appointment"/>-->
+
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:orientation="horizontal">
 
-                                        <Spinner
-                                            android:id="@+id/spinnerAddTeacherDOADay"
-                                            android:layout_width="100dp"
-                                            android:layout_height="30dp"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentStart="true"
-                                            android:layout_marginLeft="10dp"
-                                            android:layout_marginRight="10dp"
-                                            android:layout_marginTop="10dp"
-                                            android:background="@drawable/spinner_bg"
-                                            android:textColor="@color/Black" />
 
-                                        <Spinner
-                                            android:id="@+id/spinnerAddTeacherDOAMonth"
-                                            android:layout_width="100dp"
-                                            android:layout_height="30dp"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentStart="true"
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="0dp"
                                             android:layout_marginLeft="10dp"
-                                            android:layout_marginRight="10dp"
-                                            android:layout_marginTop="10dp"
-                                            android:background="@drawable/spinner_bg"
-                                            android:textColor="@color/Black" />
+                                            android:orientation="vertical">
 
-                                        <Spinner
-                                            android:id="@+id/spinnerAddTeacherDOAYear"
-                                            android:layout_width="100dp"
-                                            android:layout_height="30dp"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentStart="true"
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="14dp"
+                                                android:textColor="@color/Red"
+                                                android:text="Day"/>
+
+                                            <Spinner
+                                                android:id="@+id/spinnerAddTeacherDOADay"
+                                                android:layout_width="100dp"
+                                                android:layout_height="30dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_marginTop="10dp"
+                                                android:background="@drawable/spinner_bg"
+                                                android:textColor="@color/Black" />
+
+
+                                        </LinearLayout>
+
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="0dp"
                                             android:layout_marginLeft="10dp"
-                                            android:layout_marginRight="10dp"
-                                            android:layout_marginTop="10dp"
-                                            android:background="@drawable/spinner_bg"
-                                            android:textColor="@color/Black" />
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="14dp"
+                                                android:textColor="@color/Red"
+                                                android:text="Month"/>
+
+                                            <Spinner
+                                                android:id="@+id/spinnerAddTeacherDOAMonth"
+                                                android:layout_width="100dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="10dp"
+                                                android:background="@drawable/spinner_bg"
+                                                android:textColor="@color/Black" />
+
+
+                                        </LinearLayout>
+
+
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="0dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="14dp"
+                                                android:textColor="@color/Red"
+                                                android:text="Year"/>
+
+                                            <Spinner
+                                                android:id="@+id/spinnerAddTeacherDOAYear"
+                                                android:layout_width="100dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="10dp"
+                                                android:background="@drawable/spinner_bg"
+                                                android:textColor="@color/Black" />
+
+
+                                        </LinearLayout>
+
+
+
 
 
                                     </LinearLayout>
 
-
-                                    <EditText
-                                        android:id="@+id/txtAddTeacherCertificate"
-                                        android:enabled="false"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="50dp"
-                                        android:layout_marginTop="11dp"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/text_edit_border_grey"
-                                        android:cursorVisible="true"
-                                        android:ems="10"
-                                        android:inputType="textLongMessage"
-                                        android:hint="Certificate"
-                                        android:paddingLeft="10dp"
-                                        android:paddingRight="10dp"
-                                        android:textSize="10dp"
-                                        android:textColor="@color/Black"
-                                        android:textCursorDrawable="@null"
-                                        android:layout_below="@+id/textView4" />
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView12"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textSize="16dp"-->
+                                        <!--android:textColor="@color/Red"-->
+                                        <!--android:text="Certificate"-->
+                                        <!--android:layout_marginTop="10dp"-->
+                                        <!--android:layout_marginLeft="10dp"/>-->
 
 
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_layout8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/txtAddTeacherCertificate"
+                                            android:enabled="true"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginTop="11dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:cursorVisible="true"
+                                            android:ems="10"
+                                            android:inputType="textLongMessage"
+                                            android:hint="Certificate"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:textSize="14dp"
+                                            android:textColor="@color/Black"
+                                            android:textCursorDrawable="@null"
+                                            android:layout_below="@+id/textView4" />
+
+                                    </android.support.design.widget.TextInputLayout>
 
 
 
-                                    <EditText
-                                        android:id="@+id/txtAddTeacherDesignation"
-                                        android:enabled="false"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="50dp"
-                                        android:layout_marginTop="11dp"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/text_edit_border_grey"
-                                        android:cursorVisible="true"
-                                        android:ems="10"
-                                        android:inputType="textLongMessage"
-                                        android:hint="Designation"
-                                        android:paddingLeft="10dp"
-                                        android:paddingRight="10dp"
-                                        android:textSize="10dp"
-                                        android:textColor="@color/Black"
-                                        android:textCursorDrawable="@null"
-                                        android:layout_below="@+id/textView4" />
+
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView11"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textSize="16dp"-->
+                                        <!--android:textColor="@color/Red"-->
+                                        <!--android:text="Designation"-->
+                                        <!--android:layout_marginTop="10dp"-->
+                                        <!--android:layout_marginLeft="10dp"/>-->
+
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_layout9"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/txtAddTeacherDesignation"
+                                            android:enabled="true"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginTop="11dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:cursorVisible="true"
+                                            android:ems="10"
+                                            android:inputType="textLongMessage"
+                                            android:hint="Designation"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:textSize="10dp"
+                                            android:textColor="@color/Red"
+                                            android:textCursorDrawable="@null"
+                                            android:layout_below="@+id/textView4" />
+
+                                    </android.support.design.widget.TextInputLayout>
 
 
 
                                     <TextView
+                                        android:id="@+id/textViewClassAssignmentTag"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="Class Room Assignment"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/Red"
+                                        android:text="Please select assigned Class Rooms"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginLeft="10dp"/>
 
 
-                                    <Spinner
-                                        android:id="@+id/spinnerAddTeacherClassRoomAssignment"
-                                        android:layout_width="300dp"
-                                        android:layout_height="30dp"
-                                        android:layout_alignParentLeft="true"
-                                        android:layout_alignParentStart="true"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginTop="10dp"
-                                        android:background="@drawable/spinner_bg"
-                                        android:textColor="@color/Black" />
+                                    <!--<Spinner-->
+                                        <!--android:id="@+id/spinnerAddTeacherClassRoomAssignment"-->
+                                        <!--android:layout_width="300dp"-->
+                                        <!--android:layout_height="30dp"-->
+                                        <!--android:layout_alignParentLeft="true"-->
+                                        <!--android:layout_alignParentStart="true"-->
+                                        <!--android:layout_marginLeft="10dp"-->
+                                        <!--android:layout_marginRight="10dp"-->
+                                        <!--android:layout_marginTop="10dp"-->
+                                        <!--android:background="@drawable/spinner_bg"-->
+                                        <!--android:textColor="@color/Black" />-->
+
+                                 <LinearLayout
+                                     android:id="@+id/linearLayoutAddTeacherClassRooms"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="vertical">
+
+
+                                    <!--autogenerated classroom checkboxes enter here-->
+
+                                 </LinearLayout>
+
 
 
                                     <LinearLayout
@@ -659,26 +987,15 @@
 
                                         <Button
                                             android:id="@+id/btnRegisterTeacher"
-                                            android:layout_width="100dp"
-                                            android:layout_height="30dp"
+                                            android:layout_width="0dp"
+                                            android:layout_height="40dp"
+                                            android:layout_weight="60"
                                             android:layout_marginLeft="10dp"
                                             android:layout_marginRight="10dp"
-                                            android:layout_marginTop="30dp"
-                                            android:textSize="10dp"
-                                            android:background="@color/SteelBlue"
-                                            android:text="Register Teacher"
-                                            android:textColor="@color/White" />
-
-                                        <Button
-                                            android:id="@+id/btnUpdateTeacher"
-                                            android:layout_width="100dp"
-                                            android:layout_height="30dp"
-                                            android:layout_marginLeft="10dp"
-                                            android:layout_marginRight="10dp"
-                                            android:layout_marginTop="30dp"
-                                            android:textSize="10dp"
-                                            android:background="@color/Maroon"
-                                            android:text="Update Teacher"
+                                            android:layout_marginBottom="20dp"
+                                            android:textSize="14dp"
+                                            android:background="@color/DarkRed"
+                                            android:text="Save"
                                             android:textColor="@color/White" />
 
                                     </LinearLayout>
@@ -702,10 +1019,14 @@
             </TabHost>
 
 
-
+            <TextView
+                android:id="@+id/textViewTeacherListUpdateId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="invisible"/>
 
         </LinearLayout>
 
-    </ScrollView>
 
 </RelativeLayout>

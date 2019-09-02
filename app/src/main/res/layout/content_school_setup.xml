@@ -5,13 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".EduJuniorStaffHomeActivity"
-    tools:showIn="@layout/app_bar_edu_junior_staff_home">
-
+    tools:context=".SchoolSetupActivity"
+    tools:showIn="@layout/app_bar_school_setup">
 
 
     <LinearLayout
-        android:id="@+id/content_frame_staff"
+        android:id="@+id/school_setup_content_frame"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
@@ -21,6 +20,9 @@
 
     </LinearLayout>
 
-
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigationViewAdminHome"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
 
 </android.support.constraint.ConstraintLayout>

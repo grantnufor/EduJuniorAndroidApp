@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SchoolSetupHomeFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/setupicon"/>
+
+           <TextView
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="0dp"
+               android:layout_marginBottom="20dp"
+               android:layout_marginLeft="0dp"
+               android:textAlignment="center"
+               android:text="Welcome to School Setup"
+               android:textSize="20dp"
+               android:fontFamily="@string/common_google_play_services_updating_text"
+               android:textColor="@color/Red"
+               />
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="0dp"
+                android:textAlignment="center"
+                android:text="Please click on the menu bar top left of this screen to navigate through various aspects of this setup"
+                android:textSize="15dp"
+                android:fontFamily="@string/common_google_play_services_updating_text"
+                android:textColor="@color/Black"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <!--<TableLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TableRow-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" >-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/imageButtonSubjectSetupSchool"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="120dp"-->
+                    <!--android:layout_weight="1.5"-->
+                    <!--android:src="@drawable/subjectsicon"/>-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/imageButtonLevelSetupSchool"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="120dp"-->
+                    <!--android:layout_weight="1.5"-->
+                    <!--android:src="@drawable/levelsicon"/>-->
+
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/imageButtonGradeSetupSchool"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="120dp"-->
+                    <!--android:layout_weight="1.5"-->
+                    <!--android:src="@drawable/gradesicon"/>-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/imageButtonClassRoomSetupSchool"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="120dp"-->
+                    <!--android:layout_weight="1.5"-->
+                    <!--android:src="@drawable/classroom"/>-->
+
+            <!--</TableRow>-->
+
+            <!--<TableRow-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+
+
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/imageButtonTeacherSetupSchool"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="120dp"-->
+                    <!--android:layout_weight="1.5"-->
+                    <!--android:src="@drawable/teacher"/>-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/imageButtonParentSetupSchool"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="120dp"-->
+                    <!--android:layout_weight="1.5"-->
+                    <!--android:src="@drawable/parent"/>-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/imageButtonPupilSetupSchool"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="120dp"-->
+                    <!--android:layout_weight="1.5"-->
+                    <!--android:src="@drawable/pupil"/>-->
+
+            <!--</TableRow>-->
+
+            <!--<TableRow-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" >-->
+
+            <!--</TableRow>-->
+
+            <!--<TableRow-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" >-->
+            <!--</TableRow>-->
+        <!--</TableLayout>-->
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

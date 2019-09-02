@@ -76,173 +76,164 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="11dp"
-                    android:text="Sign Up"
+                    android:layout_marginBottom="20dp"
+                    android:text="Sign Up School"
                     android:textStyle="bold"
-                    android:fontFamily="sans-serif"
+                    app:fontFamily="@font/montserrat"
                     android:textColor="@color/Black"
-                    android:textSize="18dp" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="11dp"
-                    android:text="School Name:"
-                    android:textColor="@color/Black"
-                    android:textSize="14dp" />
+                    android:textSize="20dp" />
 
 
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtSchoolName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:cursorVisible="true"
+                            android:ems="10"
+                            android:hint="School Name"
+                            android:textSize="14dp"
+                            android:inputType="textLongMessage"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/Black"
+                            android:textCursorDrawable="@null"
+                            android:layout_below="@+id/textView4"
+                            app:fontFamily="@font/montserrat"/>
 
 
-                <EditText
-                    android:id="@+id/txtSchoolName"
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/edittext_bg_white"
-                    android:cursorVisible="true"
-                    android:ems="10"
-                    android:hint="School Name"
-                    android:textSize="14dp"
-                    android:inputType="textLongMessage"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textColor="@color/Black"
-                    android:textCursorDrawable="@null"
-                    android:layout_below="@+id/textView4" />
+                    </android.support.design.widget.TextInputLayout>
 
 
 
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="Phone Number:"
-                    android:textSize="14dp"
-                    android:textColor="@color/Black" />
 
 
-                <EditText
-                    android:id="@+id/txtPhoneNo"
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/edittext_bg_white"
-                    android:cursorVisible="true"
-                    android:hint="Phone Number"
-                    android:textSize="14dp"
-                    android:ems="10"
-                    android:inputType="textLongMessage"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textColor="@color/Black"
-                    android:textCursorDrawable="@null"
-                    android:layout_below="@+id/textView4" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
 
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="Email:"
-                    android:textSize="14dp"
-                    android:textColor="@color/Black" />
+                    <EditText
+                        android:id="@+id/txtPhoneNo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cursorVisible="true"
+                        android:hint="Phone Number"
+                        android:textSize="14dp"
+                        android:ems="10"
+                        android:inputType="textLongMessage"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/Black"
+                        android:textCursorDrawable="@null"
+                        android:layout_below="@+id/textView4"
+                        app:fontFamily="@font/montserrat"/>
+
+                </android.support.design.widget.TextInputLayout>
 
 
-                <EditText
-                    android:id="@+id/txtSignUpEmailAddress"
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/edittext_bg_white"
-                    android:cursorVisible="true"
-                    android:textSize="14dp"
-                    android:ems="10"
-                    android:hint="Email Address"
-                    android:inputType="textEmailAddress"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textColor="@color/Black"
-                    android:textCursorDrawable="@null"
-                    android:layout_below="@+id/textView4" />
 
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="Password:"
-                    android:textSize="14dp"
-                    android:textColor="@color/Black" />
 
 
-                <EditText
-                    android:id="@+id/txtSignUpPassword"
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/edittext_bg_white"
-                    android:cursorVisible="true"
-                    android:textSize="14dp"
-                    android:ems="10"
-                    android:hint="Password"
-                    android:inputType="textPassword"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textColor="@color/Black"
-                    android:textCursorDrawable="@null"
-                    android:layout_below="@+id/textView4" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/txtSignUpEmailAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cursorVisible="true"
+                        android:textSize="14dp"
+                        android:ems="10"
+                        android:hint="Email Address"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/Black"
+                        android:textCursorDrawable="@null"
+                        android:layout_below="@+id/textView4"
+                        app:fontFamily="@font/montserrat"/>
 
 
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="Address:"
-                    android:textSize="14dp"
-                    android:textColor="@color/Black" />
+                </android.support.design.widget.TextInputLayout>
 
 
-                <EditText
-                    android:id="@+id/txtAddress"
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/edittext_bg_white"
-                    android:cursorVisible="true"
-                    android:textSize="14dp"
-                    android:ems="10"
-                    android:hint="Address"
-                    android:inputType="textMultiLine"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textColor="@color/Black"
-                    android:textCursorDrawable="@null"
-                    android:layout_below="@+id/textView4" />
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/txtSignUpPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cursorVisible="true"
+                        android:textSize="14dp"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/Black"
+                        android:textCursorDrawable="@null"
+                        android:layout_below="@+id/textView4"
+                        app:fontFamily="@font/montserrat"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/txtAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cursorVisible="true"
+                        android:textSize="14dp"
+                        android:ems="10"
+                        android:hint="Address"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/Black"
+                        android:textCursorDrawable="@null"
+                        android:layout_below="@+id/textView4"
+                        app:fontFamily="@font/montserrat"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
 
 
 
@@ -255,7 +246,8 @@
                     android:layout_marginRight="10dp"
                     android:text="Location:"
                     android:textSize="14dp"
-                    android:textColor="@color/Black" />
+                    android:textColor="@color/Red"
+                    app:fontFamily="@font/montserrat"/>
 
 
 
@@ -268,106 +260,108 @@
                     android:textSize="14dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/spinner_bg"
-                    android:textColor="@color/Black" />
-
-
-                <TextView
-                    android:id="@+id/textView32"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="Proprietor Full Name:"
-                    android:textSize="14dp"
-                    android:textColor="@color/Black" />
-
-
-                <EditText
-                    android:id="@+id/txtProprietorFullName"
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/edittext_bg_white"
-                    android:cursorVisible="true"
-                    android:textSize="14dp"
-                    android:ems="10"
-                    android:hint="Proprietor Full Name"
-                    android:inputType="textLongMessage"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
                     android:textColor="@color/Black"
-                    android:textCursorDrawable="@null"
-                    android:layout_below="@+id/textView4" />
+                    app:fontFamily="@font/montserrat"/>
 
 
 
-                <TextView
-                    android:id="@+id/textView45"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="Head Master/Mistress Full Name:"
-                    android:textSize="14dp"
-                    android:textColor="@color/Black" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
 
-                <EditText
-                    android:id="@+id/txtHeadFullName"
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/edittext_bg_white"
-                    android:cursorVisible="true"
-                    android:textSize="14dp"
-                    android:ems="10"
-                    android:hint="Head Full Name"
-                    android:inputType="textLongMessage"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textColor="@color/Black"
-                    android:textCursorDrawable="@null"
-                    android:layout_below="@+id/textView4" />
+                    <EditText
+                        android:id="@+id/txtProprietorFullName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cursorVisible="true"
+                        android:textSize="14dp"
+                        android:ems="10"
+                        android:hint="Proprietor Full Name"
+                        android:inputType="textLongMessage"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/Black"
+                        android:textCursorDrawable="@null"
+                        android:layout_below="@+id/textView4"
+                        app:fontFamily="@font/montserrat"/>
 
 
-                <TextView
-                    android:id="@+id/textView453"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="Registration Key:"
-                    android:textSize="14dp"
-                    android:textColor="@color/Black" />
+                </android.support.design.widget.TextInputLayout>
 
 
-                <EditText
-                    android:id="@+id/txtRegistrationKey"
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/edittext_bg_white"
-                    android:cursorVisible="true"
-                    android:textSize="14dp"
-                    android:ems="10"
-                    android:hint="Registration Key"
-                    android:inputType="textLongMessage"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textColor="@color/Black"
-                    android:textCursorDrawable="@null"
-                    android:layout_below="@+id/textView4" />
+
+
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/txtHeadFullName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cursorVisible="true"
+                        android:textSize="14dp"
+                        android:ems="10"
+                        android:hint="Head Full Name"
+                        android:inputType="textLongMessage"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/Black"
+                        android:textCursorDrawable="@null"
+                        android:layout_below="@+id/textView4"
+                        app:fontFamily="@font/montserrat"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <EditText
+                        android:id="@+id/txtRegistrationKey"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cursorVisible="true"
+                        android:textSize="14dp"
+                        android:ems="10"
+                        android:hint="Registration Key"
+                        android:inputType="textLongMessage"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/Black"
+                        android:textCursorDrawable="@null"
+                        android:layout_below="@+id/textView4"
+                        app:fontFamily="@font/montserrat"/>
+
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
 
 
                 <Button
@@ -376,13 +370,13 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/red_button"
                     android:text="Sign Up"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="@color/White"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-
-                    android:layout_marginTop="30dp" />
+                    android:layout_marginTop="30dp"
+                    app:fontFamily="@font/montserrat"/>
 
 
                 <Button
@@ -391,13 +385,25 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/dark_blue_button"
                     android:text="Back to Home"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="@color/White"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="20dp"
-                    android:layout_marginBottom="30dp"/>
+                    android:layout_marginBottom="30dp"
+                    app:fontFamily="@font/montserrat"/>
+
+
+
+                <WebView
+                    android:id="@+id/webviewSmsSchoolSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"/>
+
+
+
 
             </LinearLayout>
 

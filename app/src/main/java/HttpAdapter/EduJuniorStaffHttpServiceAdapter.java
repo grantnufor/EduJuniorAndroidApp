@@ -247,6 +247,56 @@ public class EduJuniorStaffHttpServiceAdapter {
 
 
 
+    public JSONObject GetEduJuniorStaffByPhoneNumberAndPassword(String phoneNumber, String password)
+    {
+//        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByUserNameAndPassword";
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetEduJuniorStaffByPhoneNumberAndPassword";
+        String OPERATION_NAME_GetJsonData = "GetEduJuniorStaffByPhoneNumberAndPassword";
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/EduJuniorStaffServices.asmx";
+        SoapPrimitive response=null;
+
+        JSONObject jsonObj = new JSONObject();
+
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("phoneNumber", phoneNumber);
+            request.addProperty("password", password);
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = (SoapPrimitive) envelope.getResponse();
+            jsonObj = new JSONObject(response.toString());
+
+//            ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
+//            if(response.toString().length()>0 )
+//            {
+//
+//            }
+//            else
+//            {
+//                //response="Empty";
+//            }
+
+        }
+        catch (Exception exception)
+        {
+            //response="error: "+exception.toString();
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return jsonObj;
+
+    }
+
+
+
     public JSONObject GetEduJuniorStaffByPhoneNumber(String phoneNumber)
     {
 //        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByUserNameAndPassword";

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".SomicleStaffHomeActivity"
+    android:focusableInTouchMode="true"
+    tools:layout_editor_absoluteY="8dp"
+    tools:layout_editor_absoluteX="8dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManageSomicleStaffTopButtons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@color/LightGrey"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRegisterASomicleStaff"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:text="Register a Somicle Staff"
+                android:textSize="11dp"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:background="@drawable/dark_blue_button"/>
+
+
+            <Button
+                android:id="@+id/btnViewStaffDetail"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:text="View Staff Detail"
+                android:layout_marginLeft="15dp"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="11dp"
+                android:visibility="invisible"
+                android:background="@drawable/dark_red_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSomicleStaffSearchBar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtSomicleStaffSearch"
+                android:layout_width="0dp"
+                android:layout_weight=".75"
+                android:layout_height="fill_parent"
+                android:cursorVisible="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:ems="10"
+                android:hint="Staff Name to Search"
+                android:background="@drawable/text_edit_border_grey"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textPassword"
+                android:textColor="@color/Black"
+                android:textSize="11dp"
+                android:textCursorDrawable="@null"
+                android:layout_below="@+id/lblPassword"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/btnSomicleStaffSearch"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".30"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:layout_marginRight="5dp"
+                android:textSize="11dp"
+                android:padding="5dp"
+                android:background="@color/Red"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutSomicleStaffList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/White"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewSomicleStaffCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:text="0 Staff found"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/Red"
+                android:textSize="18dp" />
+
+            <ListView
+                android:id="@+id/listViewSomicleStaffList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

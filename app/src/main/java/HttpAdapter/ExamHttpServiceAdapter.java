@@ -10,21 +10,19 @@ import org.ksoap2.transport.HttpTransportSE;
 
 import java.util.ArrayList;
 
-/**
- * Created by Chisom on 5/29/2018.
- */
+public class ExamHttpServiceAdapter {
 
-public class TeacherClassHttpServiceAdapter {
 
-    public ArrayList<JSONObject> GetAllTeacherClasses()
+
+    public ArrayList<JSONObject> GetAllExams()
     {
-        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllTeacherClasses";
-        String OPERATION_NAME_GetJsonData = "GetAllTeacherClasses";
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllExams";
+        String OPERATION_NAME_GetJsonData = "GetAllExams";
 
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/TeacherClassServices.asmx";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ExamServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -84,14 +82,17 @@ public class TeacherClassHttpServiceAdapter {
 
 
 
-    public String GetTeacherClassById(String teacherClassId)
-    {
 
-        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetTeacherClassById";
-        String OPERATION_NAME_GetJsonData = "GetTeacherClassById";
+
+
+    public JSONObject GetExamByExamNameAndSchoolId(String examName, String schoolId)
+    {
+//        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByUserNameAndPassword";
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetExamByExamNameAndSchoolId";
+        String OPERATION_NAME_GetJsonData = "GetExamByExamNameAndSchoolId";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/TeacherClassServices.asmx";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ExamServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -99,7 +100,8 @@ public class TeacherClassHttpServiceAdapter {
         try
         {
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
-            request.addProperty("teacherClassId", teacherClassId);
+            request.addProperty("examName", examName);
+            request.addProperty("schoolId", schoolId);
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
             envelope.dotNet = true;
             envelope.setOutputSoapObject(request);
@@ -107,7 +109,7 @@ public class TeacherClassHttpServiceAdapter {
             httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
 
             response = (SoapPrimitive) envelope.getResponse();
-            //JSONObject mainJson = new JSONObject(response.toString());
+            jsonObj = new JSONObject(response.toString());
 
 //            ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
 //            if(response.toString().length()>0 )
@@ -127,7 +129,7 @@ public class TeacherClassHttpServiceAdapter {
             //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
         }
 
-        return response.toString();
+        return jsonObj;
 
     }
 
@@ -135,15 +137,66 @@ public class TeacherClassHttpServiceAdapter {
 
 
 
-    public ArrayList<JSONObject> GetTeacherClassByTeacherId(String teacherId)
+    public JSONObject GetExamById(String examId)
     {
-        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetTeacherClassByTeacherId";
-        String OPERATION_NAME_GetJsonData = "GetTeacherClassByTeacherId";
+
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetExamById";
+        String OPERATION_NAME_GetJsonData = "GetExamById";
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ExamServices.asmx";
+        SoapPrimitive response=null;
+
+        JSONObject jsonObj = new JSONObject();
+
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("examId", examId);
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = (SoapPrimitive) envelope.getResponse();
+            jsonObj = new JSONObject(response.toString());
+
+//            ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
+//            if(response.toString().length()>0 )
+//            {
+//
+//            }
+//            else
+//            {
+//                //response="Empty";
+//            }
+
+        }
+        catch (Exception exception)
+        {
+            //response="error: "+exception.toString();
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return jsonObj;
+
+    }
+
+
+
+
+
+    public ArrayList<JSONObject> GetExamBySchoolId(String schoolId)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetExamBySchoolId";
+        String OPERATION_NAME_GetJsonData = "GetExamBySchoolId";
 
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/TeacherClassServices.asmx";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ExamServices.asmx";
 
         SoapPrimitive response=null;
 
@@ -152,7 +205,7 @@ public class TeacherClassHttpServiceAdapter {
         try
         {
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
-            request.addProperty("teacherId", teacherId);
+            request.addProperty("schoolId", schoolId);
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
             envelope.dotNet = true;
             envelope.setOutputSoapObject(request);
@@ -200,69 +253,30 @@ public class TeacherClassHttpServiceAdapter {
     }
 
 
-    public String GetTeacherClassByTeacherIdAndClassId(String teacherId, String classId)
-    {
 
-        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetTeacherClassByTeacherIdAndClassId";
-        String OPERATION_NAME_GetJsonData = "GetTeacherClassByTeacherIdAndClassId";
+
+
+    public String AddExam ( String examIdLocal, String examName, String schoolId, String overallScore, String uploaded)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/AddExam";
+        String OPERATION_NAME_GetJsonData = "AddExam";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/TeacherClassServices.asmx";
-        SoapPrimitive response=null;
-
-        JSONObject jsonObj = new JSONObject();
-
-        try
-        {
-            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
-            request.addProperty("teacherId", teacherId);
-            request.addProperty("classId", classId);
-            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
-            envelope.dotNet = true;
-            envelope.setOutputSoapObject(request);
-            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
-            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
-
-            response = (SoapPrimitive) envelope.getResponse();
-
-        }
-        catch (Exception exception)
-        {
-            //response="error: "+exception.toString();
-            exception.printStackTrace();
-            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
-        }
-
-        return response.toString();
-
-    }
 
 
 
-    public String AddTeacherClass(String teacherClassIdLocal, String teacherId, String classId, String dateAdded, String dateLastUpdated, String uploaded, String schoolId)
-    {
-
-
-        String returnMessage = "0";
-
-        String SOAP_ACTION_GetJsonData ="http://tempuri.org/AddTeacherClass";
-        String OPERATION_NAME_GetJsonData = "AddTeacherClass";
-
-        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/TeacherClassServices.asmx";
-
-
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ExamServices.asmx";
+//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
+        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
         SoapPrimitive response=null;
         try
         {
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
-            request.addProperty("teacherClassIdLocal", teacherClassIdLocal);
-            request.addProperty("teacherId", teacherId);
-            request.addProperty("classId", classId);
-            request.addProperty("dateAdded", dateAdded);
-            request.addProperty("dateLastUpdated", dateLastUpdated);
-            request.addProperty("uploaded", uploaded);
+            request.addProperty("examIdLocal", examIdLocal);
+            request.addProperty("examName", examName);
             request.addProperty("schoolId", schoolId);
+            request.addProperty("overallScore", overallScore);
+            request.addProperty("uploaded", uploaded);
 
 
 
@@ -274,8 +288,6 @@ public class TeacherClassHttpServiceAdapter {
             httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
 
             response = (SoapPrimitive)envelope.getResponse();
-
-            returnMessage = response.toString();
             //JSONObject mainJson = new JSONObject(response.toString());
 
 //            ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
@@ -308,38 +320,35 @@ public class TeacherClassHttpServiceAdapter {
         catch (Exception exception)
         {
             // response="error: "+exception.toString();
-            returnMessage = exception.getMessage().toString();
             exception.printStackTrace();
             //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
         }
 
-        return returnMessage;
+        return response.toString();
 
     }
 
 
-    public String UpdateTeacherClass( String teacherClassId, String teacherClassIdLocal, String teacherId, String classId, String dateAdded, String dateLastUpdated, String uploaded, String schoolId )
+    public String UpdateExam (String examId,  String examIdLocal, String examName, String schoolId, String overallScore, String uploaded )
     {
-        String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateTeacher";
-        String OPERATION_NAME_GetJsonData = "UpdateTeacher";
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateExam";
+        String OPERATION_NAME_GetJsonData = "UpdateExam";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/TeacherClassServices.asmx";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ExamServices.asmx";
 //		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+        // String SOAP_ADDRESS = "http://localhost:49747/CasreMobileAuthentication.asmx";
         Object response=null;
         try
         {
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
-            request.addProperty("teacherClassId", teacherClassId);
-            request.addProperty("teacherClassIdLocal", teacherClassIdLocal);
-            request.addProperty("teacherId", teacherId);
-            request.addProperty("classId", classId);
-            request.addProperty("dateAdded", dateAdded);
-            request.addProperty("dateLastUpdated", dateLastUpdated);
-            request.addProperty("uploaded", uploaded);
+            request.addProperty("examId", examId);
+            request.addProperty("examIdLocal", examIdLocal);
+            request.addProperty("examName", examName);
             request.addProperty("schoolId", schoolId);
+            request.addProperty("overallScore", overallScore);
+            request.addProperty("uploaded", uploaded);
 
 
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
@@ -362,48 +371,5 @@ public class TeacherClassHttpServiceAdapter {
         return response.toString();
 
     }
-
-
-
-    public String DeleteTeacherClass( String teacherClassId )
-    {
-        String SOAP_ACTION_GetJsonData ="http://tempuri.org/DeleteTeacherClass";
-        String OPERATION_NAME_GetJsonData = "DeleteTeacherClass";
-
-        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/TeacherClassServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
-        Object response=null;
-        try
-        {
-            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
-            request.addProperty("teacherClassId", teacherClassId);
-
-
-            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
-            envelope.dotNet = true;
-            envelope.setOutputSoapObject(request);
-            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
-            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
-
-            response = envelope.getResponse();
-
-
-        }
-        catch (Exception exception)
-        {
-            response="error: "+exception.toString();
-            exception.printStackTrace();
-            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
-        }
-
-        return response.toString();
-
-    }
-
-
-
 
 }

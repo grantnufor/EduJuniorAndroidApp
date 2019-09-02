@@ -71,13 +71,13 @@
 
 
     <string-array name="sex_array">
-        <item>Select a Sex</item>
+        <item>Select Sex</item>
         <item>Male</item>
         <item>Female</item>
     </string-array>
 
     <string-array name="teacher_recipient_category_array">
-        <item>Select a Category</item>
+        <item>Select Category</item>
         <item>My School</item>
         <item>Parents of Wards in my class</item>
         <item>Others</item>
@@ -85,7 +85,7 @@
 
 
     <string-array name="parent_recipient_category_array">
-        <item>Select a Category</item>
+        <item>Select Category</item>
         <item>School of Child</item>
         <item>Teacher of Child's Class</item>
         <item>Others</item>
@@ -93,7 +93,7 @@
 
 
     <string-array name="school_recipient_category_array">
-        <item>Select a Category</item>
+        <item>Select Category</item>
         <item>All Teachers</item>
         <item>All Parents of Children in School</item>
         <item>Others</item>
@@ -294,10 +294,36 @@
         <item>Wema Bank</item>
         <item>Zenith Bank</item>
     </string-array>
+
+
+    <string-array name="session_array">
+        <item>Select Session</item>
+        <item>2019/2020</item>
+        <item>2021/2022</item>
+        <item>2022/2023</item>
+        <item>2023/2024</item>
+        <item>2024/2025</item>
+    </string-array>
+
+
+    <string-array name="term_array">
+        <item>Select Term</item>
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+    </string-array>
+
+
     <string name="title_activity_message">MessageActivity</string>
     <string name="title_activity_admin">AdminActivity</string>
     <string name="title_activity_teacher">TeacherActivity</string>
     <string name="title_activity_parent">ParentActivity</string>
     <string name="title_activity_edu_junior_staff">EduJuniorStaffActivity</string>
+    <string name="title_activity_school_setup">SchoolSetupActivity</string>
+    <string name="title_activity_school_fees">SchoolFeesActivity</string>
+
+    <string name="title_activity_result_manager">ResultManagerActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>

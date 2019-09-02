@@ -69,10 +69,12 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Welcome to EduJunior"
+                    android:text="Welcome to EduJunior!"
                     android:textAlignment="center"
-                    android:fontFamily="serif"
-                    android:textSize="20dp"/>
+                    app:fontFamily="@font/montserrat"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:textSize="26dp"/>
 
 
 
@@ -90,14 +92,15 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/dark_red_button"
                     android:text="Sign Up School"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_marginBottom="10dp"
                     android:textColor="@color/White"
                     android:layout_marginTop="30dp"
                     android:visibility="visible"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_alignParentStart="true"
+                    app:fontFamily="@font/montserrat"/>
 
 
 
@@ -107,14 +110,27 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/red_button"
                     android:text="Sign Up As Parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_marginBottom="5dp"
                     android:textColor="@color/White"
                     android:layout_marginTop="10dp"
                     android:visibility="visible"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_alignParentStart="true"
+                    app:fontFamily="@font/montserrat"/>
+
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I already have an EduJunior Account"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/Maroon"
+                    android:textAlignment="center"
+                    app:fontFamily="@font/montserrat"/>
 
 
 
@@ -124,14 +140,15 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/dark_blue_button"
                     android:text="Sign In"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_marginBottom="5dp"
                     android:textColor="@color/White"
                     android:layout_marginTop="10dp"
                     android:visibility="visible"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_alignParentStart="true"
+                    app:fontFamily="@font/montserrat"/>
 
 
 

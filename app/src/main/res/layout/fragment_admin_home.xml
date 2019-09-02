@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
                 android:textAlignment="center"
-                android:text="LANDORIA SCHOOL"
+                android:text="NO SCHOOL NAME"
                 android:textColor="@color/Red"
                 android:textSize="35dp"
                 android:textStyle="bold"
@@ -66,8 +66,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:layout_marginLeft="20dp"
-                        android:text="3000"
-                        android:textColor="@color/Black"
+                        android:text="Not Available"
+                        android:textColor="@color/Red"
                         android:textSize="14dp"
                         android:textStyle="bold" />
 
@@ -112,8 +112,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:layout_marginLeft="20dp"
-                        android:text="100"
-                        android:textColor="@color/Black"
+                        android:text="Not Available"
+                        android:textColor="@color/Red"
                         android:textSize="14dp"
                         android:textStyle="bold" />
 
@@ -160,8 +160,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:layout_marginLeft="20dp"
-                        android:text="1000"
-                        android:textColor="@color/Black"
+                        android:text="Not Available"
+                        android:textColor="@color/Red"
                         android:textSize="14dp"
                         android:textStyle="bold" />
 
