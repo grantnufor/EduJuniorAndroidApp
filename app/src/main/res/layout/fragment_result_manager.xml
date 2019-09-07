@@ -432,10 +432,26 @@
                     android:text="Cancel"
                     android:textColor="@color/White" />
 
+
+                <TextView
+                    android:id="@+id/textViewSelectedValueResultManager"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="100"
+                    android:width="0dp"
+                    android:visibility="invisible"
+                    android:text=""
+                    android:textColor="@color/GreenYellow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="13dp" />
+
             </LinearLayout>
 
 
         </LinearLayout>
+
 
 
 

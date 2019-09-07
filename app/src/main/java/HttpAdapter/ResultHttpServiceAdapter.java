@@ -338,10 +338,10 @@ public class ResultHttpServiceAdapter {
 
 
 
-    public ArrayList<JSONObject> GetResultByPupilIdSchoolIdTermIdSessionIdSubjectIdAndExamId(String pupilId, String schoolId, String termId, String sessionId, String subjectId, String examId)
+    public ArrayList<JSONObject> GetResultByPupilIdSchoolIdTermIdSessionIdSubjectIdExamIdAndLevelId(String pupilId, String schoolId, String termId, String sessionId, String subjectId, String examId, String levelId)
     {
-        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetResultByPupilIdSchoolIdTermIdSessionIdSubjectIdAndExamId";
-        String OPERATION_NAME_GetJsonData = "GetResultByPupilIdSchoolIdTermIdSessionIdSubjectIdAndExamId";
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetResultByPupilIdSchoolIdTermIdSessionIdSubjectIdExamIdAndLevelId";
+        String OPERATION_NAME_GetJsonData = "GetResultByPupilIdSchoolIdTermIdSessionIdSubjectIdExamIdAndLevelId";
 
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
@@ -361,6 +361,7 @@ public class ResultHttpServiceAdapter {
             request.addProperty("sessionId", sessionId);
             request.addProperty("subjectId", subjectId);
             request.addProperty("examId", examId);
+            request.addProperty("levelId", levelId);
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
             envelope.dotNet = true;
             envelope.setOutputSoapObject(request);
@@ -372,28 +373,28 @@ public class ResultHttpServiceAdapter {
 
 
 
-            if(response.toString().length()>0 )
-            {
-                //String responseModified = "["+response+"]";
-
-                JSONArray aryJSONStrings  = new JSONArray(response.toString());
-                JSONObject jsonObj = new JSONObject();
-
-
-
-                for(int i=0; i<aryJSONStrings.length(); i++) {
-
-                    jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
-
-                    obj.add(jsonObj);
-
-                }
-
-            }
-            else
-            {
-                obj = null;
-            }
+//            if(response.toString().length()>0 )
+//            {
+//                //String responseModified = "["+response+"]";
+//
+//                JSONArray aryJSONStrings  = new JSONArray(response.toString());
+//                JSONObject jsonObj = new JSONObject();
+//
+//
+//
+//                for(int i=0; i<aryJSONStrings.length(); i++) {
+//
+//                    jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+//
+//                    obj.add(jsonObj);
+//
+//                }
+//
+//            }
+//            else
+//            {
+//                obj = null;
+//            }
 
         }
         catch (Exception exception)
@@ -476,8 +477,10 @@ public class ResultHttpServiceAdapter {
 
     public String AddResult ( String resultIdLocal, String pupilId, String examId, String subjectId, String score,
                               String gradeId, String datePublished, String publishedBy, String approved,
-                              String schoolId, String termId, String sessionId, String uploaded, String teacherRemarks)
+                              String schoolId, String termId, String sessionId, String uploaded, String teacherRemarks, String levelId)
     {
+        String responseString = "0";
+
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/AddResult";
         String OPERATION_NAME_GetJsonData = "AddResult";
 
@@ -506,6 +509,7 @@ public class ResultHttpServiceAdapter {
             request.addProperty("sessionId", sessionId );
             request.addProperty("uploaded", uploaded );
             request.addProperty("teacherRemarks", teacherRemarks);
+            request.addProperty("levelId", levelId);
 
 
 
@@ -553,14 +557,19 @@ public class ResultHttpServiceAdapter {
             //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
         }
 
-        return response.toString();
+        if(response != null){
+              responseString = response.toString();
+        }
+
+
+        return responseString;
 
     }
 
 
     public String UpdateResult (String resultId, String resultIdLocal, String pupilId, String examId, String subjectId, String score,
                               String gradeId, String datePublished, String publishedBy, String approved,
-                              String schoolId, String termId, String sessionId, String uploaded, String teacherRemarks)
+                              String schoolId, String termId, String sessionId, String uploaded, String teacherRemarks, String levelId)
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateResult";
         String OPERATION_NAME_GetJsonData = "UpdateResult";
@@ -589,6 +598,7 @@ public class ResultHttpServiceAdapter {
             request.addProperty("sessionId", sessionId );
             request.addProperty("uploaded", uploaded );
             request.addProperty("teacherRemarks", teacherRemarks);
+            request.addProperty("levelId", levelId);
 
 
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);

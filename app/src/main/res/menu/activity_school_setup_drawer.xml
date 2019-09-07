@@ -36,6 +36,17 @@
         android:state_checked="true"
         android:title="Exam Types" />
 
+    <item
+        android:id="@+id/nav_manage_sessions_school"
+        android:icon="@drawable/classroom"
+        android:state_checked="true"
+        android:title="Sessions" />
+
+    <item
+        android:id="@+id/nav_manage_terms_school"
+        android:icon="@drawable/classroom"
+        android:state_checked="true"
+        android:title="Terms" />
 
     <item
         android:id="@+id/nav_manage_teachers_school"
