@@ -5,7 +5,7 @@
         android:drawable="@drawable/saveicon"
         android:width="40sp"
         android:height="40sp"
-        android:right="10dp"
+        android:right="0dp"
         />
 
 </layer-list >

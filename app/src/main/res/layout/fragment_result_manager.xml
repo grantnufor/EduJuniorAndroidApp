@@ -415,7 +415,8 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
                     android:textSize="14dp"
-                    android:background="@color/Blue"
+                    android:background="@drawable/steel_blue_button"
+                    android:drawableLeft="@drawable/drawable_left_save_icon"
                     android:text="Save"
                     android:textColor="@color/White" />
 
@@ -428,7 +429,8 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
                     android:textSize="14dp"
-                    android:background="@color/DarkRed"
+                    android:background="@drawable/dark_red_button"
+                    android:drawableLeft="@drawable/drawable_left_cancel_icon"
                     android:text="Cancel"
                     android:textColor="@color/White" />
 
