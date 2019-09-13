@@ -6,10 +6,15 @@
     tools:context=".SchoolSetupHomeFragment">
 
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:padding="20dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -19,8 +24,8 @@
 
             <ImageView
                 android:layout_width="fill_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:src="@drawable/setupicon"/>
 
@@ -49,13 +54,176 @@
                 android:text="Please click on the menu bar top left of this screen to navigate through various aspects of this setup"
                 android:textSize="15dp"
                 android:fontFamily="@string/common_google_play_services_updating_text"
-                android:textColor="@color/Black"
+                android:textColor="@color/White"
                 />
 
 
 
         </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonSchoolSetupSubjects"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dark_green_button"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawableLeft="@drawable/drawable_left_subject_icon"
+            android:text="Manage Subjects"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSchoolSetupLevels"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawableLeft="@drawable/drawable_left_level_icon"
+            android:background="@drawable/red_button"
+            android:text="Manage Levels"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSchoolSetupGrades"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawableLeft="@drawable/drawable_left_grade_icon"
+            android:background="@drawable/dark_blue_button"
+            android:text="Manage Grades"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSchoolSetupClassRooms"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/red_button"
+            android:drawableLeft="@drawable/drawable_left_classroom_icon"
+            android:text="Manage Class Rooms"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSchoolSetupExamTypes"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/dark_blue_button"
+            android:drawableLeft="@drawable/drawable_left_examtype_icon"
+            android:text="Manage Exam Types"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSchoolSetupSessions"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/dark_red_button"
+            android:drawableLeft="@drawable/drawable_left_session_icon"
+            android:text="Manage Sessions"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSchoolSetupTerms"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/dark_blue_button"
+            android:drawableLeft="@drawable/drawable_left_term_icon"
+            android:text="Manage Terms"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSchoolSetupTeachers"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/dark_green_button"
+            android:drawableLeft="@drawable/drawable_left_teacher_icon"
+            android:text="Manage Teachers"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSchoolSetupParents"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/red_button"
+            android:drawableLeft="@drawable/drawable_left_parent_icon"
+            android:text="Manage Parents"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSchoolSetupPupils"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/dark_blue_button"
+            android:drawableLeft="@drawable/drawable_left_pupil_icon"
+            android:text="Manage Pupils"
+            />
+
+
+
+        <Button
+            android:id="@+id/buttonSchoolSetupBackToHome"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/red_button"
+            android:drawableLeft="@drawable/drawable_left_back_icon"
+            android:text="Back to Home"
+            />
+
+    </LinearLayout>
 
         <!--<TableLayout-->
             <!--android:layout_width="match_parent"-->
@@ -141,7 +309,7 @@
 
     </LinearLayout>
 
-
+    </ScrollView>
 
 
 </FrameLayout>

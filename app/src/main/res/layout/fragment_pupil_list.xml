@@ -7,7 +7,13 @@
     tools:context="PupilListFragment">
 
 
-
+    <!--<ScrollView-->
+        <!--android:id="@+id/login_form"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true">-->
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -92,9 +98,9 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@color/SteelBlue"
+                        android:background="@drawable/steel_blue_button"
                         android:layout_weight="40"
-                        android:text="Add a New Pupil"
+                        android:text="+ Add a New Pupil"
                         android:textColor="@color/White"
                         android:textSize="12dp" />
 
@@ -254,7 +260,8 @@
                             android:id="@+id/listViewExistingPupils"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:dividerHeight="10.0sp"/>
 
 
 
@@ -721,5 +728,6 @@
     </LinearLayout>
 
 
+    <!--</ScrollView>-->
 
 </RelativeLayout>

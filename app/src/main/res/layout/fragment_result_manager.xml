@@ -286,23 +286,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/White"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:orientation="vertical">
 
 
 
-            <TextView
-                android:id="@+id/textViewExistingSelectionScoresResultManagerPupilList"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Exiting Score = 0"
-                android:layout_marginLeft="0dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10sp"
-                android:textSize="12dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:textColor="@color/Red"
-                android:layout_alignParentLeft="true" />
+            <!--<TextView-->
+                <!--android:id="@+id/textViewExistingSelectionScoresResultManagerPupilList"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Exiting Score = 0"-->
+                <!--android:layout_marginLeft="0dp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:layout_marginTop="10sp"-->
+                <!--android:textSize="12dp"-->
+                <!--android:fontFamily="sans-serif-smallcaps"-->
+                <!--android:textColor="@color/Red"-->
+                <!--android:layout_alignParentLeft="true" />-->
 
 
 
@@ -337,64 +337,64 @@
 
 
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/input_layout2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
 
 
 
-                <EditText
-                    android:id="@+id/editTextResultManagerGrade"
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:cursorVisible="true"
-                    android:enabled="false"
-                    android:ems="10"
-                    android:hint="Grade (Auto Calculated)"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textSize="14dp"
-                    android:textColor="@color/Black"
-                    android:background="@color/LightBlue"
-                    android:textCursorDrawable="@null"
-                    android:layout_below="@+id/textView4" />
+                <!--<EditText-->
+                    <!--android:id="@+id/editTextResultManagerGrade"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_marginTop="11dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:cursorVisible="true"-->
+                    <!--android:enabled="false"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Grade (Auto Calculated)"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:paddingRight="10dp"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:background="@color/LightBlue"-->
+                    <!--android:textCursorDrawable="@null"-->
+                    <!--android:layout_below="@+id/textView4" />-->
 
 
-            </android.support.design.widget.TextInputLayout>
-
-
-
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <!--</android.support.design.widget.TextInputLayout>-->
 
 
 
-                <EditText
-                    android:id="@+id/editTextResultManagerTeachersRemark"
-                    android:layout_width="fill_parent"
-                    android:layout_height="150dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:cursorVisible="true"
-                    android:ems="10"
-                    android:inputType="textLongMessage"
-                    android:hint="Teacher's Remarks"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textSize="14dp"
-                    android:textColor="@color/Black"
-                    android:textCursorDrawable="@null"
-                    android:layout_below="@+id/textView4" />
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/input_layout3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
 
 
-            </android.support.design.widget.TextInputLayout>
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editTextResultManagerTeachersRemark"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="150dp"-->
+                    <!--android:layout_marginTop="11dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:cursorVisible="true"-->
+                    <!--android:ems="10"-->
+                    <!--android:inputType="textLongMessage"-->
+                    <!--android:hint="Teacher's Remarks"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:paddingRight="10dp"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:textCursorDrawable="@null"-->
+                    <!--android:layout_below="@+id/textView4" />-->
+
+
+            <!--</android.support.design.widget.TextInputLayout>-->
 
 
 
@@ -435,7 +435,7 @@
 
                 <TextView
                     android:id="@+id/textViewSelectedValueResultManager"
-                    android:layout_width="200dp"
+                    android:layout_width="30dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_weight="100"

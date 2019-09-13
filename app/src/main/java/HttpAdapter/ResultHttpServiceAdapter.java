@@ -338,7 +338,7 @@ public class ResultHttpServiceAdapter {
 
 
 
-    public ArrayList<JSONObject> GetResultByPupilIdSchoolIdTermIdSessionIdSubjectIdExamIdAndLevelId(String pupilId, String schoolId, String termId, String sessionId, String subjectId, String examId, String levelId)
+    public JSONObject GetResultByPupilIdSchoolIdTermIdSessionIdSubjectIdExamIdAndLevelId(String pupilId, String schoolId, String termId, String sessionId, String subjectId, String examId, String levelId)
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetResultByPupilIdSchoolIdTermIdSessionIdSubjectIdExamIdAndLevelId";
         String OPERATION_NAME_GetJsonData = "GetResultByPupilIdSchoolIdTermIdSessionIdSubjectIdExamIdAndLevelId";
@@ -350,7 +350,7 @@ public class ResultHttpServiceAdapter {
 
         SoapPrimitive response=null;
 
-        ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
+        JSONObject jsonObj = new JSONObject();
 
         try
         {
@@ -368,43 +368,19 @@ public class ResultHttpServiceAdapter {
             HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
             httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
 
+
             response = (SoapPrimitive) envelope.getResponse();
+            jsonObj = new JSONObject(response.toString());
 
 
-
-
-//            if(response.toString().length()>0 )
-//            {
-//                //String responseModified = "["+response+"]";
-//
-//                JSONArray aryJSONStrings  = new JSONArray(response.toString());
-//                JSONObject jsonObj = new JSONObject();
-//
-//
-//
-//                for(int i=0; i<aryJSONStrings.length(); i++) {
-//
-//                    jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
-//
-//                    obj.add(jsonObj);
-//
-//                }
-//
-//            }
-//            else
-//            {
-//                obj = null;
-//            }
 
         }
         catch (Exception exception)
         {
-            obj = null;
             exception.printStackTrace();
-            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
         }
 
-        return obj;
+        return jsonObj;
 
     }
 
@@ -476,7 +452,7 @@ public class ResultHttpServiceAdapter {
 
 
     public String AddResult ( String resultIdLocal, String pupilId, String examId, String subjectId, String score,
-                              String gradeId, String datePublished, String publishedBy, String approved,
+                               String datePublished, String publishedBy, String approved,
                               String schoolId, String termId, String sessionId, String uploaded, String teacherRemarks, String levelId)
     {
         String responseString = "0";
@@ -500,7 +476,6 @@ public class ResultHttpServiceAdapter {
             request.addProperty("examId", examId);
             request.addProperty("subjectId", subjectId);
             request.addProperty("score", score);
-            request.addProperty("gradeId", gradeId );
             request.addProperty("datePublished", datePublished );
             request.addProperty("publishedBy", publishedBy );
             request.addProperty("approved", approved );
@@ -521,6 +496,10 @@ public class ResultHttpServiceAdapter {
             httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
 
             response = (SoapPrimitive)envelope.getResponse();
+
+
+            responseString = response.toString();
+
             //JSONObject mainJson = new JSONObject(response.toString());
 
 //            ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
@@ -557,9 +536,9 @@ public class ResultHttpServiceAdapter {
             //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
         }
 
-        if(response != null){
-              responseString = response.toString();
-        }
+//        if(response != null){
+
+//        }
 
 
         return responseString;
@@ -568,8 +547,8 @@ public class ResultHttpServiceAdapter {
 
 
     public String UpdateResult (String resultId, String resultIdLocal, String pupilId, String examId, String subjectId, String score,
-                              String gradeId, String datePublished, String publishedBy, String approved,
-                              String schoolId, String termId, String sessionId, String uploaded, String teacherRemarks, String levelId)
+                              String datePublished, String publishedBy, String approved, String schoolId, String termId,
+                                String sessionId, String uploaded, String teacherRemarks, String levelId)
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateResult";
         String OPERATION_NAME_GetJsonData = "UpdateResult";
@@ -589,7 +568,6 @@ public class ResultHttpServiceAdapter {
             request.addProperty("examId", examId);
             request.addProperty("subjectId", subjectId);
             request.addProperty("score", score);
-            request.addProperty("gradeId", gradeId );
             request.addProperty("datePublished", datePublished );
             request.addProperty("publishedBy", publishedBy );
             request.addProperty("approved", approved );

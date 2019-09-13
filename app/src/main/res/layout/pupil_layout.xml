@@ -9,8 +9,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:layout_marginLeft="10dp"
     android:layout_marginStart="10dp"
-    android:layout_marginTop="10dp"
-    android:background="@color/LightGrey"
+    android:layout_marginTop="20dp"
+    android:background="@color/LightBlue"
     android:layout_alignParentTop="true"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true">
@@ -22,6 +22,12 @@
         android:orientation="horizontal">
 
 
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/userface2" />
+
+
         <TextView
             android:id="@+id/lblPupilIdList"
             android:layout_width="wrap_content"
@@ -30,7 +36,7 @@
             android:visibility="invisible"
             android:layout_marginLeft="0dp"
             android:layout_marginStart="10dp"
-            android:textSize="10dp"
+            android:textSize="12dp"
             android:layout_alignParentLeft="true" />
 
         <TextView
