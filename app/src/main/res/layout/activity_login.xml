@@ -69,7 +69,7 @@
 
                 <TextView
                     android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="20dp"
@@ -79,6 +79,7 @@
                     android:textColor="@color/Black"
                     android:textSize="22sp"
                     android:textStyle="bold"
+                    android:gravity="center"
                     app:fontFamily="@font/montserrat" />
 
 
@@ -97,7 +98,7 @@
 
 
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/input_layout_login_phonenumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -122,7 +123,7 @@
                         android:textCursorDrawable="@null"
                         app:fontFamily="@font/montserrat" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
                 <!--<TextView-->
@@ -141,7 +142,7 @@
                     <!--android:textSize="20dp" />-->
 
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/input_layout_login_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -167,7 +168,7 @@
                         android:textSize="14dp"
                         app:fontFamily="@font/montserrat" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -206,6 +207,7 @@
                     android:visibility="visible"
                     android:textColor="@color/Red"
                     android:textSize="20dp"
+                    android:gravity="center"
                     app:fontFamily="@font/montserrat" />
 
 

@@ -70,11 +70,14 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="Welcome to EduJunior!"
-                    android:textAlignment="center"
                     app:fontFamily="@font/montserrat"
                     android:layout_marginBottom="20dp"
                     android:textStyle="bold"
-                    android:textSize="26dp"/>
+                    android:textSize="26dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    />
 
 
 
@@ -130,6 +133,7 @@
                     android:layout_marginTop="30dp"
                     android:textColor="@color/Maroon"
                     android:textAlignment="center"
+                    android:gravity="center"
                     app:fontFamily="@font/montserrat"/>
 
 

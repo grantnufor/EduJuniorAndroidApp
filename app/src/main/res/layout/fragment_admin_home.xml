@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayoutAdminHome"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/Black"
     tools:context=".AdminHomeFragment">
+
 
 
     <ScrollView
@@ -25,6 +27,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
                 android:textAlignment="center"
+                android:gravity="center"
                 android:text="NO SCHOOL NAME"
                 android:textColor="@color/White"
                 android:textSize="24dp"
@@ -282,4 +285,4 @@
 
     </ScrollView>
 
-</RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

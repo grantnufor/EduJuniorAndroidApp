@@ -16,6 +16,64 @@
     <string name="title_activity_sign_up_school">SignUpSchoolActivity</string>
 
 
+    <string name="title_activity_message">MessageActivity</string>
+
+
+    <string name="title_activity_admin">AdminActivity</string>
+
+
+    <string name="title_activity_teacher">TeacherActivity</string>
+
+    <string name="title_activity_parent">ParentActivity</string>
+
+
+    <string name="title_activity_edu_junior_staff">EduJuniorStaffActivity</string>
+
+
+    <string name="title_activity_school_setup">SchoolSetupActivity</string>
+
+
+    <string name="title_activity_school_fees">SchoolFeesActivity</string>
+
+
+    <string name="title_activity_result_manager">ResultManagerActivity</string>
+
+
+    <string name="dummy_button">Dummy Button</string>
+
+
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="title_activity_comm_box_chat">CommBoxChatActivity</string>
+
+
+    <!--<string-array name="session_array">-->
+    <!--<item>Select Session</item>-->
+    <!--<item>2019/2020</item>-->
+    <!--<item>2021/2022</item>-->
+    <!--<item>2022/2023</item>-->
+    <!--<item>2023/2024</item>-->
+    <!--<item>2024/2025</item>-->
+    <!--</string-array>-->
+
+
+    <!--<string-array name="term_array">-->
+    <!--<item>Select Term</item>-->
+    <!--<item>First</item>-->
+    <!--<item>Second</item>-->
+    <!--<item>Third</item>-->
+    <!--</string-array>-->
+
+
+    <string name="title_activity_test">TestActivity</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
     <string-array name="locations_array">
         <item>Select State</item>
         <item>FCT</item>
@@ -55,8 +113,6 @@
         <item>YOBE</item>
         <item>ZAMFARA</item>
     </string-array>
-
-
     <string-array name="title_array">
         <item>Select Title</item>
         <item>Mr</item>
@@ -68,8 +124,6 @@
         <item>Rev</item>
         <item>Chief</item>
     </string-array>
-
-
     <string-array name="sex_array">
         <item>Select Sex</item>
         <item>Male</item>
@@ -79,18 +133,15 @@
     <string-array name="teacher_recipient_category_array">
         <item>Select Category</item>
         <item>My School</item>
-        <item>Parents of Wards in my class</item>
+        <item>Parents of Children in my class</item>
         <item>Others</item>
     </string-array>
-
-
     <string-array name="parent_recipient_category_array">
         <item>Select Category</item>
         <item>School of Child</item>
-        <item>Teacher of Child's Class</item>
+        <item>Teacher of Child\'s Class</item>
         <item>Others</item>
     </string-array>
-
 
     <string-array name="school_recipient_category_array">
         <item>Select Category</item>
@@ -98,8 +149,6 @@
         <item>All Parents of Children in School</item>
         <item>Others</item>
     </string-array>
-
-
     <string-array name="day_array">
         <item>Day</item>
         <item>1</item>
@@ -134,8 +183,6 @@
         <item>30</item>
         <item>31</item>
     </string-array>
-
-
     <string-array name="month_array">
         <item>Month</item>
         <item>1</item>
@@ -151,8 +198,6 @@
         <item>11</item>
         <item>12</item>
     </string-array>
-
-
     <string-array name="year_array">
         <item>Year</item>
         <item>2018</item>
@@ -236,8 +281,6 @@
         <item>1940</item>
 
     </string-array>
-
-
     <string-array name="time_array">
         <item>Select</item>
         <item>0:00</item>
@@ -265,8 +308,6 @@
         <item>22:00</item>
         <item>23:00</item>
     </string-array>
-
-
     <string-array name="banks_array">
         <item>Select a Bank</item>
         <item>Access Bank</item>
@@ -295,35 +336,13 @@
         <item>Zenith Bank</item>
     </string-array>
 
-
-    <!--<string-array name="session_array">-->
-    <!--<item>Select Session</item>-->
-    <!--<item>2019/2020</item>-->
-    <!--<item>2021/2022</item>-->
-    <!--<item>2022/2023</item>-->
-    <!--<item>2023/2024</item>-->
-    <!--<item>2024/2025</item>-->
-    <!--</string-array>-->
-
-
-    <!--<string-array name="term_array">-->
-    <!--<item>Select Term</item>-->
-    <!--<item>First</item>-->
-    <!--<item>Second</item>-->
-    <!--<item>Third</item>-->
-    <!--</string-array>-->
-
-
-    <string name="title_activity_message">MessageActivity</string>
-    <string name="title_activity_admin">AdminActivity</string>
-    <string name="title_activity_teacher">TeacherActivity</string>
-    <string name="title_activity_parent">ParentActivity</string>
-    <string name="title_activity_edu_junior_staff">EduJuniorStaffActivity</string>
-    <string name="title_activity_school_setup">SchoolSetupActivity</string>
-    <string name="title_activity_school_fees">SchoolFeesActivity</string>
-
-    <string name="title_activity_result_manager">ResultManagerActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-
 </resources>
+
+
+    <!--preloaded_fonts.xml-->
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<resources>-->
+    <!--<array name="preloaded_fonts" translatable="false">-->
+    <!--&lt;!&ndash;<item>@font/alegreya</item>&ndash;&gt;-->
+    <!--</array>-->
+    <!--</resources>-->

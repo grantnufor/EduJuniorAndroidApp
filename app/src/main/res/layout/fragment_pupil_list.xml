@@ -18,15 +18,31 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
 
         <LinearLayout
             android:id="@+id/linearLayoutPupilList"
             android:layout_width="fill_parent"
-            android:layout_height="140dp"
+            android:layout_height="180dp"
             android:paddingRight="5dp"
             android:background="@color/Black"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="- Pupil List -"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/White"
+                android:layout_marginTop="20dp"/>
 
 
             <LinearLayout
@@ -36,17 +52,18 @@
                 android:orientation="vertical">
 
 
-                <TextView
-                    android:id="@+id/lblSchoolNamePupilList"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginStart="10dp"
-                    android:textSize="14dp"
-                    android:fontFamily="sans-serif-smallcaps"
-                    android:textColor="@color/White"
-                    android:layout_alignParentLeft="true" />
+<!--                <TextView-->
+<!--                    android:id="@+id/lblSchoolNamePupilList"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:fontFamily="sans-serif-smallcaps"-->
+<!--                    android:textColor="@color/White"-->
+<!--                    android:layout_alignParentLeft="true" />-->
 
 
 
@@ -200,6 +217,7 @@
             android:layout_height="match_parent"
             android:layout_below="@id/linearLayout1"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
             android:background="@color/White">
 
 
@@ -261,7 +279,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:dividerHeight="10.0sp"/>
+                            android:dividerHeight="5.0sp"/>
 
 
 
@@ -327,7 +345,7 @@
 
 
 
-                                <android.support.design.widget.TextInputLayout
+                                <com.google.android.material.textfield.TextInputLayout
                                     android:id="@+id/input_layout1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
@@ -351,10 +369,10 @@
                                         android:layout_below="@+id/textView4" />
 
 
-                                </android.support.design.widget.TextInputLayout>
+                                </com.google.android.material.textfield.TextInputLayout>
 
 
-                                <android.support.design.widget.TextInputLayout
+                                <com.google.android.material.textfield.TextInputLayout
                                     android:id="@+id/input_layout2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
@@ -377,10 +395,10 @@
                                         android:textCursorDrawable="@null"
                                         android:layout_below="@+id/textView4" />
 
-                                </android.support.design.widget.TextInputLayout>
+                                </com.google.android.material.textfield.TextInputLayout>
 
 
-                                <android.support.design.widget.TextInputLayout
+                                <com.google.android.material.textfield.TextInputLayout
                                     android:id="@+id/input_layout3"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
@@ -403,7 +421,7 @@
                                         android:textCursorDrawable="@null"
                                         android:layout_below="@+id/textView4" />
 
-                                </android.support.design.widget.TextInputLayout>
+                                </com.google.android.material.textfield.TextInputLayout>
 
 
                                 <TextView
@@ -535,7 +553,7 @@
                             </LinearLayout>
 
 
-                                <android.support.design.widget.TextInputLayout
+                                <com.google.android.material.textfield.TextInputLayout
                                     android:id="@+id/input_layout4"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -559,11 +577,11 @@
                                         android:textCursorDrawable="@null"
                                         android:layout_below="@+id/textView4" />
 
-                                </android.support.design.widget.TextInputLayout>
+                                </com.google.android.material.textfield.TextInputLayout>
 
 
 
-                                <android.support.design.widget.TextInputLayout
+                                <com.google.android.material.textfield.TextInputLayout
                                     android:id="@+id/input_layout5"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
@@ -586,12 +604,12 @@
                                         android:textCursorDrawable="@null"
                                         android:layout_below="@+id/textView4" />
 
-                                </android.support.design.widget.TextInputLayout>
+                                </com.google.android.material.textfield.TextInputLayout>
 
 
 
 
-                                <android.support.design.widget.TextInputLayout
+                                <com.google.android.material.textfield.TextInputLayout
                                     android:id="@+id/input_layout6"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
@@ -615,7 +633,7 @@
                                         android:layout_below="@+id/textView4" />
 
 
-                                </android.support.design.widget.TextInputLayout>
+                                </com.google.android.material.textfield.TextInputLayout>
 
 
 

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Black"
     tools:context=".SchoolSetupHomeFragment">
 
 
@@ -19,7 +20,11 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/layout_rounded_corners_red"
             android:orientation="vertical">
 
             <ImageView
@@ -36,6 +41,7 @@
                android:layout_marginBottom="20dp"
                android:layout_marginLeft="0dp"
                android:textAlignment="center"
+               android:gravity="center"
                android:text="Welcome to School Setup"
                android:textSize="20dp"
                android:fontFamily="@string/common_google_play_services_updating_text"
@@ -51,6 +57,7 @@
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="0dp"
                 android:textAlignment="center"
+                android:gravity="center"
                 android:text="Please click on the menu bar top left of this screen to navigate through various aspects of this setup"
                 android:textSize="15dp"
                 android:fontFamily="@string/common_google_play_services_updating_text"
