@@ -289,7 +289,7 @@ public class ParentHttpServiceAdapter {
 
 
 
-    public String GetParentById(String parentId)
+    public JSONObject GetParentById(String parentId)
     {
 
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetParentById";
@@ -311,8 +311,12 @@ public class ParentHttpServiceAdapter {
             HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
             httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
 
+//            response = (SoapPrimitive) envelope.getResponse();
+//            //JSONObject mainJson = new JSONObject(response.toString());
+
+
             response = (SoapPrimitive) envelope.getResponse();
-            //JSONObject mainJson = new JSONObject(response.toString());
+            jsonObj = new JSONObject(response.toString());
 
 //            ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
 //            if(response.toString().length()>0 )
@@ -332,7 +336,7 @@ public class ParentHttpServiceAdapter {
             //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
         }
 
-        return response.toString();
+        return jsonObj;
 
     }
 

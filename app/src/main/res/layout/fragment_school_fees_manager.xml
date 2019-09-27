@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
     tools:context=".SchoolFeesManagerFragment">
 
     <ScrollView
@@ -33,6 +35,7 @@
                 android:textSize="18dp"
                 android:textStyle="italic"
                 android:textAlignment="center"
+                android:gravity="center"
                 android:fontFamily="sans-serif-smallcaps"
                 android:textColor="@color/White" />
 
@@ -71,6 +74,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_weight="100"
                         android:width="0dp"
+                        android:gravity="center"
                         android:text="No Selected Student/Pupil"
                         android:textColor="@color/GreenYellow"
                         android:layout_marginLeft="10dp"
@@ -191,11 +195,12 @@
 
 
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/input_layout1"
                     android:layout_width="match_parent"
                     android:layout_marginTop="20dp"
                     android:layout_height="wrap_content">
+
 
 
 
@@ -218,7 +223,7 @@
                         android:layout_below="@+id/textView4" />
 
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -334,7 +339,7 @@
 
 
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/input_layout13"
                     android:layout_width="match_parent"
                     android:layout_marginTop="20dp"
@@ -361,12 +366,12 @@
                         android:layout_below="@+id/textView4" />
 
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
 
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/input_layout11"
                     android:layout_width="match_parent"
                     android:layout_marginTop="20dp"
@@ -393,7 +398,7 @@
                         android:layout_below="@+id/textView4" />
 
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -476,7 +481,6 @@
                         android:layout_marginBottom="20dp"
                         android:textSize="14dp"
                         android:background="@drawable/steel_blue_button"
-                        android:drawableLeft="@drawable/drawable_left_save_icon"
                         android:text="Save"
                         android:textColor="@color/White" />
 
@@ -490,7 +494,6 @@
                         android:layout_marginBottom="20dp"
                         android:textSize="14dp"
                         android:background="@drawable/dark_red_button"
-                        android:drawableLeft="@drawable/drawable_left_cancel_icon"
                         android:text="Cancel"
                         android:textColor="@color/White" />
 

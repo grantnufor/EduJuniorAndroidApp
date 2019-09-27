@@ -406,9 +406,9 @@ public class SchoolFeeHttpServiceAdapter {
 
 
 
-    public String AddSchoolFee ( String schoolFeeIdLocal, String sessionId, String sessionName, String termId, String termStartDate,
+    public String AddSchoolFee ( String schoolFeeIdLocal, String sessionId, String termId, String termStartDate,
                                  String amountToPay, String amountToSomicle, String totalAmountToPay, String amountPaid,
-                                 String balance, String pupilId, String assignedSms,  String schoolId, String uploaded, String remitted)
+                                 String balance, String pupilId, String assignedSms,  String schoolId, String uploaded, String remitted, String date)
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/AddSchoolFee";
         String OPERATION_NAME_GetJsonData = "AddSchoolFee";
@@ -426,7 +426,6 @@ public class SchoolFeeHttpServiceAdapter {
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
             request.addProperty("schoolFeeIdLocal", schoolFeeIdLocal);
             request.addProperty("sessionId", sessionId);
-            request.addProperty("sessionName", sessionName);
             request.addProperty("termId", termId);
             request.addProperty("termStartDate", termStartDate);
             request.addProperty("amountToPay", amountToPay);
@@ -438,8 +437,9 @@ public class SchoolFeeHttpServiceAdapter {
             request.addProperty("assignedSms", assignedSms);
             request.addProperty("uploaded", uploaded);
             request.addProperty("schoolId", schoolId);
-            request.addProperty("uploaded", uploaded);
             request.addProperty("remitted", remitted);
+            request.addProperty("date", date);
+
 
 
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
@@ -490,9 +490,9 @@ public class SchoolFeeHttpServiceAdapter {
     }
 
 
-    public String UpdateSchoolFee (String schoolFeeId,  String schoolFeeIdLocal, String sessionId, String sessionName, String termId, String termStartDate,
+    public String UpdateSchoolFee (String schoolFeeId,  String schoolFeeIdLocal, String sessionId, String termId, String termStartDate,
                                  String amountToPay, String amountToSomicle, String totalAmountToPay, String amountPaid,
-                                 String balance, String pupilId, String assignedSms,  String schoolId, String uploaded, String remitted)
+                                 String balance, String pupilId, String assignedSms,  String schoolId, String uploaded, String remitted, String date)
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateSchoolFee";
         String OPERATION_NAME_GetJsonData = "UpdateSchoolFee";
@@ -509,7 +509,6 @@ public class SchoolFeeHttpServiceAdapter {
             request.addProperty("schoolFeeId", schoolFeeId);
             request.addProperty("schoolFeeIdLocal", schoolFeeIdLocal);
             request.addProperty("sessionId", sessionId);
-            request.addProperty("sessionName", sessionName);
             request.addProperty("termId", termId);
             request.addProperty("termStartDate", termStartDate);
             request.addProperty("amountToPay", amountToPay);
@@ -521,8 +520,8 @@ public class SchoolFeeHttpServiceAdapter {
             request.addProperty("assignedSms", assignedSms);
             request.addProperty("uploaded", uploaded);
             request.addProperty("schoolId", schoolId);
-            request.addProperty("uploaded", uploaded);
             request.addProperty("remitted", remitted);
+            request.addProperty("date", date);
 
 
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);

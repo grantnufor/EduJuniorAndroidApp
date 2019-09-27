@@ -19,6 +19,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+        app:itemTextColor="@color/White"
         app:headerLayout="@layout/nav_header_school_fees"
         app:menu="@menu/activity_school_fees_drawer" />
 
