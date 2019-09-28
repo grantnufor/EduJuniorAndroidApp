@@ -221,7 +221,7 @@ public class SchoolFeeHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetSchoolFeeById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeesServices.asmx";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeeServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -271,7 +271,7 @@ public class SchoolFeeHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeesServices.asmx";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeeServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -343,7 +343,7 @@ public class SchoolFeeHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeesServices.asmx";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeeServices.asmx";
 
         SoapPrimitive response=null;
 
@@ -417,7 +417,7 @@ public class SchoolFeeHttpServiceAdapter {
 
 
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeesServices.asmx";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeeServices.asmx";
 //		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
         // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
         SoapPrimitive response=null;
@@ -499,7 +499,7 @@ public class SchoolFeeHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeesServices.asmx";
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeeServices.asmx";
 //		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
         // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
         Object response=null;

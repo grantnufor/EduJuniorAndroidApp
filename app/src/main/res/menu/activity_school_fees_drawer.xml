@@ -5,38 +5,25 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_admin_home"
+            android:id="@+id/nav_school_fee_app_home"
             android:icon="@drawable/home"
             android:state_checked="true"
-            android:title="Home" />
+            android:title="App Home/Feeds" />
         <item
-            android:id="@+id/nav_setup_school"
-            android:icon="@drawable/setupicon"
+            android:id="@+id/nav_school_fee_pay_school_fees"
+            android:icon="@drawable/money"
             android:state_checked="true"
-            android:title="Setup" />
+            android:title="Pay School Fees" />
 
         <item
-            android:id="@+id/nav_result_manager_school"
-            android:icon="@drawable/result_icon"
+            android:id="@+id/nav_school_fee_all_school_fees_history"
+            android:icon="@drawable/money"
             android:state_checked="true"
-            android:title="Result Manager" />
-
-        <item
-            android:id="@+id/nav_school_fees_school"
-            android:icon="@drawable/schoolfeesicon"
-            android:state_checked="true"
-            android:title="School Fees" />
-
-        <item
-            android:id="@+id/nav_comm_box_school"
-            android:icon="@drawable/commboxicon"
-            android:state_checked="true"
-            android:title="Comm Box" />
-
+            android:title="All School Fees History" />
 
 
         <item
-            android:id="@+id/nav_logout_school"
+            android:id="@+id/nav_school_fee_logout"
             android:icon="@drawable/logout"
             android:title="Logout" />
 

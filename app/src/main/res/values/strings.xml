@@ -207,6 +207,7 @@
     </string-array>
     <string-array name="year_array">
         <item>Year</item>
+        <item>2019</item>
         <item>2018</item>
         <item>2017</item>
         <item>2016</item>
