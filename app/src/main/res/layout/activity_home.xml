@@ -58,11 +58,11 @@
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/logoblack" />
 
 
@@ -73,7 +73,7 @@
                     app:fontFamily="@font/montserrat"
                     android:layout_marginBottom="20dp"
                     android:textStyle="bold"
-                    android:textSize="26dp"
+                    android:textSize="23dp"
                     android:gravity="center"
                     android:textAlignment="center"
 
@@ -83,7 +83,7 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="200dp"
+                    android:layout_height="100dp"
                     android:src="@drawable/schoolkids"/>
 
 
@@ -99,7 +99,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="10dp"
                     android:textColor="@color/White"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:visibility="visible"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -108,11 +108,11 @@
 
 
                 <Button
-                    android:id="@+id/btnSignUpAsParent"
+                    android:id="@+id/btnSignUpAsUser"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/red_button"
-                    android:text="Sign Up As Parent"
+                    android:text="Sign Up As User (Student, Parent, Teacher)"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="5dp"
@@ -130,7 +130,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="I already have an EduJunior Account"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/Maroon"
                     android:textAlignment="center"
                     android:gravity="center"
@@ -156,8 +156,40 @@
 
 
 
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adViewHome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-7947549094897909/4715345294" />
+
+
+<!--                <com.google.android.gms.ads.doubleclick.PublisherAdView-->
+<!--                    xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/publisherAdViewHome"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="-140dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    ads:adSize="BANNER"-->
+<!--                    ads:adUnitId="ca-app-pub-7947549094897909/4715345294"-->
+<!--                    >-->
+
+<!--                    &lt;!&ndash;        ads:adUnitId="ca-app-pub-7947549094897909/4715345294"&ndash;&gt;-->
+<!--                    &lt;!&ndash;        ads:adUnitId="/6499/example/banner"&ndash;&gt;-->
+<!--                </com.google.android.gms.ads.doubleclick.PublisherAdView>-->
+
 
             </LinearLayout>
+
+
+
+
 
         </RelativeLayout>
 

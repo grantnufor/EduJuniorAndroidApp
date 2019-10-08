@@ -3,21 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ResultManagerPupilListFragment">
 
     <LinearLayout
         android:id="@+id/linearLayoutResultManagerPupilList"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:paddingRight="5dp"
-        android:background="@color/Black"
+        android:layout_height="fill_parent"
+        android:focusableInTouchMode="true"
+        android:background="@color/White"
         android:orientation="vertical">
 
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:background="@color/Black"
             android:orientation="vertical">
 
 
@@ -83,7 +84,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@color/SteelBlue"
+                    android:background="@drawable/steel_blue_button"
                     android:layout_weight="40"
                     android:text="Add a New Result"
                     android:textColor="@color/White"
@@ -97,13 +98,13 @@
                     android:weightSum="100"
                     android:layout_marginTop="10dp">
 
-                    <!--<ImageView-->
-                    <!--android:id="@+id/imageView4"-->
-                    <!--android:layout_width="20dp"-->
-                    <!--android:layout_height="20dp"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:layout_marginLeft="30dp"-->
-                    <!--app:srcCompat="@drawable/info_red" />-->
+                    <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    app:srcCompat="@drawable/info_red" />
 
 
                     <TextView
@@ -207,45 +208,18 @@
         <LinearLayout
             android:id="@+id/tabResultManagerPupilList"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_alignParentTop="true"
             android:background="@color/White"
             android:orientation="vertical">
 
 
 
-            <!--<TextView-->
-            <!--android:id="@+id/textView6"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginLeft="10dp"-->
-            <!--android:layout_marginRight="10dp"-->
-            <!--android:layout_marginTop="20dp"-->
-            <!--android:fontFamily="sans-serif"-->
-            <!--android:text="Existing Classes below"-->
-            <!--android:textColor="@color/Black"-->
-            <!--android:textSize="10dp"-->
-            <!--android:textStyle="bold" />-->
-
-
-            <!--<ScrollView-->
-            <!--android:id="@+id/scrollViewClassList"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="700dp">-->
-
-            <!--<LinearLayout-->
-            <!--android:layout_width="fill_parent"-->
-            <!--android:layout_height="fill_parent"-->
-            <!--android:orientation="vertical"-->
-            <!--android:background="@color/Green"-->
-            <!--android:weightSum="1">-->
-
-
             <ListView
                 android:id="@+id/listViewResultManagerExistingPupils"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                 />
+                android:layout_height="fill_parent"
+                android:dividerHeight="5.5dp" />
 
 
 

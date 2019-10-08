@@ -37,7 +37,7 @@
             <LinearLayout
                 android:id="@+id/llayout1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:layout_centerHorizontal="true">
@@ -63,7 +63,7 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="200dp"
+                    android:layout_height="100dp"
                     android:src="@drawable/schoolkids"/>
 
 
@@ -246,11 +246,42 @@
 
 
 
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adViewLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-140dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-7947549094897909/4715345294" />
 
+
+
+
+                <!--                <com.google.android.gms.ads.doubleclick.PublisherAdView-->
+<!--                    xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/publisherAdViewLogin"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                  android:layout_marginTop="-140dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    ads:adSize="BANNER"-->
+<!--                    ads:adUnitId="ca-app-pub-7947549094897909/4715345294"-->
+<!--                    >-->
+
+<!--                    &lt;!&ndash;        ads:adUnitId="ca-app-pub-7947549094897909/4715345294"&ndash;&gt;-->
+<!--                    &lt;!&ndash;        ads:adUnitId="/6499/example/banner"&ndash;&gt;-->
+<!--                </com.google.android.gms.ads.doubleclick.PublisherAdView>-->
 
             </LinearLayout>
 
         </RelativeLayout>
+
+
+
 
     </ScrollView>
 

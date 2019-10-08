@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true"
     tools:context=".SchoolFeesHomeFragment">
@@ -121,13 +122,13 @@
                     android:weightSum="100"
                     android:layout_marginTop="10dp">
 
-                    <!--<ImageView-->
-                    <!--android:id="@+id/imageView4"-->
-                    <!--android:layout_width="20dp"-->
-                    <!--android:layout_height="20dp"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:layout_marginLeft="30dp"-->
-                    <!--app:srcCompat="@drawable/info_red" />-->
+                    <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    app:srcCompat="@drawable/info_red" />
 
 
                     <TextView

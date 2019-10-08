@@ -24,7 +24,7 @@
         <LinearLayout
             android:id="@+id/linearLayoutPupilList"
             android:layout_width="fill_parent"
-            android:layout_height="180dp"
+            android:layout_height="140dp"
             android:paddingRight="5dp"
             android:background="@color/Black"
             android:orientation="vertical">
@@ -42,7 +42,7 @@
                 android:gravity="center"
                 android:fontFamily="sans-serif-smallcaps"
                 android:textColor="@color/White"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="10dp"/>
 
 
             <LinearLayout
@@ -119,7 +119,7 @@
                         android:layout_weight="40"
                         android:text="+ Add a New Pupil"
                         android:textColor="@color/White"
-                        android:textSize="12dp" />
+                        android:textSize="11dp" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -129,13 +129,13 @@
                         android:weightSum="100"
                         android:layout_marginTop="10dp">
 
-                        <!--<ImageView-->
-                            <!--android:id="@+id/imageView4"-->
-                            <!--android:layout_width="20dp"-->
-                            <!--android:layout_height="20dp"-->
-                            <!--android:layout_weight="1"-->
-                            <!--android:layout_marginLeft="30dp"-->
-                            <!--app:srcCompat="@drawable/info_red" />-->
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="30dp"
+                            app:srcCompat="@drawable/info_red" />
 
 
                         <TextView
@@ -148,7 +148,7 @@
                             android:text="Select a Pupil from the Existing Pupils List below to Edit a Pupil"
                             android:textColor="@color/White"
                             android:layout_marginLeft="10dp"
-                            android:textSize="14dp" />
+                            android:textSize="12dp" />
 
 
 
@@ -198,7 +198,7 @@
                         android:background="@color/SteelBlue"
                         android:text="Search"
                         android:textColor="@color/White"
-                        android:textSize="12dp" />
+                        android:textSize="11dp" />
 
                 </LinearLayout>
 

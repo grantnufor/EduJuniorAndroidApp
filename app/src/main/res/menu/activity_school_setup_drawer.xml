@@ -68,5 +68,10 @@
         android:icon="@drawable/backicon"
         android:title="Back to Home" />
 
+    <item
+        android:id="@+id/nav_logout_school_setup"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
 
 </menu>

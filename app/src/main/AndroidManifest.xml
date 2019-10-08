@@ -10,9 +10,21 @@
         android:roundIcon="@drawable/edu_junior_icon"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".CheckBackLaterActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.AD_MANAGER_APP"-->
+<!--            android:value="true"/>-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7947549094897909~6676758294"/>
+        <activity
+            android:name=".UserHomeActivity"
+            android:label="@string/title_activity_user_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".SignUpUserActivity" />
+        <activity
+            android:name=".CheckBackLaterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TestActivity"
             android:label="@string/title_activity_test"

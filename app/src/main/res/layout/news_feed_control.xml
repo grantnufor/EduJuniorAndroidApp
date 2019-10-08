@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/White"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblNewsHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News Heading"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/lblNewsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturday December 22, 2018 1:30PM"
+            android:textColor="@color/Black"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:padding="0dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgNewsFeed"
+            android:layout_width="fill_parent"
+            android:layout_margin="0dp"
+            android:src="@drawable/news"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblNewsContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="Schools have the need to manage their staff. Data management has to do with biometrics of both pupils and staff, computation of student scores and performances in both class attendance and academics. Somicle is an all-in-one, user-interactive software that manages all the above in a way that will impress you. It is easy, fast and accurate."
+            android:textColor="@color/Black"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/btnReadMore"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="@color/LightBlue"-->
+            <!--android:text="Read More.." />-->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblNoOfLIkes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="200 Like(s)"
+            android:textAlignment="viewStart"
+            android:layout_weight="1"
+            android:textSize="11dp"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/lblNoOfComments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="200 Comment(s)"
+            android:textAlignment="viewEnd"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:textSize="11dp"
+            android:textColor="@color/Black"/>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <!--<Button-->
+                <!--android:id="@+id/btnLike"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/WhiteSmoke"-->
+                <!--android:text="Like" />-->
+
+            <Button
+                android:id="@+id/btnLike"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:drawableLeft="@drawable/likemain"
+                android:text="  Like"
+                android:background="@drawable/dark_red_button"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textSize="11dp"
+                android:textColor="@color/White"
+                android:gravity="left|center" />
+
+<!--            <Button-->
+<!--                android:id="@+id/btnComment"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:drawableLeft="@drawable/commentmain"-->
+<!--                android:text="  Comment"-->
+<!--                android:background="@color/LightSlateGray"-->
+<!--                android:paddingLeft="30dp"-->
+<!--                android:paddingRight="30dp"-->
+<!--                android:textColor="@color/White"-->
+<!--                android:textSize="11dp"-->
+<!--                android:gravity="left|center" />-->
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_border"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Comment.."
+             android:textSize="11dp"/>
+
+        <Button
+            android:id="@+id/btnCommentNewsFeed"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:textColor="@color/White"
+            android:background="@color/Maroon"
+            android:text=">"
+            android:textSize="11dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/Black"
+        ></LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+

@@ -132,7 +132,7 @@ public class PupilHttpServiceAdapter {
 
 
 
-    public String GetPupilByFirstNameOtherNamesLastNameAndSchoolId(String firstName, String otherNames, String lastName, String schoolId)
+    public JSONObject GetPupilByFirstNameOtherNamesLastNameAndSchoolId(String firstName, String otherNames, String lastName, String schoolId)
     {
 //        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByUserNameAndPassword";
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetPupilByFirstNameOtherNamesLastNameAndSchoolId";
@@ -158,7 +158,7 @@ public class PupilHttpServiceAdapter {
             httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
 
             response = (SoapPrimitive) envelope.getResponse();
-            //JSONObject mainJson = new JSONObject(response.toString());
+            jsonObj = new JSONObject(response.toString());
 
 //            ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
 //            if(response.toString().length()>0 )
@@ -178,7 +178,7 @@ public class PupilHttpServiceAdapter {
             //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
         }
 
-        return response.toString();
+        return jsonObj;
 
     }
 

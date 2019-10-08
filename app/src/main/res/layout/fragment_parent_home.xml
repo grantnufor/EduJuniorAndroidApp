@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/swipeRefreshLayoutAdminHome"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.gms.ads.doubleclick.PublisherAdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/publisherAdViewParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="/6499/example/banner"
+        >
+
+        <!--        ads:adUnitId="ca-app-pub-7947549094897909/4715345294"-->
+        <!--        ads:adUnitId="/6499/example/banner"-->
+    </com.google.android.gms.ads.doubleclick.PublisherAdView>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefreshLayoutParentHome"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -20,27 +43,32 @@
             android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/textViewParentWelcome"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:text="NO PARENT NAME"
-                android:textColor="@color/White"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:layout_marginTop="30dp" />
+
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop ="30dp"
+                android:paddingBottom="30dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/layout_rounded_corners_red"
                 android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewParentWelcome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="NO PARENT NAME"
+                    android:textColor="@color/White"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                />
 
                 <!--<LinearLayout-->
                 <!--android:layout_width="20dp"-->
@@ -48,25 +76,25 @@
                 <!--android:background="@color/Red">-->
 
                 <!--</LinearLayout>-->
-                <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/steel_blue_button"
-                    android:text="Update Info"
-                    android:textColor="@color/White" />
+<!--                <Button-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:background="@drawable/steel_blue_button"-->
+<!--                    android:text="Update Info"-->
+<!--                    android:textColor="@color/White" />-->
 
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="28dp"
-                    android:orientation="vertical"
-                    android:paddingTop="10dp">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="28dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingTop="10dp">-->
 
 
-                </LinearLayout>
+<!--                </LinearLayout>-->
 
 
             </LinearLayout>
@@ -167,10 +195,10 @@
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
 
@@ -182,6 +210,22 @@
                     android:textStyle="bold"
 
                     />
+
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutParentNewsFeeds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </ScrollView>
 
 
             </LinearLayout>
@@ -200,3 +244,5 @@
 
 
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

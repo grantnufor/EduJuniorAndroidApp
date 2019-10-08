@@ -18,7 +18,7 @@
         <LinearLayout
             android:id="@+id/linearLayoutClassList"
             android:layout_width="fill_parent"
-            android:layout_height="180dp"
+            android:layout_height="160dp"
             android:paddingRight="5dp"
             android:background="@color/Black"
             android:orientation="vertical">
@@ -36,7 +36,7 @@
                 android:gravity="center"
                 android:fontFamily="sans-serif-smallcaps"
                 android:textColor="@color/White"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="10dp"/>
 
 
             <LinearLayout
@@ -122,13 +122,13 @@
                         android:weightSum="100"
                         android:layout_marginTop="10dp">
 
-                        <!--<ImageView-->
-                        <!--android:id="@+id/imageView4"-->
-                        <!--android:layout_width="20dp"-->
-                        <!--android:layout_height="20dp"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:layout_marginLeft="30dp"-->
-                        <!--app:srcCompat="@drawable/info_red" />-->
+                        <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="30dp"
+                        app:srcCompat="@drawable/info_red" />
 
 
                         <TextView
@@ -141,7 +141,7 @@
                             android:text="Select a Class from the Existing Classes List below to Edit a Class"
                             android:textColor="@color/White"
                             android:layout_marginLeft="10dp"
-                            android:textSize="14dp" />
+                            android:textSize="12dp" />
 
 
 
@@ -307,7 +307,7 @@
                                     android:id="@+id/lblClassIdEdit"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text=""
+                                    android:text="0"
                                     android:visibility="invisible"
                                     android:layout_marginLeft="0dp"
                                     android:layout_marginStart="10dp"
@@ -412,7 +412,7 @@
                                         android:layout_marginRight="10dp"
                                         android:layout_marginBottom="20dp"
                                         android:textSize="14dp"
-                                        android:background="@color/DarkRed"
+                                        android:background="@drawable/dark_red_button"
                                         android:text="Save"
                                         android:textColor="@color/White" />
 

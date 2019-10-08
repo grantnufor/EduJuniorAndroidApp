@@ -252,7 +252,7 @@ public class ClassHttpServiceAdapter {
 
 
 
-    public String AddClass(String classIdLocal, String className, String schoolId, String uploaded)
+    public String AddClass(String classIdLocal, String className, String levelId, String schoolId, String uploaded)
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/AddClass";
         String OPERATION_NAME_GetJsonData = "AddClass";
@@ -270,6 +270,7 @@ public class ClassHttpServiceAdapter {
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
             request.addProperty("clasIdLocal", classIdLocal);
             request.addProperty("className", className);
+            request.addProperty("levelId", levelId);
             request.addProperty("schoolId", schoolId);
             request.addProperty("uploaded", uploaded);
 
@@ -323,7 +324,7 @@ public class ClassHttpServiceAdapter {
     }
 
 
-    public String UpdateClass( String classId, String classIdLocal, String className, String schoolId, String uploaded )
+    public String UpdateClass( String classId, String classIdLocal, String className, String levelId, String schoolId, String uploaded )
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateClass";
         String OPERATION_NAME_GetJsonData = "UpdateClass";
@@ -340,6 +341,7 @@ public class ClassHttpServiceAdapter {
             request.addProperty("classId", classId);
             request.addProperty("clasIdLocal", classIdLocal);
             request.addProperty("className", className);
+            request.addProperty("levelId", levelId);
             request.addProperty("schoolId", schoolId);
             request.addProperty("uploaded", uploaded);
 
