@@ -124,11 +124,15 @@
         <item>Mr</item>
         <item>Mrs</item>
         <item>Miss</item>
+        <item>Ms</item>
         <item>Dr</item>
         <item>Prof</item>
         <item>Engr</item>
         <item>Rev</item>
+        <item>Rev Sis</item>
         <item>Chief</item>
+        <item>Bar</item>
+
     </string-array>
 
     <string-array name="sex_array">

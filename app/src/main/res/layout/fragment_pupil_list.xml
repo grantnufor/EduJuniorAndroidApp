@@ -24,7 +24,7 @@
         <LinearLayout
             android:id="@+id/linearLayoutPupilList"
             android:layout_width="fill_parent"
-            android:layout_height="140dp"
+            android:layout_height="170dp"
             android:paddingRight="5dp"
             android:background="@color/Black"
             android:orientation="vertical">
@@ -42,7 +42,7 @@
                 android:gravity="center"
                 android:fontFamily="sans-serif-smallcaps"
                 android:textColor="@color/White"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="15dp"/>
 
 
             <LinearLayout
@@ -246,19 +246,32 @@
                         android:orientation="vertical">
 
 
+                        <Button
+                            android:id="@+id/btnLoadAllPupilPupilList"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/red_button"
+                            android:text="Load all Pupils"
+                            android:gravity="center"
+                            android:textColor="@color/White"
+                            android:textSize="11dp" />
 
-                        <!--<TextView-->
-                        <!--android:id="@+id/textView6"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_marginLeft="10dp"-->
-                        <!--android:layout_marginRight="10dp"-->
-                        <!--android:layout_marginTop="20dp"-->
-                        <!--android:fontFamily="sans-serif"-->
-                        <!--android:text="Existing Classes below"-->
-                        <!--android:textColor="@color/Black"-->
-                        <!--android:textSize="10dp"-->
-                        <!--android:textStyle="bold" />-->
+
+                        <TextView
+                        android:id="@+id/textViewPupilListLoadedCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif"
+                        android:text="0 Pupil Loaded"
+                        android:textColor="@color/Red"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
 
 
                         <!--<ScrollView-->

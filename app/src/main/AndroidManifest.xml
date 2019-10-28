@@ -10,25 +10,25 @@
         android:roundIcon="@drawable/edu_junior_icon"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-
-<!--        <meta-data-->
-<!--            android:name="com.google.android.gms.ads.AD_MANAGER_APP"-->
-<!--            android:value="true"/>-->
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-7947549094897909~6676758294"/>
+        <activity android:name=".OTPActivity"></activity>
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.ads.AD_MANAGER_APP" -->
+        <!-- android:value="true"/> -->
         <activity
             android:name=".UserHomeActivity"
             android:label="@string/title_activity_user_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".SignUpUserActivity" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+
+        <activity android:name=".SignUpUserActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
         <activity
             android:name=".CheckBackLaterActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TestActivity"
             android:label="@string/title_activity_test"
-            android:theme="@style/AppTheme.NoActionBar" /> <!-- tools:replace="android:appComponentFactory" -->
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SplashActivity"
             android:configChanges="orientation|screenSize"
@@ -38,58 +38,74 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- tools:replace="android:appComponentFactory" -->
         <activity
             android:name=".LoginActivity"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".AdminHomeActivity"
             android:configChanges="orientation|screenSize"
             android:label="Feeds"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".TeacherHomeActivity"
             android:configChanges="orientation|screenSize"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".ParentHomeActivity"
             android:configChanges="orientation|screenSize"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".EduJuniorStaffHomeActivity"
             android:configChanges="orientation|screenSize"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".SignUpSchoolActivity"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".HomeActivity"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".SignUpParentActivity" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".SignUpParentActivity"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".SchoolSetupActivity"
             android:label="School Setup"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".SchoolFeesActivity"
             android:label="School Fees"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".ResultManagerActivity"
             android:label="Result Manager"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".CommBoxChatActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_comm_box_chat"
-            android:theme="@style/FullscreenTheme" />
-        <activity android:name=".NotificationActivity" />
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".NotificationActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7947549094897909~6676758294" />
 
         <meta-data
             android:name="preloaded_fonts"

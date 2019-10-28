@@ -217,7 +217,7 @@
                         android:cursorVisible="true"
                         android:ems="10"
                         android:hint="Phone Number"
-                        android:inputType="textLongMessage"
+                        android:inputType="number"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:textColor="@color/Black"
@@ -334,7 +334,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     ads:adSize="BANNER"
-                    ads:adUnitId="ca-app-pub-7947549094897909/4715345294" />
+                    ads:adUnitId="ca-app-pub-7947549094897909/9626397790" />
 
 
 

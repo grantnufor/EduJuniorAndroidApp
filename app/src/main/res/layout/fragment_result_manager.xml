@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/White"
     tools:context=".ResultManagerFragment">
 
@@ -107,17 +108,37 @@
 
 
 
-            <TextView
-                android:id="@+id/textView33"
-                android:layout_width="fill_parent"
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_weight="100"
-                android:width="0dp"
-                android:text="Please select the Result Session, Term, Student Level and Subject and fill up the form below."
-                android:textColor="@color/LightPink"
-                android:layout_marginLeft="10dp"
-                android:textSize="11dp" />
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="0dp"
+                    app:srcCompat="@drawable/info_red" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="100"
+                    android:text="Please select the Result Session, Term, Student Level and Subject and fill up the form below."
+                    android:textColor="@color/LightPink"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="11dp" />
+
+
+
+            </LinearLayout>
 
 
 
@@ -353,22 +374,36 @@
                     android:id="@+id/buttonResultManagerSave"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_weight="49"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_weight="35"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginBottom="20dp"
                     android:textSize="14dp"
                     android:background="@drawable/steel_blue_button"
                     android:text="Save"
                     android:textColor="@color/White" />
 
+
+                <Button
+                    android:id="@+id/buttonResultManagerUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="40"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="14dp"
+                    android:background="@drawable/steel_blue_button"
+                    android:text="Update"
+                    android:textColor="@color/White" />
+
                 <Button
                     android:id="@+id/buttonResultManagerCancel"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_weight="49"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_weight="35"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginBottom="20dp"
                     android:textSize="14dp"
                     android:background="@drawable/dark_red_button"
@@ -390,8 +425,17 @@
                     android:layout_marginBottom="10dp"
                     android:textSize="13dp" />
 
+
+
+
             </LinearLayout>
 
+
+            <WebView
+                android:id="@+id/webviewSmsResultManager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
 
         </LinearLayout>
 

@@ -550,6 +550,10 @@ public class ResultHttpServiceAdapter {
                               String datePublished, String publishedBy, String approved, String schoolId, String termId,
                                 String sessionId, String uploaded, String teacherRemarks, String levelId)
     {
+
+        String responseString = "0";
+
+
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateResult";
         String OPERATION_NAME_GetJsonData = "UpdateResult";
 
@@ -585,7 +589,11 @@ public class ResultHttpServiceAdapter {
             HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
             httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
 
-            response = envelope.getResponse();
+            response = (SoapPrimitive)envelope.getResponse();
+
+
+            responseString = response.toString();
+
 
 
         }
@@ -596,7 +604,7 @@ public class ResultHttpServiceAdapter {
             //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
         }
 
-        return response.toString();
+        return responseString.toString();
 
     }
 

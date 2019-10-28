@@ -20,7 +20,7 @@
         <LinearLayout
             android:id="@+id/linearLayoutParentList"
             android:layout_width="fill_parent"
-            android:layout_height="140dp"
+            android:layout_height="150dp"
             android:paddingRight="5dp"
             android:background="@color/Black"
             android:orientation="vertical"
@@ -39,7 +39,7 @@
                 android:gravity="center"
                 android:fontFamily="sans-serif-smallcaps"
                 android:textColor="@color/White"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="15dp"/>
 
 
             <LinearLayout
@@ -106,7 +106,7 @@
                             android:layout_alignParentLeft="true"
                             android:layout_weight="100"
                             android:width="0dp"
-                            android:text="Select a Parent from the Existing Parents List below to Edit a Pupil"
+                            android:text="Select a Parent from the Existing Parents List below to Edit a Parent"
                             android:textColor="@color/White"
                             android:layout_marginLeft="10dp"
                             android:textSize="12dp" />
@@ -376,7 +376,32 @@
                         android:background="@color/White"
                         android:orientation="vertical">
 
+                        <Button
+                            android:id="@+id/btnLoadAllParentsParentList"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/red_button"
+                            android:text="Load all Parents"
+                            android:gravity="center"
+                            android:textColor="@color/White"
+                            android:textSize="11dp" />
 
+
+                        <TextView
+                            android:id="@+id/textViewParentListLoadedCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif"
+                            android:text="0 Parent Loaded"
+                            android:textColor="@color/Red"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
 
                         <!--<TextView-->
                         <!--android:id="@+id/textView6"-->
@@ -648,13 +673,14 @@
 
                                     <Button
                                         android:id="@+id/btnRegisterParent"
-                                        android:layout_width="100dp"
-                                        android:layout_height="30dp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="60"
                                         android:layout_marginLeft="10dp"
                                         android:layout_marginRight="10dp"
-                                        android:layout_marginTop="30dp"
-                                        android:textSize="10dp"
-                                        android:background="@color/SteelBlue"
+                                        android:layout_marginBottom="20dp"
+                                        android:textSize="14dp"
+                                        android:background="@color/DarkRed"
                                         android:text="Register Parent"
                                         android:textColor="@color/White" />
 

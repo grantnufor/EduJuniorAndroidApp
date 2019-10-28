@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+    tools:context=".ResultManagerTeacherFragment">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutResultManagerPupilList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusableInTouchMode="true"
+            android:background="@color/White"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Black"
+                android:paddingBottom="30dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewSchoolNameResultManagerPupilList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/White"
+                    android:layout_alignParentLeft="true" />
+
+
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/lblParentInfoLabel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=""-->
+                <!--android:layout_marginLeft="0dp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:textSize="10dp"-->
+                <!--android:textColor="@color/White"-->
+                <!--android:layout_alignParentLeft="true" />-->
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/lblParentInfo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=""-->
+                <!--android:layout_marginLeft="0dp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:textSize="10dp"-->
+                <!--android:textColor="@color/White"-->
+                <!--android:layout_alignParentLeft="true" />-->
+
+
+
+
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textViewSelectedStudentResultManagerTeacher"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="100"
+                        android:width="0dp"
+                        android:text="No Selected Student/Pupil"
+                        android:textColor="@color/GreenYellow"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="13dp" />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="0dp"
+                        app:srcCompat="@drawable/info_red" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="100"
+                        android:text="Please select the Result Session, Term, Student Level and Subject and fill up the form below."
+                        android:textColor="@color/LightPink"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="11dp" />
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="49"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Session:"
+                            android:textSize="14dp"
+                            android:textColor="@color/White"
+                            android:layout_marginLeft="0dp"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerResultManagerTeacherFragmentSession"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/spinner_bg"
+                            android:textColor="@color/Black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="49"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Term:"
+                            android:textSize="14dp"
+                            android:textColor="@color/White"
+                            android:layout_marginLeft="0dp"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerResultManagerTeacherFragmentTerm"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/spinner_bg"
+                            android:textColor="@color/Black" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="49"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Level:"
+                            android:textSize="14dp"
+                            android:textColor="@color/White"
+                            android:layout_marginLeft="0dp"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerResultManagerTeacherFragmentLevel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/spinner_bg"
+                            android:textColor="@color/Black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="49"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Subject:"
+                            android:textSize="14dp"
+                            android:textColor="@color/White"
+                            android:layout_marginLeft="0dp"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerResultManagerTeacherFragmentSubject"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/spinner_bg"
+                            android:textColor="@color/Black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="49"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Test/Exam Type:"
+                            android:textSize="14dp"
+                            android:textColor="@color/White"
+                            android:layout_marginLeft="0dp"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerResultManagerTeacherFragmentExamType"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/spinner_bg"
+                            android:textColor="@color/Black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/tabResultManagerTeacherPupilList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/textViewExistingSelectionScoresResultManagerPupilList"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Exiting Score = 0"-->
+                <!--android:layout_marginLeft="0dp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:layout_marginTop="10sp"-->
+                <!--android:textSize="12dp"-->
+                <!--android:fontFamily="sans-serif-smallcaps"-->
+                <!--android:textColor="@color/Red"-->
+                <!--android:layout_alignParentLeft="true" />-->
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+
+
+                    <EditText
+                        android:id="@+id/editTextResultManagerTeacherScore"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:hint="Score"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/Black"
+                        android:textCursorDrawable="@null"
+                        android:layout_below="@+id/textView4" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/buttonResultManagerTeacherSave"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="35"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="14dp"
+                        android:background="@drawable/steel_blue_button"
+                        android:text="Save"
+                        android:textColor="@color/White" />
+
+
+                    <Button
+                        android:id="@+id/buttonResultManagerTeacherUpdate"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="40"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="14dp"
+                        android:background="@drawable/steel_blue_button"
+                        android:text="Update"
+                        android:textColor="@color/White" />
+
+                    <Button
+                        android:id="@+id/buttonResultManagerTeacherCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="35"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="14dp"
+                        android:background="@drawable/dark_red_button"
+                        android:text="Cancel"
+                        android:textColor="@color/White" />
+
+
+                    <TextView
+                        android:id="@+id/textViewSelectedValueResultManagerTeacher"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="100"
+                        android:width="0dp"
+                        android:visibility="invisible"
+                        android:text=""
+                        android:textColor="@color/GreenYellow"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="13dp" />
+
+
+
+
+                </LinearLayout>
+
+
+                <WebView
+                    android:id="@+id/webviewSmsResultManagerTeacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

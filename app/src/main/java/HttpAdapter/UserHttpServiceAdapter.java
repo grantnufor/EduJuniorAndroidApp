@@ -4,6 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.ksoap2.SoapEnvelope;
 import org.ksoap2.serialization.SoapObject;
+import org.ksoap2.serialization.SoapPrimitive;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
 import org.ksoap2.transport.HttpTransportSE;
 
@@ -20,8 +21,10 @@ public class UserHttpServiceAdapter {
 	  String OPERATION_NAME_GetJsonData = "GetUserByEmailAndPassword";
 	 
 	  String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-//	  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-	  Object response=null;
+
+		String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
+	  SoapPrimitive response=null;
 	  
 	  JSONObject jsonObj = new JSONObject();
 	  
@@ -35,49 +38,65 @@ public class UserHttpServiceAdapter {
 	   envelope.setOutputSoapObject(request);
 	      HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
 	   httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
-	   
-	   response = envelope.getResponse();
-	   //JSONObject mainJson = new JSONObject(response.toString());
-	    
-	   ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
-	   if(response.toString().length()>0 )
-	   {
-//	       
-		   String responseModified = "["+response+"]";
-		   
-		   JSONArray aryJSONStrings  = new JSONArray(responseModified.toString());
-		   //JSONObject jsonObj = new JSONObject();
-	   
-//	    int SNO=0;
-	    
-	    for(int i=0; i<aryJSONStrings.length(); i++) {
-	    	
-	    	jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
-	    	
 
-	     
-	    }
+		  response = (SoapPrimitive) envelope.getResponse();
+		  jsonObj = new JSONObject(response.toString());
 	    
-	    //response = jsonObj.get("Email");
-	    
-	   }
-	   else 
-	   {
-	    //response="Empty";
-	   }
+
 
 	  }
 	  catch (Exception exception)
 	  {
 	   //response="error: "+exception.toString();
 	   exception.printStackTrace();
-	   //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+
 	  }
 	  
 	  return jsonObj;
 	 
 	 }
-	
+
+
+	public JSONObject GetUserByPhoneNoAndPassword(String phoneNo, String password)
+	{
+		String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByPhoneNoAndPassword";
+		String OPERATION_NAME_GetJsonData = "GetUserByPhoneNoAndPassword";
+
+		String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+		String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
+		SoapPrimitive response=null;
+
+		JSONObject jsonObj = new JSONObject();
+
+		try
+		{
+			SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+			request.addProperty("phoneNo", phoneNo);
+			request.addProperty("password", password);
+			SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+			envelope.dotNet = true;
+			envelope.setOutputSoapObject(request);
+			HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+			httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+			response = (SoapPrimitive) envelope.getResponse();
+			jsonObj = new JSONObject(response.toString());
+
+
+
+		}
+		catch (Exception exception)
+		{
+			//response="error: "+exception.toString();
+			exception.printStackTrace();
+
+		}
+
+		return jsonObj;
+
+	}
 	
 	
 	public JSONObject GetUserByPhoneNo(String phoneNo)
@@ -86,7 +105,9 @@ public class UserHttpServiceAdapter {
 	  String OPERATION_NAME_GetJsonData = "GetUserByPhoneNo";
 	 
 	  String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-//	  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
+
+		String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
 	  Object response=null;
 	  
 	  JSONObject jsonObj = new JSONObject();
@@ -150,7 +171,9 @@ public class UserHttpServiceAdapter {
 		String OPERATION_NAME_GetJsonData = "GetUserByEmail";
 
 		String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-//	  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
+
+		String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
 		Object response=null;
 
 		JSONObject jsonObj = new JSONObject();
@@ -208,14 +231,16 @@ public class UserHttpServiceAdapter {
 	}
 	
 	
-	public JSONObject GetUserByUserId(long userId)
+	public JSONObject GetUserByUserId(String userId)
 	{ 
 	  String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByUserId";
 	  String OPERATION_NAME_GetJsonData = "GetUserByUserId";
 	 
 	  String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-//	  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-	  Object response=null;
+
+		String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
+	  SoapPrimitive response=null;
 	  
 	  JSONObject jsonObj = new JSONObject();
 	  
@@ -229,35 +254,35 @@ public class UserHttpServiceAdapter {
 	      HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
 	   httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
 	   
-	   response = envelope.getResponse();
-	   //JSONObject mainJson = new JSONObject(response.toString());
-	    
-	   ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
-	   if(response.toString().length()>0 )
-	   {
-//	       
-		   String responseModified = "["+response+"]";
-		   
-		   JSONArray aryJSONStrings  = new JSONArray(responseModified.toString());
-		   //JSONObject jsonObj = new JSONObject();
-	   
-//	    int SNO=0;
-	    
-	    for(int i=0; i<aryJSONStrings.length(); i++) {
-	    	
-	    	jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
-	    	
-
-	     
-	    }
-	    
-	    //response = jsonObj.get("Email");
-	    
-	   }
-	   else 
-	   {
-	    //response="Empty";
-	   }
+	   response = (SoapPrimitive) envelope.getResponse();
+//	   //JSONObject mainJson = new JSONObject(response.toString());
+//
+//	   ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
+//	   if(response.toString().length()>0 )
+//	   {
+////
+//		   String responseModified = "["+response+"]";
+//
+//		   JSONArray aryJSONStrings  = new JSONArray(responseModified.toString());
+//		   //JSONObject jsonObj = new JSONObject();
+//
+////	    int SNO=0;
+//
+//	    for(int i=0; i<aryJSONStrings.length(); i++) {
+//
+//	    	jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+//
+//
+//
+//	    }
+//
+//	    //response = jsonObj.get("Email");
+//
+//	   }
+//	   else
+//	   {
+//	    //response="Empty";
+//	   }
 
 	  }
 	  catch (Exception exception)
@@ -270,8 +295,140 @@ public class UserHttpServiceAdapter {
 	  return jsonObj;
 	 
 	 }
-	
-	
+
+
+	public JSONObject GetUserByUserIdAndPhoneNoOtp(String userId, String phoneNoOtp)
+	{
+		String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByUserIdAndPhoneNoOtp";
+		String OPERATION_NAME_GetJsonData = "GetUserByUserIdAndPhoneNoOtp";
+
+		String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+		String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
+		Object response=null;
+
+		JSONObject jsonObj = new JSONObject();
+
+		try
+		{
+			SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+			request.addProperty("userId", userId);
+			request.addProperty("phoneNoOtp", phoneNoOtp);
+			SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+			envelope.dotNet = true;
+			envelope.setOutputSoapObject(request);
+			HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+			httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+			response = envelope.getResponse();
+			//JSONObject mainJson = new JSONObject(response.toString());
+
+			///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
+			if(response.toString().length()>0 )
+			{
+//
+				String responseModified = "["+response+"]";
+
+				JSONArray aryJSONStrings  = new JSONArray(responseModified.toString());
+				//JSONObject jsonObj = new JSONObject();
+
+//	    int SNO=0;
+
+				for(int i=0; i<aryJSONStrings.length(); i++) {
+
+					jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+
+
+
+				}
+
+				//response = jsonObj.get("Email");
+
+			}
+			else
+			{
+				//response="Empty";
+			}
+
+		}
+		catch (Exception exception)
+		{
+			//response="error: "+exception.toString();
+			exception.printStackTrace();
+			//Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+		}
+
+		return jsonObj;
+
+	}
+
+
+    public JSONObject GetUserByPhoneNoOtp(String phoneNoOtp)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByPhoneNoOtp";
+        String OPERATION_NAME_GetJsonData = "GetUserByPhoneNoOtp";
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+
+		String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
+        Object response=null;
+
+        JSONObject jsonObj = new JSONObject();
+
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("phoneNoOtp", phoneNoOtp);
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = envelope.getResponse();
+            //JSONObject mainJson = new JSONObject(response.toString());
+
+            ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
+            if(response.toString().length()>0 )
+            {
+//
+                String responseModified = "["+response+"]";
+
+                JSONArray aryJSONStrings  = new JSONArray(responseModified.toString());
+                //JSONObject jsonObj = new JSONObject();
+
+//	    int SNO=0;
+
+                for(int i=0; i<aryJSONStrings.length(); i++) {
+
+                    jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+
+
+
+                }
+
+                //response = jsonObj.get("Email");
+
+            }
+            else
+            {
+                //response="Empty";
+            }
+
+        }
+        catch (Exception exception)
+        {
+            //response="error: "+exception.toString();
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return jsonObj;
+
+    }
 	
 	public ArrayList<JSONObject> GetAllUsers()
 	{ 
@@ -279,7 +436,9 @@ public class UserHttpServiceAdapter {
 	  String OPERATION_NAME_GetJsonData = "GetAllUsers";
 	 
 	  String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-//	  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
+
+		String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
 	  Object response=null;
 	  
 	  ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
@@ -295,8 +454,7 @@ public class UserHttpServiceAdapter {
 	   
 	   response = envelope.getResponse();
 
-	   
-	  
+
 	   
 	   if(response.toString().length()>0 )
 	   {       
@@ -400,15 +558,17 @@ public class UserHttpServiceAdapter {
 	
 	
 	
-	  public String RegisterUser(String firstName, String surname, String otherNames, String sex, String email, String phoneNo, String password, String dateCreated,  String dateLastUpdated, String status, String profilePicture,  String userCategoryId)
+	  public String RegisterUser(String firstName, String surname, String otherNames, String sex, String email, String phoneNo, String password, String dateCreated,  String dateLastUpdated, String status, String siteVisitCount,  String userCategoryId, String phoneNoOtp, String phoneNoOtpExpiration, String verified)
 		 { 
 		  String SOAP_ACTION_GetJsonData ="http://tempuri.org/CreateUser";
 		  String OPERATION_NAME_GetJsonData = "CreateUser";
 		 
 		  String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-		 // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
-		  Object response=null;
+
+			 String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
+		  SoapPrimitive response=null;
+
 		  try
 		  {
 		   SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
@@ -422,52 +582,54 @@ public class UserHttpServiceAdapter {
 		   request.addProperty("dateCreated", dateCreated);
 		   request.addProperty("dateLastUpdated", dateLastUpdated);
 		   request.addProperty("status", status);
-		   request.addProperty("profilePicture", profilePicture);
+		   request.addProperty("siteVisitCount", siteVisitCount);
 		   request.addProperty("userCategoryId", userCategoryId);
+		   request.addProperty("phoneNoOtp", phoneNoOtp );
+		   request.addProperty("phoneNoOtpExpiration", phoneNoOtpExpiration);
+		   request.addProperty("verified", verified);
 
 
-	
-		   
-		   SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
-		   envelope.dotNet = true;
-		   envelope.setOutputSoapObject(request);
-		      HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
-		   httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
-		   
-		   response = envelope.getResponse();
-		   //JSONObject mainJson = new JSONObject(response.toString());
+
+
+			  SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+			  envelope.dotNet = true;
+			  envelope.setOutputSoapObject(request);
+			  HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+			  httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+			  response = (SoapPrimitive)envelope.getResponse();
 		    
-		   ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
-		   if(response.toString().length()>0 )
-		   {
-		       
-			   String responseModified = "["+response+"]";
-			   
-			   JSONArray aryJSONStrings  = new JSONArray(responseModified.toString());
-			   JSONObject jsonObj = new JSONObject();
-		   
-//		    int SNO=0;
-		    
-		    for(int i=0; i<aryJSONStrings.length(); i++) {
-		    	
-		    	jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
-		    	
-		     
-		    }
-		    
-		    response = jsonObj.get("Email");
-		    
-		   }
-		   else 
-		   {
-		    response="Empty";
-		   }
+//		   ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
+//		   if(response.toString().length()>0 )
+//		   {
+//
+//			   String responseModified = "["+response+"]";
+//
+//			   JSONArray aryJSONStrings  = new JSONArray(responseModified.toString());
+//			   JSONObject jsonObj = new JSONObject();
+//
+////		    int SNO=0;
+//
+//		    for(int i=0; i<aryJSONStrings.length(); i++) {
+//
+//		    	jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+//
+//
+//		    }
+//
+//		    response = jsonObj.get("Email");
+//
+//		   }
+//		   else
+//		   {
+//		    response="Empty";
+//		   }
 
 		  }
 		  catch (Exception exception)
 		  {
-		   response="error: "+exception.toString();
 		   exception.printStackTrace();
+
 		   //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
 		  }
 		  
@@ -476,15 +638,17 @@ public class UserHttpServiceAdapter {
 		 }
 	
 	  
-	  public String UpdateUser(long userId, String firstName, String surname, String otherNames, String sex, String dateOfBirth, String email, String phoneNo, String password, String dateCreated, String registrationType, String dateLastUpdated, String status, String profilePicture, String departmentId, String institutionId, String siteVisitCount, String userCategoryId)
+	  public String UpdateUser(long userId, String firstName, String surname, String otherNames, String sex, String dateOfBirth, String email, String phoneNo, String password, String dateCreated, String dateLastUpdated, String status, String siteVisitCount, String userCategoryId, String phoneNoOtp, String phoneNoOtpExpiration, String verified)
 		 { 
 		  String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateUser";
 		  String OPERATION_NAME_GetJsonData = "UpdateUser";
 		 
 		  String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
+
+			 String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
 		 // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
-		  Object response=null;
+		  SoapPrimitive response=null;
 		  try
 		  {
 		   SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
@@ -498,14 +662,13 @@ public class UserHttpServiceAdapter {
 			  request.addProperty("phoneNo", phoneNo);
 			  request.addProperty("password", password);
 			  request.addProperty("dateCreated", dateCreated);
-			  request.addProperty("registrationType", registrationType);
 			  request.addProperty("dateLastUpdated", dateLastUpdated);
 			  request.addProperty("status", status);
-			  request.addProperty("profilePicture", profilePicture);
-			  request.addProperty("departmentId", departmentId);
-			  request.addProperty("institutionId", institutionId);
 			  request.addProperty("siteVisitCount", siteVisitCount);
 			  request.addProperty("userCategoryId", userCategoryId);
+			  request.addProperty("phoneNoOtp", phoneNoOtp );
+			  request.addProperty("phoneNoOtpExpiration", phoneNoOtpExpiration);
+			  request.addProperty("verified", verified);
 
 		   
 		   SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
@@ -514,7 +677,7 @@ public class UserHttpServiceAdapter {
 		      HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
 		   httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
 		   
-		   response = envelope.getResponse();
+		   response = (SoapPrimitive) envelope.getResponse();
 		   //JSONObject mainJson = new JSONObject(response.toString());
 		    
 		   ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
@@ -547,7 +710,7 @@ public class UserHttpServiceAdapter {
 		  }
 		  catch (Exception exception)
 		  {
-		   response="error: "+exception.toString();
+		  // response="error: "+exception.toString();
 		   exception.printStackTrace();
 		   //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
 		  }
@@ -555,7 +718,73 @@ public class UserHttpServiceAdapter {
 		  return response.toString();
 		 
 		 }
-	  
+
+
+	public String UpdateUserVerified(String userId,  String verified)
+	{
+		String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateUserVerified";
+		String OPERATION_NAME_GetJsonData = "UpdateUserVerified";
+
+		String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+		String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/UserServices.asmx";
+
+		// String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+		SoapPrimitive response=null;
+		try
+		{
+			SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+			request.addProperty("userId", userId);
+			request.addProperty("verified", verified);
+
+
+			SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+			envelope.dotNet = true;
+			envelope.setOutputSoapObject(request);
+			HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+			httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+			response = (SoapPrimitive) envelope.getResponse();
+			//JSONObject mainJson = new JSONObject(response.toString());
+
+			///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
+//		   if(response.toString().length()>0 )
+//		   {
+////
+//			   String responseModified = "["+response+"]";
+//
+//			   JSONArray aryJSONStrings  = new JSONArray(responseModified.toString());
+//			   JSONObject jsonObj = new JSONObject();
+//
+////		    int SNO=0;
+//
+//		    for(int i=0; i<aryJSONStrings.length(); i++) {
+//
+//		    	jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+//
+//
+//
+//		    }
+//
+//		    response = jsonObj.get("Email");
+//
+//		   }
+//		   else
+//		   {
+//		    response="Empty";
+//		   }
+
+		}
+		catch (Exception exception)
+		{
+			//response="error: "+exception.toString();
+			exception.printStackTrace();
+			//Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+		}
+
+		return response.toString();
+
+	}
 	  
 	 
 	

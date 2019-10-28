@@ -89,21 +89,6 @@
 
 
 
-                <Button
-                    android:id="@+id/btnSignUpAsSchool"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/dark_red_button"
-                    android:text="Sign Up School"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="10dp"
-                    android:textColor="@color/White"
-                    android:layout_marginTop="20dp"
-                    android:visibility="visible"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    app:fontFamily="@font/montserrat"/>
 
 
 
@@ -112,7 +97,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/red_button"
-                    android:text="Sign Up As User (Student, Parent, Teacher)"
+                    android:text="Sign Up"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="5dp"
@@ -156,17 +141,20 @@
 
 
 
+
+
+
                 <com.google.android.gms.ads.AdView
                     xmlns:ads="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/adViewHome"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     ads:adSize="BANNER"
-                    ads:adUnitId="ca-app-pub-7947549094897909/4715345294" />
+                    ads:adUnitId="ca-app-pub-7947549094897909/9626397790" />
 
 
 <!--                <com.google.android.gms.ads.doubleclick.PublisherAdView-->
@@ -189,6 +177,21 @@
 
 
 
+            <Button
+                android:id="@+id/btnSignUpAsSchool"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_red_button"
+                android:text="Sign Up School"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/White"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                app:fontFamily="@font/montserrat"/>
 
 
         </RelativeLayout>

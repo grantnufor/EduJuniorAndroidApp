@@ -57,7 +57,7 @@
             android:id="@+id/imgNewsFeed"
             android:layout_width="fill_parent"
             android:layout_margin="0dp"
-            android:src="@drawable/news"
+            android:src="@drawable/info_red"
             android:layout_height="fill_parent" />
 
     </LinearLayout>
@@ -87,106 +87,106 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="0dp"
-        android:orientation="horizontal">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:orientation="horizontal">-->
 
-        <TextView
-            android:id="@+id/lblNoOfLIkes"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="200 Like(s)"
-            android:textAlignment="viewStart"
-            android:layout_weight="1"
-            android:textSize="11dp"
-            android:textColor="@color/Black"/>
+<!--        <TextView-->
+<!--            android:id="@+id/lblNoOfLIkes"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="200 Like(s)"-->
+<!--            android:textAlignment="viewStart"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textSize="11dp"-->
+<!--            android:textColor="@color/Black"/>-->
 
-        <TextView
-            android:id="@+id/lblNoOfComments"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="200 Comment(s)"
-            android:textAlignment="viewEnd"
-            android:layout_weight="1"
-            android:layout_marginLeft="40dp"
-            android:textSize="11dp"
-            android:textColor="@color/Black"/>
-
-
-    </LinearLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/lblNoOfComments"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="200 Comment(s)"-->
+<!--            android:textAlignment="viewEnd"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="40dp"-->
+<!--            android:textSize="11dp"-->
+<!--            android:textColor="@color/Black"/>-->
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+<!--    </LinearLayout>-->
 
 
-            <!--<Button-->
-                <!--android:id="@+id/btnLike"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="30dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:background="@color/WhiteSmoke"-->
-                <!--android:text="Like" />-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
 
-            <Button
-                android:id="@+id/btnLike"
-                android:layout_width="120dp"
-                android:layout_height="35dp"
-                android:drawableLeft="@drawable/likemain"
-                android:text="  Like"
-                android:background="@drawable/dark_red_button"
-                android:paddingLeft="30dp"
-                android:paddingRight="30dp"
-                android:textSize="11dp"
-                android:textColor="@color/White"
-                android:gravity="left|center" />
+
+<!--            &lt;!&ndash;<Button&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/btnLike"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="30dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:background="@color/WhiteSmoke"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:text="Like" />&ndash;&gt;-->
 
 <!--            <Button-->
-<!--                android:id="@+id/btnComment"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/btnLike"-->
+<!--                android:layout_width="120dp"-->
 <!--                android:layout_height="35dp"-->
-<!--                android:drawableLeft="@drawable/commentmain"-->
-<!--                android:text="  Comment"-->
-<!--                android:background="@color/LightSlateGray"-->
+<!--                android:drawableLeft="@drawable/likemain"-->
+<!--                android:text="  Like"-->
+<!--                android:background="@drawable/dark_red_button"-->
 <!--                android:paddingLeft="30dp"-->
 <!--                android:paddingRight="30dp"-->
-<!--                android:textColor="@color/White"-->
 <!--                android:textSize="11dp"-->
+<!--                android:textColor="@color/White"-->
 <!--                android:gravity="left|center" />-->
 
-        </LinearLayout>
+<!--&lt;!&ndash;            <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/btnComment"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="35dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:drawableLeft="@drawable/commentmain"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="  Comment"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="@color/LightSlateGray"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:paddingLeft="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:paddingRight="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="@color/White"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="11dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:gravity="left|center" />&ndash;&gt;-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+<!--        </LinearLayout>-->
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:background="@drawable/spinner_border"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Comment.."
-             android:textSize="11dp"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal">-->
 
-        <Button
-            android:id="@+id/btnCommentNewsFeed"
-            android:layout_width="50dp"
-            android:layout_height="52dp"
-            android:textColor="@color/White"
-            android:background="@color/Maroon"
-            android:text=">"
-            android:textSize="11dp"/>
+<!--        <EditText-->
+<!--            android:id="@+id/editText"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="@drawable/spinner_border"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:hint="Comment.."-->
+<!--             android:textSize="11dp"/>-->
 
-    </LinearLayout>
+<!--        <Button-->
+<!--            android:id="@+id/btnCommentNewsFeed"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="52dp"-->
+<!--            android:textColor="@color/White"-->
+<!--            android:background="@color/Maroon"-->
+<!--            android:text=">"-->
+<!--            android:textSize="11dp"/>-->
+
+<!--    </LinearLayout>-->
 
     </LinearLayout>
 
