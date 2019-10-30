@@ -495,7 +495,7 @@ public class TeacherHttpServiceAdapter {
     }
 
 
-    public String UpdateTeacher(String teacherIdLocal, String teacherId, String title, String firstName, String otherNames, String lastName, String homeAddress, String phoneNumber,
+    public String UpdateTeacher(String teacherId, String teacherIdLocal, String title, String firstName, String otherNames, String lastName, String homeAddress, String phoneNumber,
                                 String emailAddress, String password, String dateOfBirthDay, String dateOfBirthMonth, String dateOfBirthYear,  String sex,
                                 String dateOfAppointmentDay, String dateOfAppointmentMonth, String dateOfAppointmentYear, String certificate,
                                 String designation, String dateRegistered, String dateLastUpdated, String schoolId, String uploaded )

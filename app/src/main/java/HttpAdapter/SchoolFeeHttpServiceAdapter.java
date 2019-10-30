@@ -220,6 +220,151 @@ public class SchoolFeeHttpServiceAdapter {
 
 
 
+    public ArrayList<JSONObject> GetSchoolFeeBySchoolIdDatesFromAndTo(String schoolId,  String dateFromDay, String dateFromMonth, String dateFromYear,
+                                                                     String dateToDay, String dateToMonth, String dateToYear)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetSchoolFeeBySchoolIdDatesFromAndTo";
+        String OPERATION_NAME_GetJsonData = "GetSchoolFeeBySchoolIdDatesFromAndTo";
+
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeeServices.asmx";
+
+
+        SoapPrimitive response=null;
+
+        ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
+
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("schoolId", schoolId);
+            request.addProperty("dateFromDay", dateFromDay);
+            request.addProperty("dateFromMonth", dateFromMonth);
+            request.addProperty("dateFromYear", dateFromYear);
+            request.addProperty("dateToDay", dateToDay);
+            request.addProperty("dateToMonth", dateToMonth);
+            request.addProperty("dateToYear", dateToYear);
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = (SoapPrimitive) envelope.getResponse();
+
+
+
+
+            if(response.toString().length()>0 )
+            {
+                //String responseModified = "["+response+"]";
+
+                JSONArray aryJSONStrings  = new JSONArray(response.toString());
+                JSONObject jsonObj = new JSONObject();
+
+
+
+                for(int i=0; i<aryJSONStrings.length(); i++) {
+
+                    jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+
+                    obj.add(jsonObj);
+
+                }
+
+            }
+            else
+            {
+                obj = null;
+            }
+
+        }
+        catch (Exception exception)
+        {
+            obj = null;
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return obj;
+
+    }
+
+
+    public ArrayList<JSONObject> GetSchoolFeeByPupilNameWildCardSchoolIdDatesFromAndTo(String pupilNameWildCard, String schoolId,  String dateFromDay, String dateFromMonth, String dateFromYear,
+                                                                      String dateToDay, String dateToMonth, String dateToYear)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetSchoolFeeByPupilNameWildCardSchoolIdDatesFromAndTo";
+        String OPERATION_NAME_GetJsonData = "GetSchoolFeeByPupilNameWildCardSchoolIdDatesFromAndTo";
+
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/SchoolFeeServices.asmx";
+
+
+        SoapPrimitive response=null;
+
+        ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
+
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("pupilNameWildCard", pupilNameWildCard);
+            request.addProperty("schoolId", schoolId);
+            request.addProperty("dateFromDay", dateFromDay);
+            request.addProperty("dateFromMonth", dateFromMonth);
+            request.addProperty("dateFromYear", dateFromYear);
+            request.addProperty("dateToDay", dateToDay);
+            request.addProperty("dateToMonth", dateToMonth);
+            request.addProperty("dateToYear", dateToYear);
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = (SoapPrimitive) envelope.getResponse();
+
+
+
+
+            if(response.toString().length()>0 )
+            {
+                //String responseModified = "["+response+"]";
+
+                JSONArray aryJSONStrings  = new JSONArray(response.toString());
+                JSONObject jsonObj = new JSONObject();
+
+
+
+                for(int i=0; i<aryJSONStrings.length(); i++) {
+
+                    jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+
+                    obj.add(jsonObj);
+
+                }
+
+            }
+            else
+            {
+                obj = null;
+            }
+
+        }
+        catch (Exception exception)
+        {
+            obj = null;
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return obj;
+
+    }
 
     public ArrayList<JSONObject> GetSchoolFeeByPupilIdAndSchoolId(String pupilId, String schoolId)
     {
@@ -484,7 +629,8 @@ public class SchoolFeeHttpServiceAdapter {
 
     public String AddSchoolFee ( String schoolFeeIdLocal, String sessionId, String termId, String termStartDate,
                                  String amountToPay, String amountToSomicle, String totalAmountToPay, String amountPaid,
-                                 String balance, String pupilId, String assignedSms,  String schoolId, String uploaded, String remitted, String date)
+                                 String balance, String pupilId, String assignedSms,  String schoolId, String uploaded,
+                                 String remitted, String dateDay, String dateMonth, String dateYear, String dateFinal)
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/AddSchoolFee";
         String OPERATION_NAME_GetJsonData = "AddSchoolFee";
@@ -514,7 +660,10 @@ public class SchoolFeeHttpServiceAdapter {
             request.addProperty("uploaded", uploaded);
             request.addProperty("schoolId", schoolId);
             request.addProperty("remitted", remitted);
-            request.addProperty("date", date);
+            request.addProperty("dateDay", dateDay);
+            request.addProperty("dateMonth", dateMonth);
+            request.addProperty("dateYear", dateYear);
+            request.addProperty("dateFinal", dateFinal);
 
 
 
@@ -568,7 +717,8 @@ public class SchoolFeeHttpServiceAdapter {
 
     public String UpdateSchoolFee (String schoolFeeId,  String schoolFeeIdLocal, String sessionId, String termId, String termStartDate,
                                  String amountToPay, String amountToSomicle, String totalAmountToPay, String amountPaid,
-                                 String balance, String pupilId, String assignedSms,  String schoolId, String uploaded, String remitted, String date)
+                                 String balance, String pupilId, String assignedSms,  String schoolId, String uploaded, String remitted,
+                                   String dateDay, String dateMonth, String dateYear, String dateFinal)
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateSchoolFee";
         String OPERATION_NAME_GetJsonData = "UpdateSchoolFee";
@@ -597,7 +747,10 @@ public class SchoolFeeHttpServiceAdapter {
             request.addProperty("uploaded", uploaded);
             request.addProperty("schoolId", schoolId);
             request.addProperty("remitted", remitted);
-            request.addProperty("date", date);
+            request.addProperty("dateDay", dateDay);
+            request.addProperty("dateMonth", dateMonth);
+            request.addProperty("dateYear", dateYear);
+            request.addProperty("dateFinal", dateFinal);
 
 
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
