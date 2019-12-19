@@ -128,10 +128,10 @@ public class MessageHttpServiceAdapter {
 
 
 
-    public ArrayList<JSONObject> GetMessageBySenderEmailAddressAndRecipientEmailAddress(String senderEmailAddress, String recipientEmailAddress)
+    public ArrayList<JSONObject> GetMessageBySenderPhoneNumberAndRecipientPhoneNumber(String senderPhoneNumber, String recipientPhoneNumber)
     {
-        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetMessageBySenderEmailAddressAndRecipientEmailAddress";
-        String OPERATION_NAME_GetJsonData = "GetMessageBySenderEmailAddressAndRecipientEmailAddress";
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetMessageBySenderPhoneNumberAndRecipientPhoneNumber";
+        String OPERATION_NAME_GetJsonData = "GetMessageBySenderPhoneNumberAndRecipientPhoneNumber";
 
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
@@ -146,8 +146,8 @@ public class MessageHttpServiceAdapter {
         try
         {
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
-            request.addProperty("senderEmailAddress", senderEmailAddress);
-            request.addProperty("recipientEmailAddress", recipientEmailAddress);
+            request.addProperty("senderPhoneNumber", senderPhoneNumber);
+            request.addProperty("recipientPhoneNumber", recipientPhoneNumber);
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
             envelope.dotNet = true;
             envelope.setOutputSoapObject(request);
@@ -196,7 +196,141 @@ public class MessageHttpServiceAdapter {
 
 
 
-    public String AddMessage(String header, String body, byte[] image, String senderEmailAddress, String recipientEmailAddress, String dateTimeSent, String seen)
+    public ArrayList<JSONObject> GetMessageByRecipientPhoneNumberAndSeen(String recipientPhoneNumber, String seen)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetMessageByRecipientPhoneNumberAndSeen";
+        String OPERATION_NAME_GetJsonData = "GetMessageByRecipientPhoneNumberAndSeen";
+
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
+
+
+        SoapPrimitive response = null;
+
+        ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
+
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("recipientPhoneNumber", recipientPhoneNumber);
+            request.addProperty("seen", seen);
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = (SoapPrimitive) envelope.getResponse();
+
+
+
+
+            if(response.toString().length()>0 )
+            {
+                //String responseModified = "["+response+"]";
+
+                JSONArray aryJSONStrings  = new JSONArray(response.toString());
+                JSONObject jsonObj = new JSONObject();
+
+
+
+                for(int i=0; i<aryJSONStrings.length(); i++) {
+
+                    jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+
+                    obj.add(jsonObj);
+
+                }
+
+            }
+            else
+            {
+                obj = null;
+            }
+
+        }
+        catch (Exception exception)
+        {
+            obj = null;
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return obj;
+
+    }
+
+
+
+    public ArrayList<JSONObject> GetMessageByMessageUserPegId(String messageUserPegId)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetMessageByMessageUserPegId";
+        String OPERATION_NAME_GetJsonData = "GetMessageByMessageUserPegId";
+
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
+
+
+        SoapPrimitive response = null;
+
+        ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
+
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("messageUserPegId", messageUserPegId);
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = (SoapPrimitive) envelope.getResponse();
+
+
+
+
+            if(response.toString().length()>0 )
+            {
+                //String responseModified = "["+response+"]";
+
+                JSONArray aryJSONStrings  = new JSONArray(response.toString());
+                JSONObject jsonObj = new JSONObject();
+
+
+
+                for(int i=0; i<aryJSONStrings.length(); i++) {
+
+                    jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+
+                    obj.add(jsonObj);
+
+                }
+
+            }
+            else
+            {
+                obj = null;
+            }
+
+        }
+        catch (Exception exception)
+        {
+            obj = null;
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return obj;
+
+    }
+
+
+    public String AddMessage(String header, String body, String image, String starterPhoneNumber, String senderPhoneNumber, String recipientPhoneNumber, String dateTimeSent, String seen, String uploaded, String messageUserPegId)
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/AddMessage";
         String OPERATION_NAME_GetJsonData = "AddMessage";
@@ -215,10 +349,13 @@ public class MessageHttpServiceAdapter {
             request.addProperty("header", header);
             request.addProperty("body", body);
             request.addProperty("image", image);
-            request.addProperty("senderEmailAddress", senderEmailAddress);
-            request.addProperty("recipientEmailAddress", recipientEmailAddress);
+            request.addProperty("starterPhoneNumber", starterPhoneNumber);
+            request.addProperty("senderPhoneNumber", senderPhoneNumber);
+            request.addProperty("recipientPhoneNumber", recipientPhoneNumber);
             request.addProperty("dateTimeSent", dateTimeSent);
             request.addProperty("seen", seen);
+            request.addProperty("uploaded", uploaded);
+            request.addProperty("messageUserPegId", messageUserPegId);
 
 
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
@@ -269,7 +406,7 @@ public class MessageHttpServiceAdapter {
     }
 
 
-    public String UpdateMessage(String messageId, String header, String body, byte[] image, String senderEmailAddress, String recipientEmailAddress, String dateTimeSent, String seen)
+    public String UpdateMessage(String messageId, String header, String body, String image, String starterPhoneNumber, String senderPhoneNumber, String recipientPhoneNumber, String dateTimeSent, String seen, String uploaded, String messageUserPegId)
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateMessage";
         String OPERATION_NAME_GetJsonData = "UpdateMessage";
@@ -286,10 +423,56 @@ public class MessageHttpServiceAdapter {
             request.addProperty("header", header);
             request.addProperty("body", body);
             request.addProperty("image", image);
-            request.addProperty("senderEmailAddress", senderEmailAddress);
-            request.addProperty("recipientEmailAddress", recipientEmailAddress);
+            request.addProperty("starterPhoneNumber", starterPhoneNumber);
+            request.addProperty("senderPhoneNumber", senderPhoneNumber);
+            request.addProperty("recipientPhoneNumber", recipientPhoneNumber);
             request.addProperty("dateTimeSent", dateTimeSent);
             request.addProperty("seen", seen);
+            request.addProperty("uploaded", uploaded);
+            request.addProperty("messageUserPegId", messageUserPegId);
+
+
+
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = envelope.getResponse();
+
+
+        }
+        catch (Exception exception)
+        {
+            response="error: "+exception.toString();
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return response.toString();
+
+    }
+
+
+    public String UpdateMessageSeen(String senderPhoneNumber, String recipientPhoneNumber, String seen)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdateMessageSeen";
+        String OPERATION_NAME_GetJsonData = "UpdateMessageSeen";
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
+//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
+        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+        Object response=null;
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("senderPhoneNumber", senderPhoneNumber);
+            request.addProperty("recipientPhoneNumber", recipientPhoneNumber);
+            request.addProperty("seen", seen);
+
 
 
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);

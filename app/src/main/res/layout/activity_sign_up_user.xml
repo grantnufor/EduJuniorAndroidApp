@@ -74,11 +74,12 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="11dp"
-                    android:text="Sign Up As User (Student, Parent, Teacher/Lecturer. Other)"
+                    android:text="Sign Up (Create Account)"
                     android:textColor="@color/Black"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:gravity="center"
+                    android:layout_gravity="center"
                     app:fontFamily="@font/montserrat"/>
 
 
@@ -94,6 +95,7 @@
                     android:text="Your Category:"
                     android:textColor="@color/Red"
                     android:textSize="14dp"
+                    android:visibility="gone"
                     app:fontFamily="@font/montserrat"/>
 
 
@@ -108,6 +110,7 @@
                     android:background="@drawable/spinner_bg"
                     android:layout_marginTop="3dp"
                     android:textColor="@color/Black"
+                    android:visibility="gone"
                     android:textSize="13dp" />
 
 
@@ -303,7 +306,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/red_button"
-                    android:text="Sign Up"
+                    android:text="Sign Up (Create Account)"
                     android:textColor="@color/White"
                     app:fontFamily="@font/montserrat"/>
 
@@ -332,9 +335,9 @@
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     ads:adSize="BANNER"
-                    ads:adUnitId="ca-app-pub-7947549094897909/9626397790" />
+                    ads:adUnitId="ca-app-pub-2954191210352297/6499414227" />
 
 
 

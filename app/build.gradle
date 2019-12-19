@@ -10,7 +10,7 @@ android {
         applicationId "org.landoria.mac.edujunior"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 18
+        versionCode 25
         versionName "1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
@@ -22,6 +22,20 @@ android {
         }
     }
     buildToolsVersion '28.0.3'
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+
+    }
+
+    useLibrary 'org.apache.http.legacy'
 
 }
 
@@ -44,8 +58,11 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.1.0'
     implementation 'com.google.firebase:firebase-messaging:20.0.0'
     implementation 'com.google.android.gms:play-services-ads:18.2.0'
+//    implementation 'com.google.firebase:firebase-admin:6.10.0'
     implementation files('libs/picasso-2.5.2.jar')
     implementation 'com.android.support:multidex:1.0.3'
+    implementation files('libs/connectionclass-1.0.1.jar')
+
 }
 
 

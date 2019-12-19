@@ -374,7 +374,7 @@
                         android:id="@+id/buttonResultManagerTeacherSave"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
-                        android:layout_weight="35"
+                        android:layout_weight="50"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
                         android:layout_marginBottom="20dp"
@@ -388,7 +388,7 @@
                         android:id="@+id/buttonResultManagerTeacherUpdate"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
-                        android:layout_weight="40"
+                        android:layout_weight="50"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
                         android:layout_marginBottom="20dp"
@@ -397,39 +397,40 @@
                         android:text="Update"
                         android:textColor="@color/White" />
 
-                    <Button
-                        android:id="@+id/buttonResultManagerTeacherCancel"
-                        android:layout_width="0dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="35"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginBottom="20dp"
-                        android:textSize="14dp"
-                        android:background="@drawable/dark_red_button"
-                        android:text="Cancel"
-                        android:textColor="@color/White" />
+<!--                    <Button-->
+<!--                        android:id="@+id/buttonResultManagerTeacherCancel"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_weight="35"-->
+<!--                        android:layout_marginLeft="5dp"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:layout_marginBottom="20dp"-->
+<!--                        android:textSize="14dp"-->
+<!--                        android:background="@drawable/dark_red_button"-->
+<!--                        android:text="Cancel"-->
+<!--                        android:textColor="@color/White" />-->
 
 
-                    <TextView
-                        android:id="@+id/textViewSelectedValueResultManagerTeacher"
-                        android:layout_width="30dp"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_weight="100"
-                        android:width="0dp"
-                        android:visibility="invisible"
-                        android:text=""
-                        android:textColor="@color/GreenYellow"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:textSize="13dp" />
+
 
 
 
 
                 </LinearLayout>
 
+                <TextView
+                    android:id="@+id/textViewSelectedValueResultManagerTeacher"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="100"
+                    android:width="0dp"
+                    android:visibility="invisible"
+                    android:text=""
+                    android:textColor="@color/GreenYellow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="13dp" />
 
                 <WebView
                     android:id="@+id/webviewSmsResultManagerTeacher"

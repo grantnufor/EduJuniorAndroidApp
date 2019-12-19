@@ -144,20 +144,17 @@
         <item>Select Category</item>
         <item>My School</item>
         <item>Parents of Children in my class</item>
-        <item>Others</item>
     </string-array>
 
     <string-array name="parent_recipient_category_array">
         <item>Select Category</item>
         <item>School of Child</item>
         <item>Teacher of Child\'s Class</item>
-        <item>Others</item>
     </string-array>
     <string-array name="school_recipient_category_array">
         <item>Select Category</item>
         <item>All Teachers</item>
         <item>All Parents of Children in School</item>
-        <item>Others</item>
     </string-array>
     <string-array name="day_array">
         <item>Day</item>
@@ -346,6 +343,8 @@
         <item>Wema Bank</item>
         <item>Zenith Bank</item>
     </string-array>
+    <string name="title_activity_comm_box">CommBoxActivity</string>
+    <string name="title_activity_comm_box_home">CommBoxHomeActivity</string>
 
 </resources>
 

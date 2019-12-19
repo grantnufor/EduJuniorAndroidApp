@@ -181,7 +181,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/red_button"
-                    android:text="Login"
+                    android:text="Sign In (Login)"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
@@ -228,6 +228,9 @@
                     app:fontFamily="@font/montserrat" />
 
 
+
+
+
                 <Button
                     android:id="@+id/btnLoginSignUpSchool"
                     android:layout_width="fill_parent"
@@ -254,9 +257,9 @@
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="-140dp"
+                    android:layout_marginTop="-110dp"
                     ads:adSize="BANNER"
-                    ads:adUnitId="ca-app-pub-7947549094897909/9626397790" />
+                    ads:adUnitId="ca-app-pub-2954191210352297/6499414227" />
 
 
 

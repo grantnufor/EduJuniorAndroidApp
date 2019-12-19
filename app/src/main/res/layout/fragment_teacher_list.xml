@@ -394,7 +394,7 @@
                                             android:hint="First Name"
                                             android:paddingLeft="10dp"
                                             android:paddingRight="10dp"
-                                            android:textSize="12dp"
+                                            android:textSize="14dp"
                                             android:textColor="@color/Black"
                                             android:textCursorDrawable="@null"
                                             android:layout_below="@+id/textView4" />
@@ -438,7 +438,7 @@
                                             android:hint="Other Names"
                                             android:paddingLeft="10dp"
                                             android:paddingRight="10dp"
-                                            android:textSize="12dp"
+                                            android:textSize="14dp"
                                             android:textColor="@color/Black"
                                             android:textCursorDrawable="@null"
                                             android:layout_below="@+id/textView4" />
@@ -476,7 +476,7 @@
                                             android:hint="Last Name"
                                             android:paddingLeft="10dp"
                                             android:paddingRight="10dp"
-                                            android:textSize="12dp"
+                                            android:textSize="14dp"
                                             android:textColor="@color/Black"
                                             android:textCursorDrawable="@null"
                                             android:layout_below="@+id/textView4" />
@@ -515,7 +515,7 @@
                                             android:hint="Home Address"
                                             android:paddingLeft="10dp"
                                             android:paddingRight="10dp"
-                                            android:textSize="12dp"
+                                            android:textSize="14dp"
                                             android:textColor="@color/Black"
                                             android:textCursorDrawable="@null"
                                             android:layout_below="@+id/textView4" />
@@ -554,7 +554,7 @@
                                             android:hint="Phone Number"
                                             android:paddingLeft="10dp"
                                             android:paddingRight="10dp"
-                                            android:textSize="12dp"
+                                            android:textSize="14dp"
                                             android:textColor="@color/Black"
                                             android:textCursorDrawable="@null"
                                             android:layout_below="@+id/textView4" />
@@ -592,7 +592,7 @@
                                             android:hint="Email Address"
                                             android:paddingLeft="10dp"
                                             android:paddingRight="10dp"
-                                            android:textSize="12dp"
+                                            android:textSize="14dp"
                                             android:textColor="@color/Black"
                                             android:textCursorDrawable="@null"
                                             android:layout_below="@+id/textView4" />
@@ -635,7 +635,7 @@
                                             android:hint="Password"
                                             android:paddingLeft="10dp"
                                             android:paddingRight="10dp"
-                                            android:textSize="12dp"
+                                            android:textSize="14dp"
                                             android:textColor="@color/Black"
                                             android:textCursorDrawable="@null"
                                             android:layout_below="@+id/textView4" />
@@ -946,7 +946,7 @@
                                             android:hint="Certificate"
                                             android:paddingLeft="10dp"
                                             android:paddingRight="10dp"
-                                            android:textSize="12dp"
+                                            android:textSize="14dp"
                                             android:textColor="@color/Black"
                                             android:textCursorDrawable="@null"
                                             android:layout_below="@+id/textView4" />
@@ -988,7 +988,7 @@
                                             android:hint="Designation"
                                             android:paddingLeft="10dp"
                                             android:paddingRight="10dp"
-                                            android:textSize="12dp"
+                                            android:textSize="14dp"
                                             android:textColor="@color/Red"
                                             android:textCursorDrawable="@null"
                                             android:layout_below="@+id/textView4" />

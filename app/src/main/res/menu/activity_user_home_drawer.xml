@@ -16,10 +16,10 @@
             android:title="Profile" />
 
         <item
-            android:id="@+id/nav_user_results"
+            android:id="@+id/nav_user_cbt"
             android:icon="@drawable/result_icon"
             android:state_checked="true"
-            android:title="Results" />
+            android:title="CBT (Computer Based Tests)" />
 
 
         <item

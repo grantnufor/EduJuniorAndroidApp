@@ -30,6 +30,34 @@
                 android:orientation="vertical">
 
 
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adViewTeacherProfile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-7947549094897909/9626397790" />
+
+
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Your Profile -"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="italic"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/Black"
+                    android:layout_marginTop="10dp"/>
 
 
 
@@ -53,7 +81,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/spinner_bg"
                     android:textColor="@color/Black" />
 
@@ -79,7 +107,7 @@
 
 
                     <EditText
-                        android:id="@+id/txtAddTeacherFirstName"
+                        android:id="@+id/txtTeacherProfileFirstName"
                         android:layout_width="fill_parent"
                         android:layout_height="50dp"
                         android:layout_marginTop="11dp"
@@ -91,7 +119,7 @@
                         android:hint="First Name"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textSize="10dp"
+                        android:textSize="14dp"
                         android:textColor="@color/Black"
                         android:textCursorDrawable="@null"
                         android:layout_below="@+id/textView4" />
@@ -123,7 +151,7 @@
 
 
                     <EditText
-                        android:id="@+id/txtAddTeacherOtherNames"
+                        android:id="@+id/txtTeacherProfileOtherNames"
                         android:layout_width="fill_parent"
                         android:layout_height="50dp"
                         android:layout_marginTop="11dp"
@@ -135,7 +163,7 @@
                         android:hint="Other Names"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textSize="10dp"
+                        android:textSize="14dp"
                         android:textColor="@color/Black"
                         android:textCursorDrawable="@null"
                         android:layout_below="@+id/textView4" />
@@ -161,7 +189,7 @@
 
 
                     <EditText
-                        android:id="@+id/txtAddTeacherLastName"
+                        android:id="@+id/txtTeacherProfileLastName"
                         android:layout_width="fill_parent"
                         android:layout_height="50dp"
                         android:layout_marginTop="11dp"
@@ -173,7 +201,7 @@
                         android:hint="Last Name"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textSize="10dp"
+                        android:textSize="14dp"
                         android:textColor="@color/Black"
                         android:textCursorDrawable="@null"
                         android:layout_below="@+id/textView4" />
@@ -200,7 +228,7 @@
 
 
                     <EditText
-                        android:id="@+id/txtAddTeacherHomeAddress"
+                        android:id="@+id/txtTeacherProfileHomeAddress"
                         android:layout_width="fill_parent"
                         android:layout_height="90dp"
                         android:layout_marginTop="11dp"
@@ -212,7 +240,7 @@
                         android:hint="Home Address"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textSize="10dp"
+                        android:textSize="14dp"
                         android:textColor="@color/Black"
                         android:textCursorDrawable="@null"
                         android:layout_below="@+id/textView4" />
@@ -239,7 +267,7 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:id="@+id/txtAddTeacherPhoneNumber"
+                        android:id="@+id/txtTeacherProfilePhoneNumber"
                         android:layout_width="fill_parent"
                         android:layout_height="50dp"
                         android:layout_marginTop="11dp"
@@ -251,7 +279,7 @@
                         android:hint="Phone Number"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textSize="10dp"
+                        android:textSize="14dp"
                         android:textColor="@color/Black"
                         android:textCursorDrawable="@null"
                         android:layout_below="@+id/textView4" />
@@ -277,7 +305,7 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:id="@+id/txtAddTeacherEmailAddress"
+                        android:id="@+id/txtTeacherProfileEmailAddress"
                         android:layout_width="fill_parent"
                         android:layout_height="50dp"
                         android:layout_marginTop="11dp"
@@ -289,7 +317,7 @@
                         android:hint="Email Address"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textSize="10dp"
+                        android:textSize="14dp"
                         android:textColor="@color/Black"
                         android:textCursorDrawable="@null"
                         android:layout_below="@+id/textView4" />
@@ -319,7 +347,7 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:id="@+id/txtAddTeacherPassword"
+                        android:id="@+id/txtTeacherProfilePassword"
                         android:enabled="true"
                         android:layout_width="fill_parent"
                         android:layout_height="50dp"
@@ -328,11 +356,11 @@
                         android:layout_marginRight="10dp"
                         android:cursorVisible="true"
                         android:ems="10"
-                        android:inputType="textPassword"
+                        android:inputType="text"
                         android:hint="Password"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textSize="10dp"
+                        android:textSize="14dp"
                         android:textColor="@color/Black"
                         android:textCursorDrawable="@null"
                         android:layout_below="@+id/textView4" />
@@ -376,7 +404,7 @@
                             android:text="Day"/>
 
                         <Spinner
-                            android:id="@+id/spinnerAddTeacherDOBDay"
+                            android:id="@+id/spinnerTeacherProfileDOBDay"
                             android:layout_width="100dp"
                             android:layout_height="30dp"
                             android:layout_alignParentLeft="true"
@@ -409,7 +437,7 @@
                             android:text="Month"/>
 
                         <Spinner
-                            android:id="@+id/spinnerAddTeacherDOBMonth"
+                            android:id="@+id/spinnerTeacherProfileDOBMonth"
                             android:layout_width="100dp"
                             android:layout_height="30dp"
                             android:layout_alignParentLeft="true"
@@ -443,7 +471,7 @@
                             android:text="Year"/>
 
                         <Spinner
-                            android:id="@+id/spinnerAddTeacherDOBYear"
+                            android:id="@+id/spinnerTeacherProfileDOBYear"
                             android:layout_width="100dp"
                             android:layout_height="30dp"
                             android:layout_alignParentLeft="true"
@@ -473,7 +501,7 @@
                     android:layout_marginLeft="10dp"/>
 
                 <Spinner
-                    android:id="@+id/spinnerAddTeacherSex"
+                    android:id="@+id/spinnerTeacherProfileSex"
                     android:layout_width="200dp"
                     android:layout_height="30dp"
                     android:layout_alignParentLeft="true"
@@ -534,7 +562,7 @@
                             android:text="Day"/>
 
                         <Spinner
-                            android:id="@+id/spinnerAddTeacherDOADay"
+                            android:id="@+id/spinnerTeacherProfileDOADay"
                             android:layout_width="100dp"
                             android:layout_height="30dp"
                             android:layout_alignParentLeft="true"
@@ -564,7 +592,7 @@
                             android:text="Month"/>
 
                         <Spinner
-                            android:id="@+id/spinnerAddTeacherDOAMonth"
+                            android:id="@+id/spinnerTeacherProfileDOAMonth"
                             android:layout_width="100dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="10dp"
@@ -595,7 +623,7 @@
                             android:text="Year"/>
 
                         <Spinner
-                            android:id="@+id/spinnerAddTeacherDOAYear"
+                            android:id="@+id/spinnerTeacherProfileDOAYear"
                             android:layout_width="100dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="10dp"
@@ -630,7 +658,7 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:id="@+id/txtAddTeacherCertificate"
+                        android:id="@+id/txtTeacherProfileCertificate"
                         android:enabled="true"
                         android:layout_width="fill_parent"
                         android:layout_height="50dp"
@@ -672,7 +700,7 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:id="@+id/txtAddTeacherDesignation"
+                        android:id="@+id/txtTeacherProfileDesignation"
                         android:enabled="true"
                         android:layout_width="fill_parent"
                         android:layout_height="50dp"
@@ -685,7 +713,7 @@
                         android:hint="Designation"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textSize="10dp"
+                        android:textSize="14dp"
                         android:textColor="@color/Red"
                         android:textCursorDrawable="@null"
                         android:layout_below="@+id/textView4" />
@@ -694,15 +722,15 @@
 
 
 
-                <TextView
-                    android:id="@+id/textViewClassAssignmentTag"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16dp"
-                    android:textColor="@color/Red"
-                    android:text="Please select assigned Class Rooms"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
+<!--                <TextView-->
+<!--                    android:id="@+id/textViewClassAssignmentTagTeacherProfile"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/Red"-->
+<!--                    android:text="Please select assigned Class Rooms"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginLeft="10dp"/>-->
 
 
                 <!--<Spinner-->
@@ -718,7 +746,7 @@
                 <!--android:textColor="@color/Black" />-->
 
                 <LinearLayout
-                    android:id="@+id/linearLayoutAddTeacherClassRooms"
+                    android:id="@+id/linearLayoutTeacherProfileClassRooms"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -738,7 +766,7 @@
 
 
                     <Button
-                        android:id="@+id/btnRegisterTeacher"
+                        android:id="@+id/btnSaveTeacherProfile"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_weight="60"

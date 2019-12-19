@@ -97,7 +97,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/red_button"
-                    android:text="Sign Up"
+                    android:text="Sign Up (Create Account)"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="5dp"
@@ -128,7 +128,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/dark_blue_button"
-                    android:text="Sign In"
+                    android:text="Sign In (Login)"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="5dp"
@@ -152,9 +152,9 @@
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="30dp"
                     ads:adSize="BANNER"
-                    ads:adUnitId="ca-app-pub-7947549094897909/9626397790" />
+                    ads:adUnitId="ca-app-pub-2954191210352297/6499414227" />
 
 
 <!--                <com.google.android.gms.ads.doubleclick.PublisherAdView-->
