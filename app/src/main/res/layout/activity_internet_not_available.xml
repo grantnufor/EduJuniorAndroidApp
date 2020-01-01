@@ -28,7 +28,7 @@ tools:context=".InternetNotAvailableActivity">
     android:gravity="center"
     android:textSize="20dp"
     android:textColor="@color/Black"
-    android:text="Opps! Looks like your internet connection is too poor. This app may not work as expected. Please check your connection."
+    android:text="Oops! Looks like your internet connection is too poor. This app may not work as expected. Please check your connection."
     />
 
 

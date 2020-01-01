@@ -219,8 +219,11 @@ public class FirebaseTokenHttpServiceAdapter {
             HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
             httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
 
-            response = (SoapPrimitive) envelope.getResponse();
-            jsonObj = new JSONObject(response.toString());
+            if(!envelope.getResponse().equals(null)) {
+                response = (SoapPrimitive) envelope.getResponse();
+                jsonObj = new JSONObject(response.toString());
+
+            }
 
 //            ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
 //            if(response.toString().length()>0 )
@@ -336,6 +339,45 @@ public class FirebaseTokenHttpServiceAdapter {
             request.addProperty("userCategory", userCategory);
             request.addProperty("userServerId", userServerId);
             request.addProperty("dateCaptured", dateCaptured);
+
+
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = envelope.getResponse();
+
+
+        }
+        catch (Exception exception)
+        {
+            response="error: "+exception.toString();
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return response.toString();
+
+    }
+
+
+
+    public String DeleteFirebaseToken( String id)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/DeleteFirebaseToken";
+        String OPERATION_NAME_GetJsonData = "DeleteFirebaseToken";
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/FirebaseTokenServices.asmx";
+
+        Object response=null;
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("id", id);
 
 
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
