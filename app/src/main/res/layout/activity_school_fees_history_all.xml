@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".SchoolFeesHistoryAllActivity">
+
+<!--<ScrollView-->
+<!--android:id="@+id/login_form"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="fill_parent"-->
+<!--android:layout_alignParentTop="true"-->
+<!--android:layout_alignParentLeft="true"-->
+<!--android:layout_alignParentStart="true">-->
+
+<LinearLayout
+    android:id="@+id/linearLayoutSchoolFeesPupilList"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="5dp"
+    android:background="@color/Black"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="- School Fees History -"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/White" />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/textViewSchoolNameSchoolFeesPupilList"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text=""-->
+        <!--                android:layout_marginLeft="0dp"-->
+        <!--                android:layout_marginStart="10dp"-->
+        <!--                android:textSize="14dp"-->
+        <!--                android:fontFamily="sans-serif-smallcaps"-->
+        <!--                android:textColor="@color/White"-->
+        <!--                android:layout_alignParentLeft="true" />-->
+
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/lblParentInfoLabel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=""-->
+        <!--android:layout_marginLeft="0dp"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:textSize="10dp"-->
+        <!--android:textColor="@color/White"-->
+        <!--android:layout_alignParentLeft="true" />-->
+
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/lblParentInfo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=""-->
+        <!--android:layout_marginLeft="0dp"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:textSize="10dp"-->
+        <!--android:textColor="@color/White"-->
+        <!--android:layout_alignParentLeft="true" />-->
+
+
+
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <!--<Button-->
+            <!--android:id="@+id/buttonSchoolFeesAddANewResult"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@color/SteelBlue"-->
+            <!--android:layout_weight="40"-->
+            <!--android:text="Add a New Result"-->
+            <!--android:textColor="@color/White"-->
+            <!--android:textSize="12dp" />-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="100"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    app:srcCompat="@drawable/info_red" />
+
+
+                <TextView
+                    android:id="@+id/lbl556"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="100"
+                    android:width="0dp"
+                    android:text="Narrow your search based on the dates of payment."
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:paddingRight="10dp"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl87"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="100"
+                    android:width="0dp"
+                    android:text="Day From"
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSchoolFeesHistoryAllSearchFromDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/spinner_bg"
+                    android:textColor="@color/Black" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:paddingRight="10dp"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl88"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="100"
+                    android:width="0dp"
+                    android:text="Month From"
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSchoolFeesHistoryAllSearchFromMonth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/spinner_bg"
+                    android:textColor="@color/Black" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:paddingRight="10dp"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl89"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="100"
+                    android:width="0dp"
+                    android:text="Year From"
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp" />
+
+
+                <Spinner
+                    android:id="@+id/spinnerSchoolFeesHistoryAllSearchFromYear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/spinner_bg"
+                    android:textColor="@color/Black" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:paddingRight="10dp"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl90"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="100"
+                    android:width="0dp"
+                    android:text="Day To"
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSchoolFeesHistoryAllSearchToDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/spinner_bg"
+                    android:textColor="@color/Black" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:paddingRight="10dp"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl91"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="100"
+                    android:width="0dp"
+                    android:text="Month To"
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp" />
+
+
+                <Spinner
+                    android:id="@+id/spinnerSchoolFeesHistoryAllSearchToMonth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/spinner_bg"
+                    android:textColor="@color/Black" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:paddingRight="10dp"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl92"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="100"
+                    android:width="0dp"
+                    android:text="Year To"
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSchoolFeesHistoryAllSearchToYear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/spinner_bg"
+                    android:textColor="@color/Black" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/txtAllListSearch"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="40"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/White"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:inputType="textLongMessage"
+                android:hint="Search Pupil"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/Black"
+                android:textCursorDrawable="@null"
+                android:layout_below="@+id/textView4" />
+
+
+            <Button
+                android:id="@+id/buttonSchoolFeesHistoryAllSearch"
+                android:layout_width="0dp"
+                android:layout_height="31dp"
+                android:layout_weight="25"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/SteelBlue"
+                android:text="Search"
+                android:textColor="@color/White"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tabSchoolFeesPupilList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView6"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:text="Existing Classes below"-->
+        <!--android:textColor="@color/Black"-->
+        <!--android:textSize="10dp"-->
+        <!--android:textStyle="bold" />-->
+
+
+        <!--<ScrollView-->
+        <!--android:id="@+id/scrollViewClassList"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="700dp">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/Green"-->
+        <!--android:weightSum="1">-->
+
+
+        <ListView
+            android:id="@+id/listViewSchoolFeesHistoryAllExistingFees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="5.0dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+<!--</ScrollView>-->
+
+</FrameLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="match_parent"
+tools:context=".PostNotificationsActivity"
+android:paddingLeft="20dp"
+android:paddingRight="20dp"
+android:orientation="vertical">
+
+
+<TextView
+    android:id="@+id/textViewNotificationTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="SEND NOTIFICATION TO ALL USERS"
+    android:textSize="24dp"
+    android:layout_marginTop="50dp"/>
+
+
+<TextView
+    android:id="@+id/textViewNotificationMessage"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:text="Enter Message Below." />
+
+
+    <EditText
+        android:id="@+id/editTextAdminNotificationType"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_bg"
+        android:cursorVisible="true"
+        android:drawableBottom="@color/Brown"
+        android:ems="10"
+        android:hint="Notification Type Here"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/Black"
+        android:textCursorDrawable="@null"
+        android:textSize="14dp"
+        app:fontFamily="@font/montserrat" />
+
+
+    <EditText
+        android:id="@+id/editTextAdminNotificationMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="171dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_bg"
+        android:cursorVisible="true"
+        android:drawableBottom="@color/Brown"
+        android:ems="10"
+        android:hint="Message Heres"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/Black"
+        android:textCursorDrawable="@null"
+        android:textSize="14dp"
+        app:fontFamily="@font/montserrat" />
+
+
+<Button
+    android:id="@+id/buttonAdminPostNotification"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/dark_red_button"
+    android:text="Post Notification"
+    android:textColor="@color/White" />
+
+
+
+</LinearLayout>

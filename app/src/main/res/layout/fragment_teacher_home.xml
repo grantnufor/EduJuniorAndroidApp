@@ -44,12 +44,12 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop ="30dp"
-                android:paddingBottom="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="30dp"
+                android:paddingTop ="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/layout_rounded_corners_red"
                 android:orientation="vertical">
 
@@ -65,6 +65,45 @@
                     android:textColor="@color/White"
                     android:textSize="15dp"
                     android:textStyle="bold" />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+
+                    <ImageView
+                        android:id="@+id/imageviewTeacherContactMessageCountList"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/mail_icon_red"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/lblTeacherContactMessageCountList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 Message(s) Unread"
+                        android:layout_alignParentTop="true"
+                        android:textColor="@color/Yellow"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="12dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+
+
+
+
+                </LinearLayout>
 
                 <!--<LinearLayout-->
                 <!--android:layout_width="20dp"-->
@@ -195,8 +234,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp">
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -204,9 +243,49 @@
                     android:text="Feeds Here:"
                     android:textColor="@color/White"
                     android:textStyle="bold"
-
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     />
 
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewLoadingTeacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loading Feeds.....please wait"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="3dp"
+                        android:textColor="@color/Red"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        />
+
+
+<!--                    <VideoView-->
+<!--                        android:id="@+id/imageViewLoadingTeacher"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:src="@drawable/ajax_loader"-->
+<!--                        android:visibility="gone">-->
+<!--                        -->
+<!--                        -->
+<!--                    </VideoView>-->
+
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageViewLoadingTeacher"
+                        android:src="@drawable/ajax_loader"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
 
                 <ScrollView
                     android:layout_width="fill_parent"

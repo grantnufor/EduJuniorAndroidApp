@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ParentPupilListActivity">
+
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="0dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPupilList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/Black"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="- Your Kid(s) on EduJunior -"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/White" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/tabParentPupilList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/textViewParentPupilListLoadedCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="0 Pupil Loaded"
+                    android:textColor="@color/Red"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+
+
+                <ListView
+                    android:id="@+id/listViewExistingParentPupils"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:dividerHeight="5.0sp"/>
+
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</FrameLayout>
+
