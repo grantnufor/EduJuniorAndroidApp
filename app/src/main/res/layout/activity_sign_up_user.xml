@@ -74,7 +74,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="11dp"
-                    android:text="Sign Up (Create Account)"
+                    android:text="Sign Up As Student"
                     android:textColor="@color/Black"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -85,33 +85,33 @@
 
 
 
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="11dp"
-                    android:text="Your Category:"
-                    android:textColor="@color/Red"
-                    android:textSize="14dp"
-                    android:visibility="gone"
-                    app:fontFamily="@font/montserrat"/>
+<!--                <TextView-->
+<!--                    android:id="@+id/textView5"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_marginTop="11dp"-->
+<!--                    android:text="Your Category:"-->
+<!--                    android:textColor="@color/Red"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:visibility="visible"-->
+<!--                    app:fontFamily="@font/montserrat"/>-->
 
 
-                <Spinner
-                    android:id="@+id/spinnerSignUpUserCategory"
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/spinner_bg"
-                    android:layout_marginTop="3dp"
-                    android:textColor="@color/Black"
-                    android:visibility="gone"
-                    android:textSize="13dp" />
+<!--                <Spinner-->
+<!--                    android:id="@+id/spinnerSignUpUserCategory"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/spinner_bg"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:textColor="@color/Black"-->
+<!--                    android:visibility="visible"-->
+<!--                    android:textSize="13dp" />-->
 
 
 
@@ -306,7 +306,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/red_button"
-                    android:text="Sign Up (Create Account)"
+                    android:text="Sign Up"
                     android:textColor="@color/White"
                     app:fontFamily="@font/montserrat"/>
 

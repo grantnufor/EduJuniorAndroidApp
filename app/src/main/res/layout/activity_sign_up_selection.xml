@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+tools:context=".SignUpSelectionActivity">
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:src="@drawable/logoblack"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="-40dp"
+    />
+
+
+
+<TextView
+    android:id="@+id/lbl556"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:text="Please select your sign up type."
+    android:textColor="@color/Black"
+    android:fontFamily="@font/montserrat"
+    android:textSize="18dp" />
+
+
+    <Button
+        android:id="@+id/buttonSignUpSelectionSignUpAsStudent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/dark_red_button"
+        android:text="Register as Student"
+        android:textColor="@color/White"
+        android:layout_marginTop="20dp"
+        />
+
+
+<Button
+    android:id="@+id/buttonSignUpSelectionSignUpAsParent"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/dark_red_button"
+    android:text="Register as a Parent"
+    android:textColor="@color/White"
+    android:layout_marginTop="40dp"
+    />
+
+
+
+
+
+<com.google.android.gms.ads.AdView
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adViewMarketerRegConfirmation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="30dp"
+    ads:adSize="BANNER"
+    ads:adUnitId="ca-app-pub-2954191210352297/6499414227"  />
+
+
+</LinearLayout>

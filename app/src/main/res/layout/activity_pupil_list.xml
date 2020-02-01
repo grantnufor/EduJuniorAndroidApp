@@ -19,7 +19,9 @@ tools:context="PupilListActivity">
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="40dp">
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_marginTop="0dp">
 
     <LinearLayout
         android:id="@+id/linearLayoutPupilList"
@@ -217,7 +219,7 @@ tools:context="PupilListActivity">
         android:layout_height="match_parent"
         android:layout_below="@id/linearLayout1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:background="@color/White">
 
 

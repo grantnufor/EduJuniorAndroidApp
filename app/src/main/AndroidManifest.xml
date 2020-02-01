@@ -20,8 +20,13 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/edu_junior_icon"
         android:supportsRtl="false"
-        android:theme="@style/AppTheme">
-        <activity android:name=".TeacherProfileActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SchoolFeesUpdateActivity"></activity>
+        <activity
+            android:name=".SignUpSelectionActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".TeacherProfileActivity" />
         <activity android:name=".SchoolFeesHistoryAllActivity" />
         <activity android:name=".SchoolFeesHistoryPupilActivity" />
         <activity android:name=".SchoolFeesManagerActivity" />
@@ -57,6 +62,7 @@
             android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity
             android:name=".SignUpUserActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity
             android:name=".CheckBackLaterActivity"
@@ -116,6 +122,7 @@
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".SignUpParentActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".SchoolSetupActivity"

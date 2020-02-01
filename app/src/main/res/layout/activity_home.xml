@@ -93,7 +93,7 @@
 
 
                 <Button
-                    android:id="@+id/btnSignUpAsUser"
+                    android:id="@+id/btnSignUp"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/red_button"

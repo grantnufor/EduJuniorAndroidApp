@@ -668,4 +668,44 @@ public class PupilHttpServiceAdapter {
 
     }
 
+
+    public String UpdatePupilDisable(String pupilId, String dateLastUpdated )
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/UpdatePupilDisable";
+        String OPERATION_NAME_GetJsonData = "UpdatePupilDisable";
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PupilServices.asmx";
+//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
+        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+        Object response=null;
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("pupilId", pupilId);
+            request.addProperty("dateLastUpdated", dateLastUpdated);
+
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = envelope.getResponse();
+
+
+        }
+        catch (Exception exception)
+        {
+            response="error: "+exception.toString();
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return response.toString();
+
+    }
+
+
 }
