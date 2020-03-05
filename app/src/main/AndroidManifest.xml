@@ -22,10 +22,13 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SchoolFeesUpdateActivity"></activity>
+        <activity android:name=".SchoolFeeReceiptActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity android:name=".SchoolFeesUpdateActivity" />
         <activity
             android:name=".SignUpSelectionActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TeacherProfileActivity" />
         <activity android:name=".SchoolFeesHistoryAllActivity" />
         <activity android:name=".SchoolFeesHistoryPupilActivity" />

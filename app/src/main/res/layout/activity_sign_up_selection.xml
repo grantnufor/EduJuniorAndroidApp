@@ -26,10 +26,14 @@ tools:context=".SignUpSelectionActivity">
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
-    android:text="Please select your sign up type."
+    android:text="Please select your registration type."
     android:textColor="@color/Black"
     android:fontFamily="@font/montserrat"
     android:textSize="18dp" />
+
+
+
+
 
 
     <Button
@@ -37,7 +41,7 @@ tools:context=".SignUpSelectionActivity">
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:background="@drawable/dark_red_button"
+        android:background="@drawable/dark_blue_button"
         android:text="Register as Student"
         android:textColor="@color/White"
         android:layout_marginTop="20dp"
@@ -49,12 +53,37 @@ tools:context=".SignUpSelectionActivity">
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:gravity="center"
-    android:background="@drawable/dark_red_button"
+    android:background="@drawable/steel_blue_button"
     android:text="Register as a Parent"
     android:textColor="@color/White"
-    android:layout_marginTop="40dp"
+    android:layout_marginTop="20dp"
     />
 
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonSignUpSelectionSignUpAsSchool"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:background="@drawable/steel_blue_button"-->
+<!--        android:text="Register as a School"-->
+<!--        android:textColor="@color/White"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        />-->
+
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonRegisterForEAR"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:background="@drawable/red_button"-->
+<!--        android:text="Register for EAR (EduJunior Academic Reward) Competition"-->
+<!--        android:textColor="@color/White"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        />-->
 
 
 

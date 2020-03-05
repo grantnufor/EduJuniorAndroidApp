@@ -64,14 +64,14 @@
         android:title="Pupils" />
 
     <item
-        android:id="@+id/nav_back_to_home_school"
-        android:icon="@drawable/backicon"
-        android:title="Back to Home" />
-
-    <item
-        android:id="@+id/nav_logout_school_setup"
+        android:id="@+id/nav_exit_school_setup"
         android:icon="@drawable/logout"
-        android:title="Logout" />
+        android:title="Exit School Setup" />
+
+<!--    <item-->
+<!--        android:id="@+id/nav_logout_school_setup"-->
+<!--        android:icon="@drawable/logout"-->
+<!--        android:title="Logout" />-->
 
 
 </menu>

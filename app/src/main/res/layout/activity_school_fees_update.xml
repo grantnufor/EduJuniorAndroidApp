@@ -17,7 +17,7 @@ tools:context=".SchoolFeesUpdateActivity">
 
 
     <LinearLayout
-        android:id="@+id/linearLayoutResultManagerPupilList"
+        android:id="@+id/linearLayoutSchoolFeesUpdate"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingRight="5dp"
@@ -29,7 +29,7 @@ tools:context=".SchoolFeesUpdateActivity">
             android:id="@+id/textView22"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="- Pay School Fees -"
+            android:text="- Update School Fees -"
             android:layout_marginLeft="0dp"
             android:layout_marginStart="10dp"
             android:textSize="18dp"
@@ -68,7 +68,7 @@ tools:context=".SchoolFeesUpdateActivity">
 
 
                 <TextView
-                    android:id="@+id/textViewSelectedStudentResultManager"
+                    android:id="@+id/textViewSchoolFeesUpdateSelectedStudent"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -125,7 +125,7 @@ tools:context=".SchoolFeesUpdateActivity">
                         android:layout_marginLeft="0dp"/>
 
                     <Spinner
-                        android:id="@+id/spinnerSchoolFeesManagerSession"
+                        android:id="@+id/spinnerSchoolFeesUpdateSession"
                         android:layout_width="fill_parent"
                         android:layout_height="30dp"
                         android:layout_marginRight="0dp"
@@ -151,7 +151,7 @@ tools:context=".SchoolFeesUpdateActivity">
                         android:layout_marginLeft="0dp"/>
 
                     <Spinner
-                        android:id="@+id/spinnerSchoolFeesManagerTerm"
+                        android:id="@+id/spinnerSchoolFeesUpdateTerm"
                         android:layout_width="fill_parent"
                         android:layout_height="30dp"
                         android:background="@drawable/spinner_bg"
@@ -200,7 +200,7 @@ tools:context=".SchoolFeesUpdateActivity">
 
 
                     <TextView
-                        android:id="@+id/textViewSchoolFeeManageInfo"
+                        android:id="@+id/textViewSchoolFeesUpdateInfo"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
@@ -241,7 +241,7 @@ tools:context=".SchoolFeesUpdateActivity">
 
 
                 <EditText
-                    android:id="@+id/editTextSchoolFeesManagerAmountToPay"
+                    android:id="@+id/editTextSchoolFeesUpdateAmountToPay"
                     android:layout_width="fill_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="11dp"
@@ -298,7 +298,7 @@ tools:context=".SchoolFeesUpdateActivity">
                         android:text="Day"/>
 
                     <Spinner
-                        android:id="@+id/spinnerSchoolFeesManagerTSDDay"
+                        android:id="@+id/spinnerSchoolFeesUpdateTSDDay"
                         android:layout_width="100dp"
                         android:layout_height="30dp"
                         android:layout_alignParentLeft="true"
@@ -328,7 +328,7 @@ tools:context=".SchoolFeesUpdateActivity">
                         android:text="Month"/>
 
                     <Spinner
-                        android:id="@+id/spinnerSchoolFeesManagerTSDMonth"
+                        android:id="@+id/spinnerSchoolFeesUpdateTSDMonth"
                         android:layout_width="100dp"
                         android:layout_height="30dp"
                         android:layout_alignParentLeft="true"
@@ -359,7 +359,7 @@ tools:context=".SchoolFeesUpdateActivity">
                         android:text="Year"/>
 
                     <Spinner
-                        android:id="@+id/spinnerSchoolFeesManagerTSDYear"
+                        android:id="@+id/spinnerSchoolFeesUpdateTSDYear"
                         android:layout_width="100dp"
                         android:layout_height="30dp"
                         android:layout_alignParentLeft="true"
@@ -384,7 +384,7 @@ tools:context=".SchoolFeesUpdateActivity">
 
 
                 <EditText
-                    android:id="@+id/editTextSchoolFeesManagerAmountPaid"
+                    android:id="@+id/editTextSchoolFeesUpdateAmountPaid"
                     android:layout_width="fill_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="11dp"
@@ -416,7 +416,7 @@ tools:context=".SchoolFeesUpdateActivity">
 
 
                 <EditText
-                    android:id="@+id/editTextSchoolFeesManagerBalance"
+                    android:id="@+id/editTextSchoolFeesUpdateBalance"
                     android:layout_width="fill_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="11dp"
@@ -508,7 +508,7 @@ tools:context=".SchoolFeesUpdateActivity">
 
 
                 <Button
-                    android:id="@+id/buttonSchoolFeesManagerSave"
+                    android:id="@+id/buttonSchoolFeesUpdateSave"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight="49"
@@ -521,7 +521,7 @@ tools:context=".SchoolFeesUpdateActivity">
                     android:textColor="@color/White" />
 
                 <Button
-                    android:id="@+id/buttonSchoolFeesManagerCancel"
+                    android:id="@+id/buttonSchoolFeesUpdateCancel"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight="49"
@@ -549,7 +549,7 @@ tools:context=".SchoolFeesUpdateActivity">
                     android:textSize="13dp" />
 
                 <TextView
-                    android:id="@+id/textViewPayingBalanceSchoolFeeManager"
+                    android:id="@+id/textViewPayingBalanceSchoolFeesUpdate"
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"

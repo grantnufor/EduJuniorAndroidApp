@@ -11,9 +11,9 @@
             android:title="App Home/Feeds" />
 
         <item
-            android:id="@+id/nav_result_manager_logout"
+            android:id="@+id/nav_result_manager_exit"
             android:icon="@drawable/logout"
-            android:title="Logout" />
+            android:title="Exit Result Manager" />
 
     </group>
 

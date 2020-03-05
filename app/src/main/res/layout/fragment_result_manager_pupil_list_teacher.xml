@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="fill_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ResultManagerPupilListTeacherFragment">
 
@@ -22,17 +22,17 @@
             android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/textViewSchoolNameResultManagerPupilListTeacher"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:layout_marginLeft="0dp"
-                android:layout_marginStart="10dp"
-                android:textSize="14dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:textColor="@color/White"
-                android:layout_alignParentLeft="true" />
+<!--            <TextView-->
+<!--                android:id="@+id/textViewSchoolNameResultManagerPupilListTeacher"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=""-->
+<!--                android:layout_marginLeft="0dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:textSize="14dp"-->
+<!--                android:fontFamily="sans-serif-smallcaps"-->
+<!--                android:textColor="@color/White"-->
+<!--                android:layout_alignParentLeft="true" />-->
 
 
 
@@ -114,7 +114,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_weight="100"
                         android:width="0dp"
-                        android:text="Select a Pupil from the Existing Pupils List below to Manage Results"
+                        android:text="Select a class from your authorized classes or enter a pupil name on the textbox and click on the search button, then click on 'VIEW AND MANAGE RESULT' button of the desired Pupil/Student to Manage Results"
                         android:textColor="@color/White"
                         android:layout_marginLeft="10dp"
                         android:textSize="12dp" />
@@ -202,7 +202,37 @@
             </LinearLayout>
 
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewLoadingResultManagerPupilListTeacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading required data.....please wait"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/Red"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewLoadingResultManagerPupilList"
+                    android:src="@drawable/ajax_loader"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
         </LinearLayout>
+
+
+
+
 
 
         <LinearLayout
@@ -212,6 +242,9 @@
             android:layout_alignParentTop="true"
             android:background="@color/White"
             android:orientation="vertical">
+
+
+
 
 
             <TextView

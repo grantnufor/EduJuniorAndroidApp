@@ -349,7 +349,7 @@ tools:context="ParentListActivity">
         android:layout_below="@id/linearLayout1"
         android:layout_centerHorizontal="true"
         android:background="@color/White"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="0dp">
 
 
         <LinearLayout

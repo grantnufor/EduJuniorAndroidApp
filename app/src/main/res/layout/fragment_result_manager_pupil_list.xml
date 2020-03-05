@@ -71,31 +71,29 @@
 
             <!--</LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:weightSum="100"
-                android:orientation="horizontal">
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:weightSum="100"-->
+<!--                android:orientation="horizontal">-->
 
-                <Button
-                    android:id="@+id/buttonResultManagerAddANewResult"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/steel_blue_button"
-                    android:layout_weight="40"
-                    android:text="Add a New Result"
-                    android:textColor="@color/White"
-                    android:textSize="12dp" />
+<!--                <Button-->
+<!--                    android:id="@+id/buttonResultManagerAddANewResult"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:background="@drawable/steel_blue_button"-->
+<!--                    android:layout_weight="40"-->
+<!--                    android:text="Add a New Result"-->
+<!--                    android:textColor="@color/White"-->
+<!--                    android:textSize="12dp" />-->
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_weight="60"
-                    android:weightSum="100"
                     android:layout_marginTop="10dp">
 
                     <ImageView
@@ -114,7 +112,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_weight="100"
                         android:width="0dp"
-                        android:text="Select a Pupil from the Existing Pupils List below to Manage Results"
+                        android:text="Select a class or enter a pupil name on the textbox and click on the search button, then click on 'VIEW AND MANAGE RESULT' button of the desired Pupil/Student to Manage Results"
                         android:textColor="@color/White"
                         android:layout_marginLeft="10dp"
                         android:textSize="12dp" />
@@ -125,7 +123,7 @@
 
 
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
 
             <LinearLayout
@@ -214,11 +212,24 @@
             android:orientation="vertical">
 
 
+            <TextView
+                android:id="@+id/textViewPupilListLoadedCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:text="0 Pupil Loaded"
+                android:textColor="@color/Red"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
 
             <ListView
                 android:id="@+id/listViewResultManagerExistingPupils"
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
                 android:dividerHeight="5.5dp" />
 
 

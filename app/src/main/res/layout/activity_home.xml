@@ -26,9 +26,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             tools:context=".SplashScreenActivity">
@@ -71,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:text="Welcome to EduJunior!"
                     app:fontFamily="@font/montserrat"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="-40dp"
                     android:textStyle="bold"
                     android:textSize="23dp"
                     android:gravity="center"
@@ -79,16 +77,38 @@
 
                     />
 
-
+<!--                <LinearLayout-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:src="@drawable/schoolkids"/>
+                    android:layout_height="300dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/schoolkids" />
+
+<!--                </LinearLayout>-->
 
 
 
 
+<!--                <Button-->
+<!--                    android:id="@+id/btnRegisterForEAR"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/red_button"-->
+<!--                    android:text="Register for EAR (EduJunior Academic Reward) Competition"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:textColor="@color/White"-->
+<!--                    android:layout_marginTop="-40dp"-->
+<!--                    android:visibility="visible"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    app:fontFamily="@font/montserrat"/>-->
 
 
 
@@ -96,8 +116,8 @@
                     android:id="@+id/btnSignUp"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/red_button"
-                    android:text="Sign Up (Create Account)"
+                    android:background="@drawable/steel_blue_button"
+                    android:text="Create an EduJunior Account"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="5dp"
@@ -107,6 +127,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     app:fontFamily="@font/montserrat"/>
+
 
 
 
@@ -128,7 +149,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/dark_blue_button"
-                    android:text="Sign In (Login)"
+                    android:text="Login"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="5dp"
