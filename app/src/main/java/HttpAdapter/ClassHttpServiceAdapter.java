@@ -251,6 +251,73 @@ public class ClassHttpServiceAdapter {
 
 
 
+    public ArrayList<JSONObject> GetClassByClassNameWildCardAndSchoolId(String className, String schoolId)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetClassByClassNameWildCardAndSchoolId";
+        String OPERATION_NAME_GetJsonData = "GetClassByClassNameWildCardAndSchoolId";
+
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ClassServices.asmx";
+
+        SoapPrimitive response=null;
+
+        ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
+
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("className", className);
+            request.addProperty("schoolId", schoolId);
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = (SoapPrimitive) envelope.getResponse();
+
+
+
+
+            if(response.toString().length()>0 )
+            {
+                //String responseModified = "["+response+"]";
+
+                JSONArray aryJSONStrings  = new JSONArray(response.toString());
+                JSONObject jsonObj = new JSONObject();
+
+
+
+                for(int i=0; i<aryJSONStrings.length(); i++) {
+
+                    jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+
+                    obj.add(jsonObj);
+
+                }
+
+            }
+            else
+            {
+                obj = null;
+            }
+
+        }
+        catch (Exception exception)
+        {
+            obj = null;
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return obj;
+
+    }
+
+
+
 
     public String AddClass(String classIdLocal, String className, String levelId, String schoolId, String uploaded)
     {
@@ -268,7 +335,7 @@ public class ClassHttpServiceAdapter {
         try
         {
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
-            request.addProperty("clasIdLocal", classIdLocal);
+            request.addProperty("classIdLocal", classIdLocal);
             request.addProperty("className", className);
             request.addProperty("levelId", levelId);
             request.addProperty("schoolId", schoolId);
@@ -339,7 +406,7 @@ public class ClassHttpServiceAdapter {
         {
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
             request.addProperty("classId", classId);
-            request.addProperty("clasIdLocal", classIdLocal);
+            request.addProperty("classIdLocal", classIdLocal);
             request.addProperty("className", className);
             request.addProperty("levelId", levelId);
             request.addProperty("schoolId", schoolId);

@@ -78,6 +78,60 @@ public class LevelHttpServiceAdapter {
     }
 
 
+//    public JSONObject GetLevelByLevelNameAndSchoolId(String levelName, String schoolId)
+//    {
+////        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByUserNameAndPassword";
+//        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetLevelByLevelNameAndSchoolId";
+//        String OPERATION_NAME_GetJsonData = "GetLevelByLevelNameAndSchoolId";
+//
+//        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+//        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LevelServices.asmx";
+//        SoapObject response=null;
+//
+//        JSONObject jsonObj = new JSONObject();
+//
+//        try
+//        {
+//            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+//            request.addProperty("levelName", levelName);
+//            request.addProperty("schoolId", schoolId);
+//            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+//            envelope.dotNet = true;
+//            envelope.setOutputSoapObject(request);
+//            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+//            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+//
+//
+//
+//            response = (SoapObject) envelope.getResponse();
+//            if(!response.equals("")) {
+//                jsonObj = new JSONObject(response.toString());
+//            }
+//
+////            ///JSONArray jsonArray = mainJson.getJSONArrayundefined"student");
+////            if(response.toString().length()>0 )
+////            {
+////
+////            }
+////            else
+////            {
+////                //response="Empty";
+////            }
+//
+//        }
+//        catch (Exception exception)
+//        {
+//            //response="error: "+exception.toString();
+//            exception.printStackTrace();
+//            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+//        }
+//
+//        return jsonObj;
+//
+//    }
+
+
+
     public JSONObject GetLevelByLevelNameAndSchoolId(String levelName, String schoolId)
     {
 //        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByUserNameAndPassword";
@@ -125,7 +179,6 @@ public class LevelHttpServiceAdapter {
         return jsonObj;
 
     }
-
 
 
 
@@ -178,6 +231,71 @@ public class LevelHttpServiceAdapter {
     }
 
 
+
+    public ArrayList<JSONObject> GetLevelByLevelNameWildCardAndSchoolId(String levelName, String schoolId)
+    {
+        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetLevelByLevelNameWildCardAndSchoolId";
+        String OPERATION_NAME_GetJsonData = "GetLevelByLevelNameWildCardAndSchoolId";
+
+
+        String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
+
+        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LevelServices.asmx";
+
+        SoapPrimitive response=null;
+
+        ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
+
+        try
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,OPERATION_NAME_GetJsonData);
+            request.addProperty("levelName", levelName);
+            request.addProperty("schoolId", schoolId);
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.dotNet = true;
+            envelope.setOutputSoapObject(request);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            httpTransport.call(SOAP_ACTION_GetJsonData, envelope);
+
+            response = (SoapPrimitive) envelope.getResponse();
+
+
+
+
+            if(response.toString().length()>0 )
+            {
+                //String responseModified = "["+response+"]";
+
+                JSONArray aryJSONStrings  = new JSONArray(response.toString());
+                JSONObject jsonObj = new JSONObject();
+
+
+
+                for(int i=0; i<aryJSONStrings.length(); i++) {
+
+                    jsonObj = (JSONObject)aryJSONStrings.getJSONObject(i);
+
+                    obj.add(jsonObj);
+
+                }
+
+            }
+            else
+            {
+                obj = null;
+            }
+
+        }
+        catch (Exception exception)
+        {
+            obj = null;
+            exception.printStackTrace();
+            //Toast.makeTextundefinedthis, exception.printStackTraceundefined) ,Toast.LENGTH_LONG).showundefined);
+        }
+
+        return obj;
+
+    }
 
 
 
