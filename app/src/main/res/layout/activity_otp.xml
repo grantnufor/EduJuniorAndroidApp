@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPActivity"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textViewNotificationTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PHONE NUMBER VERIFICATION"
+        android:textSize="24dp"
+        android:layout_marginTop="50dp"/>
+
+
+    <TextView
+        android:id="@+id/textViewNotificationMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="A One Time Password (OTP) has been sent to your phone number in order to verify that you are the rightful owner of the Phone Number you submitted during registration. Ensure that your Phone Number is not on DND (Do Not Disturb) as this will not allow your OTP to be delivered to you. To deactivate DND text ALLOW to 2442. DND deactivation may take up to 24 hours. Please enter your OTP below when received and click on the VERIFY PHONE NUMBER button." />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_login_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextOtp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp"
+            android:cursorVisible="true"
+            android:drawableBottom="@color/Brown"
+            android:ems="10"
+            android:hint="OTP"
+            android:inputType="text|number"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/Black"
+            android:textCursorDrawable="@null"
+            app:fontFamily="@font/montserrat" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonPhoneNumberVerification"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/dark_red_button"
+        android:text="Verify Phone Number"
+        android:textColor="@color/White" />
+
+
+
+</LinearLayout>
