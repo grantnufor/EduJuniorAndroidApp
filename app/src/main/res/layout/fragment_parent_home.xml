@@ -5,19 +5,19 @@
     xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
+    android:background="@color/Black"
     android:orientation="vertical">
 
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/adViewParentHome"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+
+    <LinearLayout
+        android:id="@+id/linearLayoutParentHomeFbBannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Black"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="0dp"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-2954191210352297/6499414227" />
+        android:orientation="vertical"
+        />
 
 <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
     android:id="@+id/swipeRefreshLayoutParentHome"
@@ -132,6 +132,19 @@
 
 
             </LinearLayout>
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewParentHome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-2954191210352297/6499414227" />
 
 
             <!--<LinearLayout-->

@@ -2,61 +2,93 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
 android:orientation="vertical"
 android:gravity="center"
+    android:background="@color/Maroon"
 tools:context=".SignUpSelectionActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
 
 
 <ImageView
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:src="@drawable/logoblack"
+    android:layout_height="70dp"
+    android:src="@drawable/logowhite"
     android:layout_marginRight="20dp"
     android:layout_marginLeft="20dp"
-    android:layout_marginTop="-40dp"
+    android:layout_marginTop="10dp"
     />
 
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/select"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
 
-<TextView
+        />
+
+
+
+    <TextView
     android:id="@+id/lbl556"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
-    android:text="Please select your registration type."
-    android:textColor="@color/Black"
+    android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+    android:text="Please select your Sign Up type."
+    android:textColor="@color/White"
     android:fontFamily="@font/montserrat"
     android:textSize="18dp" />
 
 
 
 
-    <Button
-        android:id="@+id/buttonSignUpSelectionSignUpAsStudent"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:background="@drawable/dark_blue_button"
-        android:text="Register as Student (Higher Inst.)"
-        android:textColor="@color/White"
-        android:layout_marginTop="20dp"
-        />
 
 
 <Button
     android:id="@+id/buttonSignUpSelectionSignUpAsParent"
-    android:layout_width="300dp"
+    android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
     android:background="@drawable/steel_blue_button"
-    android:text="Register as a Parent"
+    android:text="Sign Up as Parent"
     android:textColor="@color/White"
     android:layout_marginTop="20dp"
     />
 
+
+
+    <Button
+        android:id="@+id/buttonSignUpSelectionSignUpAsStudent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/dark_blue_button"
+        android:text="Sign Up as Student (Higher Inst.)"
+        android:textColor="@color/White"
+        android:layout_marginTop="20dp"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -81,10 +113,11 @@ tools:context=".SignUpSelectionActivity">
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="5dp"
             android:textSize="15dp"
-            android:textColor="@color/Black"
+            android:textColor="@color/White"
             android:fontFamily="@font/montserrat"
-            android:text="Schools are registered by EduJunior and Teachers are registered by their School"
+            android:text="Schools are Signed Up by EduJunior and Teachers are Signed Up by their School"
             >
         </TextView>
 
@@ -118,6 +151,14 @@ tools:context=".SignUpSelectionActivity">
 <!--        />-->
 
 
+            <LinearLayout
+                android:id="@+id/linearLayoutSignUpSelectionFbBannerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                />
 
 
 <com.google.android.gms.ads.AdView
@@ -129,9 +170,17 @@ tools:context=".SignUpSelectionActivity">
     android:layout_alignParentBottom="true"
     android:layout_gravity="center"
     android:layout_marginTop="60dp"
-    android:layout_marginBottom="30dp"
+    android:layout_marginBottom="20dp"
     ads:adSize="BANNER"
     ads:adUnitId="ca-app-pub-2954191210352297/6499414227"  />
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
 
 
 </LinearLayout>

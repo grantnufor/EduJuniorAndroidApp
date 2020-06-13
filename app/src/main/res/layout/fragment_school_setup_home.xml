@@ -22,8 +22,8 @@
             android:layout_width="fill_parent"
             android:layout_height="200dp"
             android:layout_marginTop="70dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
             android:background="@drawable/layout_rounded_corners_red"
             android:orientation="vertical">
 
@@ -74,8 +74,8 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
         android:orientation="vertical">
 
         <Button
@@ -87,7 +87,6 @@
             android:background="@drawable/dark_green_button"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/drawable_left_subject_icon"
             android:text="Manage Subjects"
             />
 
@@ -100,7 +99,6 @@
             android:layout_marginTop="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/drawable_left_level_icon"
             android:background="@drawable/red_button"
             android:text="Manage Levels"
             />
@@ -114,7 +112,6 @@
             android:layout_marginTop="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/drawable_left_grade_icon"
             android:background="@drawable/dark_blue_button"
             android:text="Manage Grades"
             />
@@ -129,7 +126,6 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:background="@drawable/red_button"
-            android:drawableLeft="@drawable/drawable_left_classroom_icon"
             android:text="Manage Class Rooms"
             />
 
@@ -143,7 +139,6 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:background="@drawable/dark_blue_button"
-            android:drawableLeft="@drawable/drawable_left_examtype_icon"
             android:text="Manage Exam Types"
             />
 
@@ -157,7 +152,6 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:background="@drawable/dark_red_button"
-            android:drawableLeft="@drawable/drawable_left_session_icon"
             android:text="Manage Sessions"
             />
 
@@ -171,7 +165,6 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:background="@drawable/dark_blue_button"
-            android:drawableLeft="@drawable/drawable_left_term_icon"
             android:text="Manage Terms"
             />
 
@@ -185,7 +178,6 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:background="@drawable/dark_green_button"
-            android:drawableLeft="@drawable/drawable_left_teacher_icon"
             android:text="Manage Teachers"
             />
 
@@ -199,7 +191,6 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:background="@drawable/red_button"
-            android:drawableLeft="@drawable/drawable_left_parent_icon"
             android:text="Manage Parents"
             />
 
@@ -213,7 +204,6 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:background="@drawable/dark_blue_button"
-            android:drawableLeft="@drawable/drawable_left_pupil_icon"
             android:text="Manage Pupils"
             />
 
@@ -228,7 +218,6 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:background="@drawable/red_button"
-            android:drawableLeft="@drawable/drawable_left_back_icon"
             android:text="Back to Home"
             />
 

@@ -29,6 +29,13 @@
             android:title="Comm Box" />
 
 
+        <item
+            android:id="@+id/nav_parent_elearning"
+            android:icon="@drawable/elearning"
+            android:state_checked="true"
+            android:title="E-Learning" />
+
+
 
         <item
             android:id="@+id/nav_logout_parent"

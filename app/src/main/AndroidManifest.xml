@@ -22,13 +22,17 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".ELearningContentOpenVideoActivity"></activity>
+        <activity android:name=".ELearningContentSelectionActivity" />
+        <activity android:name=".ELearningSubjectSelectionActivity" />
+        <activity android:name=".ELearningGradeSelectionActivity" />
         <activity android:name=".SchoolFeeReceiptActivity"
             android:windowSoftInputMode="stateVisible|adjustResize" >
         </activity>
         <activity android:name=".SchoolFeesUpdateActivity" />
         <activity
             android:name=".SignUpSelectionActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".TeacherProfileActivity" />
         <activity android:name=".SchoolFeesHistoryAllActivity" />
         <activity android:name=".SchoolFeesHistoryPupilActivity" />
@@ -65,7 +69,7 @@
             android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity
             android:name=".SignUpUserActivity"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity
             android:name=".CheckBackLaterActivity"
@@ -125,7 +129,7 @@
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".SignUpParentActivity"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".SchoolSetupActivity"
