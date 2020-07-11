@@ -40,7 +40,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 ads:adSize="BANNER"
-                ads:adUnitId="ca-app-pub-5757716981164944/2849526714" />
+                ads:adUnitId="ca-app-pub-8256015341812191/4587985925" />
 
 
 
@@ -75,7 +75,7 @@
                     android:layout_width="0dp"
                     android:layout_weight=".05"
                     android:layout_height="60dp"
-                    android:background="@color/SteelBlue">
+                    android:background="@color/Maroon">
 
                 </LinearLayout>
                 <LinearLayout
@@ -108,7 +108,7 @@
                     android:layout_width="0dp"
                     android:layout_weight=".05"
                     android:layout_height="60dp"
-                    android:background="@color/SteelBlue">
+                    android:background="@color/Maroon">
 
                 </LinearLayout>
 

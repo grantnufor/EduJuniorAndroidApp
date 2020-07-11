@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Black"
-    tools:context=".ELearningSubjectSelectionActivity">
+    tools:context=".ELearningTypeSelectionActivity">
+
 
 
 
@@ -21,7 +22,7 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/linearLayoutSubjectSelectionFbBannerContainer"
+            android:id="@+id/linearLayoutELearningTypeSelectionFbBannerContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -32,7 +33,7 @@
 
         <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adViewSubjectSelection"
+            android:id="@+id/adViewELearningTypeSelection"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -92,7 +93,7 @@
                     android:fontFamily="@font/montserrat"
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:text="What Subject do you want to access?"
+                    android:text="Please select E-Learning Type"
                     android:textColor="@color/Red"
                     android:textSize="18dp"
                     android:textStyle="bold"
@@ -114,72 +115,31 @@
 
 
 
-        <ListView
-            android:id="@+id/listViewELearningSubjectSelectionLevels"
+        <Button
+            android:id="@+id/buttonELearningByLevelsAndSubjects"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/steel_blue_button"
+            android:text="E-Learning by Levels/Subjects"
+            android:textColor="@color/White"
+            android:layout_marginTop="40dp"
+            />
+
+        <Button
+            android:id="@+id/buttonAllELearningBySearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/steel_blue_button"
+            android:text="All E-Learning by search"
+            android:textColor="@color/White"
             android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </ListView>
-
-
-
-
-
-
-        <!--            <LinearLayout-->
-        <!--                android:layout_width="fill_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_marginTop="0dp"-->
-        <!--                android:orientation="horizontal">-->
-
-
-        <!--                <Button-->
-        <!--                    android:id="@+id/buttonUserHomePlayEnrolledGames"-->
-        <!--                    android:layout_width="0dp"-->
-        <!--                    android:layout_weight=".45"-->
-        <!--                    android:background="@drawable/red_button"-->
-        <!--                    android:textColor="@color/White"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="20dp"-->
-        <!--                    android:layout_marginLeft="10dp"-->
-        <!--                    android:layout_marginBottom="40dp"-->
-        <!--                    android:fontFamily="@font/montserrat"-->
-        <!--                    android:layout_alignParentBottom="true"-->
-        <!--                    android:text="Play your Enrolled Games" />-->
-
-        <!--                <Button-->
-        <!--                    android:id="@+id/buttonUserHomeViewGameResults"-->
-        <!--                    android:layout_width="0dp"-->
-        <!--                    android:layout_weight=".45"-->
-        <!--                    android:background="@drawable/steel_blue_button"-->
-        <!--                    android:textColor="@color/White"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="20dp"-->
-        <!--                    android:layout_marginRight="10dp"-->
-        <!--                    android:layout_marginLeft="10dp"-->
-        <!--                    android:fontFamily="@font/montserrat"-->
-        <!--                    android:layout_alignParentBottom="true"-->
-        <!--                    android:layout_marginBottom="20dp"-->
-        <!--                    android:text="View your Game Results" />-->
-
-
-        <!--            </LinearLayout>-->
-
-
-
-
-        <!--            <com.google.android.gms.ads.AdView-->
-        <!--                xmlns:ads="http://schemas.android.com/apk/res-auto"-->
-        <!--                android:id="@+id/adViewUserHome"-->
-        <!--                android:layout_width="fill_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_centerHorizontal="true"-->
-        <!--                android:layout_alignParentBottom="true"-->
-        <!--                android:layout_gravity="center"-->
-        <!--                android:layout_marginTop="0dp"-->
-        <!--                ads:adSize="BANNER"-->
-        <!--                ads:adUnitId="ca-app-pub-1422423899855082/3820125354" />-->
-
+            />
 
 
     </LinearLayout>
@@ -187,10 +147,6 @@
 
 
     <!--    </ScrollView>-->
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,6 +18,23 @@
     android:layout_height="wrap_content"/>
 
 
+        <TextView
+            android:id="@+id/textViewContentTypeList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please open on youtube and click the subscribe button to get notified when new videos are available. Also do not forget to like this video. Thanks for watching."
+            android:visibility="visible"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/Red"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:layout_gravity="center" />
+
+
         <Button
             android:id="@+id/buttonVideoContentDone"
             android:layout_width="fill_parent"
@@ -44,6 +61,20 @@
             android:layout_marginTop="20dp"
             android:orientation="vertical"
             />
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewContentOpenVideo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8256015341812191/4587985925" />
+
 
 
     </LinearLayout>

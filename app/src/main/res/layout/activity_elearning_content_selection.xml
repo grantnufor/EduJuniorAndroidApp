@@ -42,7 +42,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-5757716981164944/2849526714" />
+            ads:adUnitId="ca-app-pub-8256015341812191/4587985925" />
 
 
 
@@ -77,7 +77,7 @@
                 android:layout_width="0dp"
                 android:layout_weight=".05"
                 android:layout_height="60dp"
-                android:background="@color/SteelBlue">
+                android:background="@color/Maroon">
 
             </LinearLayout>
             <LinearLayout
@@ -108,7 +108,7 @@
                 android:layout_width="0dp"
                 android:layout_weight=".05"
                 android:layout_height="60dp"
-                android:background="@color/SteelBlue">
+                android:background="@color/Maroon">
 
             </LinearLayout>
 
@@ -150,7 +150,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".3"
-                android:background="@drawable/steel_blue_button"
+                android:background="@drawable/red_button"
                 android:text="Search"
                 android:layout_marginRight="10dp"
                 android:textColor="@color/White"

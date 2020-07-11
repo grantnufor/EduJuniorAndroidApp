@@ -22,13 +22,14 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ELearningContentOpenVideoActivity"></activity>
+        <activity android:name=".ELearningTypeSelectionActivity"></activity>
+        <activity android:name=".ELearningContentOpenVideoActivity" />
         <activity android:name=".ELearningContentSelectionActivity" />
         <activity android:name=".ELearningSubjectSelectionActivity" />
         <activity android:name=".ELearningGradeSelectionActivity" />
-        <activity android:name=".SchoolFeeReceiptActivity"
-            android:windowSoftInputMode="stateVisible|adjustResize" >
-        </activity>
+        <activity
+            android:name=".SchoolFeeReceiptActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
         <activity android:name=".SchoolFeesUpdateActivity" />
         <activity
             android:name=".SignUpSelectionActivity"
@@ -158,7 +159,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-7947549094897909~6676758294" />
+            android:value="ca-app-pub-8256015341812191~3755370119" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

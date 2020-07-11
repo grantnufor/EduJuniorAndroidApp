@@ -27,7 +27,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-2954191210352297/6499414227" />
+            ads:adUnitId="ca-app-pub-8256015341812191/4587985925" />
 
 
 
@@ -597,17 +597,17 @@
 
 
 
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/adViewMessengerList"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-2954191210352297/6499414227" />
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adViewMessengerList"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        ads:adSize="BANNER"-->
+<!--        ads:adUnitId="ca-app-pub-8256015341812191/4587985925" />-->
 
 
 

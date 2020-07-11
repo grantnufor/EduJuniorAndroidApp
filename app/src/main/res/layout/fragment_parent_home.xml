@@ -9,17 +9,32 @@
     android:orientation="vertical">
 
 
-    <LinearLayout
-        android:id="@+id/linearLayoutParentHomeFbBannerContainer"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/Black"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical"
-        />
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayoutParentHomeFbBannerContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@color/Black"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:orientation="vertical"-->
+<!--        />-->
 
-<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewParentHome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8256015341812191/4587985925" />
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
     android:id="@+id/swipeRefreshLayoutParentHome"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
@@ -133,18 +148,6 @@
 
             </LinearLayout>
 
-
-            <com.google.android.gms.ads.AdView
-                xmlns:ads="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/adViewParentHome"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="0dp"
-                ads:adSize="BANNER"
-                ads:adUnitId="ca-app-pub-2954191210352297/6499414227" />
 
 
             <!--<LinearLayout-->

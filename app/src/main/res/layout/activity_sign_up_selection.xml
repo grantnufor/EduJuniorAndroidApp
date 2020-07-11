@@ -163,16 +163,16 @@ tools:context=".SignUpSelectionActivity">
 
 <com.google.android.gms.ads.AdView
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/adViewMarketerRegConfirmation"
+    android:id="@+id/adViewSignUpSelection"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
     android:layout_alignParentBottom="true"
     android:layout_gravity="center"
-    android:layout_marginTop="60dp"
+    android:layout_marginTop="40dp"
     android:layout_marginBottom="20dp"
     ads:adSize="BANNER"
-    ads:adUnitId="ca-app-pub-2954191210352297/6499414227"  />
+    ads:adUnitId="ca-app-pub-8256015341812191/4587985925"  />
 
 
 
