@@ -22,14 +22,15 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ELearningTypeSelectionActivity"></activity>
+        <activity android:name=".ELearningAllVideosOpenActivity"></activity>
+        <activity android:name=".ELearningTypeSelectionActivity" />
         <activity android:name=".ELearningContentOpenVideoActivity" />
         <activity android:name=".ELearningContentSelectionActivity" />
         <activity android:name=".ELearningSubjectSelectionActivity" />
         <activity android:name=".ELearningGradeSelectionActivity" />
         <activity
             android:name=".SchoolFeeReceiptActivity"
-            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+            android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity android:name=".SchoolFeesUpdateActivity" />
         <activity
             android:name=".SignUpSelectionActivity"

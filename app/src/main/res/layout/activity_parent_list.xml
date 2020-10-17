@@ -379,13 +379,13 @@ tools:context="ParentListActivity">
 
                     <Button
                         android:id="@+id/btnLoadAllParentsParentList"
-                        android:layout_width="150dp"
+                        android:layout_width="250dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
                         android:background="@drawable/red_button"
-                        android:text="Load all Parents"
+                        android:text="Load all Parents of Kids in your School"
                         android:gravity="center"
                         android:textColor="@color/White"
                         android:textSize="11dp" />
@@ -436,7 +436,7 @@ tools:context="ParentListActivity">
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:dividerHeight="5.0sp"/>
+                        android:dividerHeight="5.0dp"/>
 
 
 
@@ -682,7 +682,7 @@ tools:context="ParentListActivity">
                                     android:layout_marginBottom="20dp"
                                     android:textSize="14dp"
                                     android:background="@color/DarkRed"
-                                    android:text="Register Parent"
+                                    android:text="Save"
                                     android:textColor="@color/White" />
 
                                 <!--<Button-->
