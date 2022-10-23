@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class NewsHttpServiceAdapter {
 
-
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/NewsServices.asmx";
 
     public JSONObject GetNewById(String newsId)
     {
@@ -20,8 +20,8 @@ public class NewsHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetNewById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-//        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/NewsServices.asmx";
-        String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsServices.asmx";
+
+        //String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsServices.asmx";
         Object response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -87,7 +87,7 @@ public class NewsHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
         //String SOAP_ADDRESS = "http://junior.landoria.org/WebServices/NewsServices.asmx";
-        String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsServices.asmx";
+        //String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsServices.asmx";
         Object response=null;
 
         ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
@@ -150,7 +150,7 @@ public class NewsHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
         //String SOAP_ADDRESS = "http://junior.landoria.org/WebServices/NewsServices.asmx";
-        String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsServices.asmx";
+        //String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsServices.asmx";
         Object response=null;
 
         ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
@@ -220,7 +220,7 @@ public class NewsHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
         //String SOAP_ADDRESS = "http://junior.landoria.org/WebServices/NewsServices.asmx";
-        String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsServices.asmx";
+        //String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsServices.asmx";
         Object response=null;
 
         try
@@ -269,7 +269,7 @@ public class NewsHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
         //String SOAP_ADDRESS = "http://junior.landoria.org/WebServices/NewsServices.asmx";
-        String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsServices.asmx";
+        //String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsServices.asmx";
         Object response=null;
 
 

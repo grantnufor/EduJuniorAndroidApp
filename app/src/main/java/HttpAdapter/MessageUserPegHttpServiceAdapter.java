@@ -13,6 +13,8 @@ import java.util.ArrayList;
 public class MessageUserPegHttpServiceAdapter {
 
 
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/MessageUserPegServices.asmx";
+
     public ArrayList<JSONObject> GetAllMessageUserPeg()
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllMessageUserPeg";
@@ -21,7 +23,7 @@ public class MessageUserPegHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageUserPegServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageUserPegServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -85,7 +87,7 @@ public class MessageUserPegHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetMessageUserPegById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageUserPegServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageUserPegServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -137,7 +139,7 @@ public class MessageUserPegHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetMessageUserPegByUserOnePhoneNumberAndUserTwoPhoneNumber";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageUserPegServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageUserPegServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -189,11 +191,8 @@ public class MessageUserPegHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageUserPegServices.asmx";
 
-
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageUserPegServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
         SoapPrimitive response=null;
         try
         {
@@ -259,9 +258,8 @@ public class MessageUserPegHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageUserPegServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageUserPegServices.asmx";
+
         Object response=null;
         try
         {

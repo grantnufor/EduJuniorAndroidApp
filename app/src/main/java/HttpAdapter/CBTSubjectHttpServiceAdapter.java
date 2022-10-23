@@ -13,7 +13,7 @@ public class CBTSubjectHttpServiceAdapter {
 
 
 
-    String SOAP_ADDRESS = "http://studyair.com/WebServices/TESubjectServices.asmx";
+    String SOAP_ADDRESS = "http://edujunior.co.uk/WebServices/TESubjectServices.asmx";
 
     public JSONObject GetSubjectBySubjectId(String subjectId)
     {

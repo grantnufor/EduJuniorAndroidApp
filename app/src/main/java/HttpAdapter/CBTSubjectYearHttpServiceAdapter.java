@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CBTSubjectYearHttpServiceAdapter {
 
 
-	String SOAP_ADDRESS = "http://studyair.com/WebServices/TESubjectYearServices.asmx";
+	String SOAP_ADDRESS = "http://edujunior.co.uk/WebServices/TESubjectYearServices.asmx";
 
 	public JSONObject GetSubjectYearBySubjectIdAndYearId(String subjectId, String yearId)
 	{ 

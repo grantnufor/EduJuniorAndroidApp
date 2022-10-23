@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class NewsImageHttpServiceAdapter {
 
-
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/NewsImageServices.asmx";
 
     public JSONObject GetNewsImageById(String newsImageId)
     {
@@ -20,7 +20,7 @@ public class NewsImageHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetNewsImageById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsImageServices.asmx";
+        //String SOAP_ADDRESS ="http://studyair.com/WebServices/NewsImageServices.asmx";
         Object response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -85,7 +85,7 @@ public class NewsImageHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetAllNewsImages";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS = "http://studyair.com/WebServices/NewsImageServices.asmx";
+        //String SOAP_ADDRESS = "http://studyair.com/WebServices/NewsImageServices.asmx";
         Object response=null;
 
         ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
@@ -147,7 +147,7 @@ public class NewsImageHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetNewsImageByNewsId";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS = "http://studyair.com/WebServices/NewsImageServices.asmx";
+        //String SOAP_ADDRESS = "http://studyair.com/WebServices/NewsImageServices.asmx";
         Object response=null;
 
         ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
@@ -215,7 +215,7 @@ public class NewsImageHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "AddNewsImage";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS = "http://studyair.com/WebServices/NewsImageServices.asmx";
+        //String SOAP_ADDRESS = "http://studyair.com/WebServices/NewsImageServices.asmx";
         Object response=null;
 
         try
@@ -255,7 +255,7 @@ public class NewsImageHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "UpdateNews";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS = "http://studyair.com/WebServices/NewsImageServices.asmx";
+        //String SOAP_ADDRESS = "http://studyair.com/WebServices/NewsImageServices.asmx";
         Object response=null;
 
 

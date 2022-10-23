@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CBTExamHttpServiceAdapter {
 
 
-
+    String SOAP_ADDRESS = "http://edujunior.co.uk/WebServices/TEExamServices.asmx";
 
     public JSONObject GetExamByExamId(String examId)
     {
@@ -20,7 +20,7 @@ public class CBTExamHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetExamByExamId";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS = "http://studyair.com/WebServices/TEExamServices.asmx";
+//        String SOAP_ADDRESS = "http://studyair.com/WebServices/TEExamServices.asmx";
         Object response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -85,7 +85,7 @@ public class CBTExamHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetExamByExamName";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS = "http://studyair.com/WebServices/TEExamServices.asmx";
+        //String SOAP_ADDRESS = "http://studyair.com/WebServices/TEExamServices.asmx";
         Object response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -147,7 +147,7 @@ public class CBTExamHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetAllExams";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS = "http://studyair.com/WebServices/TEExamServices.asmx";
+        //String SOAP_ADDRESS = "http://studyair.com/WebServices/TEExamServices.asmx";
         Object response=null;
 
         ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
@@ -209,7 +209,7 @@ public class CBTExamHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetExamByCountryId";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS = "http://studyair.com/WebServices/TEExamServices.asmx";
+        //String SOAP_ADDRESS = "http://studyair.com/WebServices/TEExamServices.asmx";
         Object response=null;
 
         ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects

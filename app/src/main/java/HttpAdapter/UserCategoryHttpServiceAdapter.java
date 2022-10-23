@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class UserCategoryHttpServiceAdapter {
 
-	String SOAP_ADDRESS = "http://junior.landoria.org/WebServices/UserCategoryServices.asmx";
+	String SOAP_ADDRESS = "http://edujunior.co.uk/WebServices/UserCategoryServices.asmx";
 	
 	public ArrayList<JSONObject> GetAllUserCategories()
 	{ 

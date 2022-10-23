@@ -12,6 +12,9 @@ import java.util.ArrayList;
 
 public class BankHttpServiceAdapter {
 
+
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/BankServices.asmx";
+
     public ArrayList<JSONObject> GetAllBanks()
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllBanks";
@@ -20,7 +23,7 @@ public class BankHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/BankServices.asmx";
+       // String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/BankServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -84,7 +87,7 @@ public class BankHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetBankByBankId";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/BankServices.asmx";
+       // String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/BankServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -135,7 +138,7 @@ public class BankHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetBankByBankName";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/BankServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/BankServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();

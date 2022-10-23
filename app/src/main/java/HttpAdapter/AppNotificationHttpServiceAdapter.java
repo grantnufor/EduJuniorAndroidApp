@@ -21,7 +21,7 @@ public class AppNotificationHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/AppNotificationServices.asmx";
+        String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/AppNotificationServices.asmx";
 
 
         SoapPrimitive response=null;

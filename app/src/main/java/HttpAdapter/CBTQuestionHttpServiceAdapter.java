@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CBTQuestionHttpServiceAdapter {
 
 
-
+	String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/TEQuestionServices.asmx";
 
 	public JSONObject GetQuestionBySubjectTypeIdAndQuestionNo(String subjectTypeId, String questionNo)
 	{ 
@@ -20,7 +20,7 @@ public class CBTQuestionHttpServiceAdapter {
 		String OPERATION_NAME_GetJsonData = "GetQuestionBySubjectTypeIdAndQuestionNo";
 
 		String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-		String SOAP_ADDRESS ="http://studyair.com/WebServices/TEQuestionServices.asmx";
+		//String SOAP_ADDRESS ="http://studyair.com/WebServices/TEQuestionServices.asmx";
 		Object response=null;
 
 		JSONObject jsonObj = new JSONObject();
@@ -85,7 +85,7 @@ public class CBTQuestionHttpServiceAdapter {
 		String OPERATION_NAME_GetJsonData = "GetAllQuestions";
 
 		String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-		String SOAP_ADDRESS = "http://studyair.com/WebServices/TEQuestionServices.asmx";
+		//String SOAP_ADDRESS = "http://studyair.com/WebServices/TEQuestionServices.asmx";
 		Object response=null;
 
 		ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects
@@ -147,7 +147,7 @@ public class CBTQuestionHttpServiceAdapter {
 		String OPERATION_NAME_GetJsonData = "GetQuestionBySubjectTypeId";
 
 		String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-		String SOAP_ADDRESS = "http://studyair.com/WebServices/TEQuestionServices.asmx";
+		//String SOAP_ADDRESS = "http://studyair.com/WebServices/TEQuestionServices.asmx";
 		Object response=null;
 
 		ArrayList<JSONObject> obj = new ArrayList<JSONObject>();//create arraylist of jsonobject to capture all returned objects

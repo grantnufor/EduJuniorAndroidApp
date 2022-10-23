@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class LocationHttpServiceAdapter {
 
-
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/LocationServices.asmx";
 
     public ArrayList<JSONObject> GetAllLocations()
     {
@@ -22,7 +22,7 @@ public class LocationHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LocationServices.asmx";
+       // String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LocationServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -86,7 +86,7 @@ public class LocationHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetLocationById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LocationServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LocationServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -137,7 +137,7 @@ public class LocationHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetLocationByLocationName";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LocationServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LocationServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -189,7 +189,7 @@ public class LocationHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LocationServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LocationServices.asmx";
 
         SoapPrimitive response=null;
 
@@ -255,7 +255,7 @@ public class LocationHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetLocationByLocationNameAndStateId";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LocationServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/LocationServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();

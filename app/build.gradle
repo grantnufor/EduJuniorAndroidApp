@@ -5,12 +5,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     defaultConfig {
         applicationId "org.landoria.mac.edujunior"
         minSdkVersion 16
-        targetSdkVersion 29
-        versionCode 40
+        targetSdkVersion 30
+        versionCode 46
         versionName "1.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
@@ -27,7 +27,6 @@ android {
         checkReleaseBuilds false
 
     }
-    buildToolsVersion '28.0.3'
 
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'

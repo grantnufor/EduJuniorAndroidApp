@@ -13,6 +13,9 @@ import java.util.ArrayList;
 public class ELearningGradeHttpServiceAdapter {
 
 
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/ELearningGradeServices.asmx";
+
+
     public ArrayList<JSONObject> GetAllELearningGrades()
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllELearningGrades";
@@ -21,7 +24,7 @@ public class ELearningGradeHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningGradeServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningGradeServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -87,7 +90,7 @@ public class ELearningGradeHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetELearningGradeById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningGradeServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningGradeServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -138,7 +141,7 @@ public class ELearningGradeHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetELearningGradeByGradeName";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningGradeServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningGradeServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();

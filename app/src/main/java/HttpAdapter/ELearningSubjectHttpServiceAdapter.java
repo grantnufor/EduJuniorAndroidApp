@@ -12,6 +12,10 @@ import java.util.ArrayList;
 
 public class ELearningSubjectHttpServiceAdapter {
 
+
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/ELearningSubjectServices.asmx";
+
+
     public ArrayList<JSONObject> GetAllELearningSubjects()
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllELearningSubjects";
@@ -20,7 +24,7 @@ public class ELearningSubjectHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningSubjectServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningSubjectServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -86,7 +90,7 @@ public class ELearningSubjectHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetELearningSubjectById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningSubjectServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningSubjectServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -135,7 +139,7 @@ public class ELearningSubjectHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS = "http://junior.landoria.org/WebServices/ELearningSubjectServices.asmx";
+        //String SOAP_ADDRESS = "http://junior.landoria.org/WebServices/ELearningSubjectServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -202,7 +206,7 @@ public class ELearningSubjectHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetELearningSubjectBySubjectName";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningSubjectServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningSubjectServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();

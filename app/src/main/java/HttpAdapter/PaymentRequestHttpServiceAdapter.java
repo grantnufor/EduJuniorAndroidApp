@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class PaymentRequestHttpServiceAdapter {
 
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/PaymentRequestServices.asmx";
 
     public ArrayList<JSONObject> GetAllPaymentRequest()
     {
@@ -21,7 +22,7 @@ public class PaymentRequestHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -85,7 +86,7 @@ public class PaymentRequestHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetPaymentRequestByPaymentRequestId";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -133,7 +134,7 @@ public class PaymentRequestHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetPaymentRequestByEduJuniorStaffIdAndSettled";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -183,7 +184,7 @@ public class PaymentRequestHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
 
         SoapPrimitive response=null;
 
@@ -253,7 +254,7 @@ public class PaymentRequestHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "AddPaymentRequest";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -324,9 +325,8 @@ public class PaymentRequestHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+       // String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/PaymentRequestServices.asmx";
+
         Object response=null;
         try
         {

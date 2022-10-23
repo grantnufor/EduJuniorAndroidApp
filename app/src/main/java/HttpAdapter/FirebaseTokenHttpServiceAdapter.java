@@ -12,6 +12,10 @@ import java.util.ArrayList;
 
 public class FirebaseTokenHttpServiceAdapter {
 
+
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/FirebaseTokenServices.asmx";
+
+
     public ArrayList<JSONObject> GetAllFirebaseToken()
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllFirebaseToken";
@@ -19,8 +23,6 @@ public class FirebaseTokenHttpServiceAdapter {
 
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/FirebaseTokenServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -86,7 +88,7 @@ public class FirebaseTokenHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/FirebaseTokenServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/FirebaseTokenServices.asmx";
 
 
         SoapPrimitive response= null;
@@ -155,7 +157,7 @@ public class FirebaseTokenHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetFirebaseTokenById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/FirebaseTokenServices.asmx";
+
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -203,8 +205,6 @@ public class FirebaseTokenHttpServiceAdapter {
 
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/FirebaseTokenServices.asmx";
 
 
         SoapPrimitive response= null;
@@ -270,8 +270,6 @@ public class FirebaseTokenHttpServiceAdapter {
 
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/FirebaseTokenServices.asmx";
 
 
         SoapPrimitive response= null;
@@ -391,10 +389,6 @@ public class FirebaseTokenHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-
-
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/FirebaseTokenServices.asmx";
-
         SoapPrimitive response=null;
         try
         {
@@ -462,7 +456,6 @@ public class FirebaseTokenHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/FirebaseTokenServices.asmx";
 
         Object response=null;
         try
@@ -505,8 +498,6 @@ public class FirebaseTokenHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "DeleteFirebaseToken";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/FirebaseTokenServices.asmx";
 
         Object response=null;
         try

@@ -9,6 +9,9 @@ import org.ksoap2.transport.HttpTransportSE;
 
 public class RegKeyHttpServiceAdapter {
 
+
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/RegKeyServices.asmx";
+
     public JSONObject GetRegKeyByRegKeyDetail(String regKeyDetail)
     {
 //        String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetUserByUserNameAndPassword";
@@ -16,7 +19,7 @@ public class RegKeyHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetRegKeyByRegKeyDetail";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/RegKeyServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/RegKeyServices.asmx";
         SoapPrimitive response = null;
 
         JSONObject jsonObj = new JSONObject();

@@ -12,6 +12,9 @@ import java.util.ArrayList;
 
 public class StaffSchoolEngagementHttpServiceAdapter {
 
+
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/StaffSchoolEngagementServices.asmx";
+
     public ArrayList<JSONObject> GetAllStaffSchoolEngagements()
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllStaffSchoolEngagements";
@@ -20,7 +23,7 @@ public class StaffSchoolEngagementHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -84,7 +87,7 @@ public class StaffSchoolEngagementHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetStaffSchoolEngagementById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -135,7 +138,7 @@ public class StaffSchoolEngagementHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -202,7 +205,7 @@ public class StaffSchoolEngagementHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -266,7 +269,7 @@ public class StaffSchoolEngagementHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetStaffSchoolEngagementBySchoolNameAndLocationId";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -317,7 +320,7 @@ public class StaffSchoolEngagementHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -385,9 +388,8 @@ public class StaffSchoolEngagementHttpServiceAdapter {
 
 
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
+
         SoapPrimitive response=null;
 
 
@@ -439,9 +441,8 @@ public class StaffSchoolEngagementHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StaffSchoolEngagementServices.asmx";
+
         Object response=null;
         try
         {

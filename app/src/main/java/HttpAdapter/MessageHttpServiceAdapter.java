@@ -13,6 +13,8 @@ import java.util.ArrayList;
 public class MessageHttpServiceAdapter {
 
 
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/MessageServices.asmx";
+
     public ArrayList<JSONObject> GetAllMessages()
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllMessages";
@@ -21,7 +23,7 @@ public class MessageHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -85,7 +87,7 @@ public class MessageHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetMessageById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -136,7 +138,7 @@ public class MessageHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -204,7 +206,7 @@ public class MessageHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -272,7 +274,7 @@ public class MessageHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -337,11 +339,8 @@ public class MessageHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
 
-
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
         SoapPrimitive response=null;
         try
         {
@@ -413,9 +412,8 @@ public class MessageHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+       // String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
+
         Object response=null;
         try
         {
@@ -462,9 +460,8 @@ public class MessageHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+       // String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/MessageServices.asmx";
+
         Object response=null;
         try
         {

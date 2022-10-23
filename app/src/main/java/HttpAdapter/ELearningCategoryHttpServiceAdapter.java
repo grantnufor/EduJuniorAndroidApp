@@ -13,6 +13,9 @@ import java.util.ArrayList;
 public class ELearningCategoryHttpServiceAdapter {
 
 
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/ELearningCategoryServices.asmx";
+
+
     public ArrayList<JSONObject> GetAllELearningCategories()
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllELearningCategories";
@@ -21,7 +24,7 @@ public class ELearningCategoryHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningCategoryServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningCategoryServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -87,7 +90,7 @@ public class ELearningCategoryHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetELearningCategoryById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningCategoryServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningCategoryServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -138,7 +141,7 @@ public class ELearningCategoryHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetELearningCategoryByCategoryName";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningCategoryServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningCategoryServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -194,7 +197,7 @@ public class ELearningCategoryHttpServiceAdapter {
 
 
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningCategoryServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningCategoryServices.asmx";
 
         SoapPrimitive response=null;
         try
@@ -258,7 +261,7 @@ public class ELearningCategoryHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningCategoryServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ELearningCategoryServices.asmx";
 
         Object response=null;
         try

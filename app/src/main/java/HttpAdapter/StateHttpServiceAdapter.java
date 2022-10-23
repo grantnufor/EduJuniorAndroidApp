@@ -16,6 +16,9 @@ import java.util.ArrayList;
 
 public class StateHttpServiceAdapter {
 
+
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/StateServices.asmx";
+
     public ArrayList<JSONObject> GetAllStates()
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllStates";
@@ -24,7 +27,7 @@ public class StateHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StateServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StateServices.asmx";
 
 
         SoapPrimitive response=null;
@@ -88,7 +91,7 @@ public class StateHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetStateById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StateServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StateServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -139,7 +142,7 @@ public class StateHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetStateByStateName";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StateServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StateServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -192,7 +195,7 @@ public class StateHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StateServices.asmx";
+       // String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/StateServices.asmx";
 
         SoapPrimitive response=null;
 

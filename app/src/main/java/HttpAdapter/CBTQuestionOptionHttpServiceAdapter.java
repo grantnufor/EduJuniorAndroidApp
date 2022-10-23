@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CBTQuestionOptionHttpServiceAdapter {
 
 
-	String SOAP_ADDRESS = "http://studyair.com/WebServices/TEQuestionOptionServices.asmx";
+	String SOAP_ADDRESS = "http://edujunior.co.uk/WebServices/TEQuestionOptionServices.asmx";
 
 	public JSONObject GetQuestionOptionByQuestionIdAndOptionName(String questionId, String optionName)
 	{ 

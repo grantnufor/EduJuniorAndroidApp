@@ -17,6 +17,8 @@ import java.util.ArrayList;
 public class ParentHttpServiceAdapter {
 
 
+    String SOAP_ADDRESS ="http://edujunior.co.uk/WebServices/ParentServices.asmx";
+
     public ArrayList<JSONObject> GetAllParents()
     {
         String SOAP_ACTION_GetJsonData ="http://tempuri.org/GetAllParents";
@@ -25,7 +27,7 @@ public class ParentHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
+       // String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -92,7 +94,7 @@ public class ParentHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -157,7 +159,7 @@ public class ParentHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
 
 
         SoapPrimitive response = null;
@@ -222,7 +224,7 @@ public class ParentHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetParentByEmailAddressAndPassword";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
         SoapPrimitive response=null;
 
 
@@ -274,7 +276,7 @@ public class ParentHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetParentByEmailAddress";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
         SoapPrimitive response=null;
 
 
@@ -326,7 +328,7 @@ public class ParentHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetParentByPhoneNumberAndPassword";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
         SoapPrimitive response=null;
 
 
@@ -378,7 +380,7 @@ public class ParentHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetParentByPhoneNumber";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
         SoapPrimitive response=null;
 
 
@@ -429,7 +431,7 @@ public class ParentHttpServiceAdapter {
         String OPERATION_NAME_GetJsonData = "GetParentById";
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
         SoapPrimitive response=null;
 
         JSONObject jsonObj = new JSONObject();
@@ -489,9 +491,8 @@ public class ParentHttpServiceAdapter {
 
 
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+       // String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
+
         SoapPrimitive response=null;
         try
         {
@@ -568,9 +569,8 @@ public class ParentHttpServiceAdapter {
 
         String WSDL_TARGET_NAMESPACE ="http://tempuri.org/";
 
-        String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
-//		  String SOAP_ADDRESS ="http://www.webservice.studyair.com/PresentationLayer/UserServices.asmx";
-        // String SOAP_ADDRESS = "http://localhost:49747/CareMobileAuthentication.asmx";
+        //String SOAP_ADDRESS ="http://junior.landoria.org/WebServices/ParentServices.asmx";
+
         Object response=null;
         try
         {

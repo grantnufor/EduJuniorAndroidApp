@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CBTSubjectTypeHttpServiceAdapter {
 
 
-	String SOAP_ADDRESS = "http://studyair.com/WebServices/TESubjectTypeServices.asmx";
+	String SOAP_ADDRESS = "http://edujunior.co.uk/WebServices/TESubjectTypeServices.asmx";
 
 	public JSONObject GetSubjectTypeBySubjectTypeId(String subjectTypeId)
 	{ 
